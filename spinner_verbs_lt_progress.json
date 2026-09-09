@@ -1,0 +1,134 @@
+{
+  "_meta": {
+    "purpose": "Reconstructed from the transcript of a crashed session (session id 6d70bd2b-5ddd-4e7c-b528-bbc37f2c98c7, 2026-09-08 11:25-15:33). All translation here was done by Claude directly, no LLM (LT_AI_DLKVM) was used. Source dictionary: claudionary_source.json (187 entries).",
+    "reconstructed_on": "2026-09-08",
+    "status": "4 of ~7 semantic categories done and LOCKED (~97 pool entries): Cooking/Food (23), Thinking/Cognition (21), Movement/Wandering (~34), Nature/Organic Growth (19, re-reviewed and finalized 2026-09-09 with -inėju suffix pass). Next: pick one of the remaining 4 categories.",
+    "outstanding_deliverables_from_original_request": [
+      "~/.claude/settings.json spinnerVerbs config — NOT yet written",
+      "Lithuanian claudionary-style documentation file — NOT yet written",
+      "Optional: run local LT_AI_DLKVM model for supplementary variants — deferred by user, never run"
+    ],
+    "remaining_categories_not_started": [
+      "Whimsical Nonsense Words (Discombobulating, Flibbertigibbeting, Razzmatazzing, Hullaballooing, Tomfoolering, etc.)",
+      "Technical/Processing (Crunching, Hashing, Bootstrapping, Processing — Malinėju and Trupinu from the user's original example list were earmarked for here, unplaced)",
+      "Bureaucratic/corporate jargon (Actioning, Actualizing, Effecting, Accomplishing... assistant suggested skip or find LT bureaucratese equivalents)",
+      "Physics/sci-fi (Hyperspacing, Quantumizing, Levitating, Warping)"
+    ]
+  },
+  "categories": {
+    "Cooking/Food": {
+      "count": 23,
+      "entries": [
+        {"en": "Baking", "lt": "Kepu"},
+        {"en": "Blanching", "lt": "Apvirinu"},
+        {"en": "Brewing", "lt": "Plikau"},
+        {"en": "Caramelizing", "lt": "Karamelizuoju"},
+        {"en": "Churning", "lt": "Grūdu"},
+        {"en": "Cooking", "lt": "Gaminu"},
+        {"en": "Crunching", "lt": "Traškinu"},
+        {"en": "Flambeing", "lt": "Liepsninu", "note": "replaced original Flambiruoju per user request"},
+        {"en": "Frosting", "lt": "Glazūruoju"},
+        {"en": "Garnishing", "lt": "Puošiu"},
+        {"en": "Julienning", "lt": "Smulkinu"},
+        {"en": "Kneading", "lt": "Minkau"},
+        {"en": "Leavening", "lt": "Raugiu"},
+        {"en": "Marinating", "lt": "Marinuoju"},
+        {"en": "Proofing", "lt": "Pampstu", "note": "replaced original Kylu per user request"},
+        {"en": "Sauteing", "lt": "Spirginu"},
+        {"en": "Seasoning", "lt": "Skaninu"},
+        {"en": "Simmering", "lt": "Kunkuliuoju"},
+        {"en": "Smooshing", "lt": "Traiškau"},
+        {"en": "Stewing", "lt": "Troškinu"},
+        {"en": "Tempering", "lt": "Grūdinu"},
+        {"en": "Whisking", "lt": "Plaku"},
+        {"en": "Zesting", "lt": "Tarkuoju"}
+      ]
+    },
+    "Thinking/Cognition": {
+      "count": 21,
+      "entries": [
+        {"en": "Cerebrating", "lt": "Smegenuoju"},
+        {"en": "Cogitating", "lt": "Mąstau"},
+        {"en": "Considering", "lt": "Svarstau"},
+        {"en": "Contemplating", "lt": "Apmąstau"},
+        {"en": "Deliberating", "lt": "Dvejoju"},
+        {"en": "Determining", "lt": "Nusprendžiu"},
+        {"en": "Elucidating", "lt": "Aiškinu"},
+        {"en": "Envisioning", "lt": "Numatau"},
+        {"en": "Ideating", "lt": "Prasimanau"},
+        {"en": "Imagining", "lt": "Įsivaizduoju"},
+        {"en": "Inferring", "lt": "Numanau"},
+        {"en": "Mulling", "lt": "Kaitinu"},
+        {"en": "Musing", "lt": "Fantazuoju"},
+        {"en": "Philosophising", "lt": "Filosofuoju"},
+        {"en": "Pondering", "lt": "Sveriu"},
+        {"en": "Puzzling", "lt": "Kvaištu"},
+        {"en": "Ruminating", "lt": "Gromuluoju"},
+        {"en": "Thinking", "lt": "Galvoju"},
+        {"en": null, "lt": "Mintiju", "note": "user-added extra, kept alongside Galvoju"},
+        {"en": null, "lt": "Svarstinėju", "note": "user-added extra, kept alongside Sveriu"},
+        {"en": null, "lt": "Narplioju", "note": "user-added extra, kept alongside Kvaištu"}
+      ]
+    },
+    "Movement/Wandering": {
+      "count_approx": 34,
+      "entries": [
+        {"en": "Ebbing", "lt": "Atslūgstu"},
+        {"en": "Gallivanting", "lt": "Slampinėju"},
+        {"en": "Galloping", "lt": "Šuoliuoju"},
+        {"en": "Gusting", "lt": ["Gūsiuoju", "Vėjinu", "Vėduoju", "Vėsinu"]},
+        {"en": "Lollygagging", "lt": ["Grybauju", "Čiulptukauju"], "note": "Čiulptukauju kept as silly bonus"},
+        {"en": "Meandering", "lt": "Vingiuoju"},
+        {"en": "Moonwalking", "lt": ["Atbulauju", "Mėnuleigiauju"]},
+        {"en": "Moseying", "lt": "Trypinėju"},
+        {"en": "Orbiting", "lt": "Skrieju"},
+        {"en": "Perambulating", "lt": "Vaikštinėju"},
+        {"en": "Pouncing", "lt": ["Puolu", "Puolinėju"]},
+        {"en": "Roosting", "lt": ["Tupiu", "Tupinėju"]},
+        {"en": "Scampering", "lt": "Straksinėju"},
+        {"en": "Schlepping", "lt": "Valkiojuosi", "note": "replaced original Vilkstu per user request"},
+        {"en": "Scurrying", "lt": "Skuodžiu"},
+        {"en": "Skedaddling", "lt": "Sprunku"},
+        {"en": "Slithering", "lt": "Šliaužiu"},
+        {"en": "Sock-hopping", "lt": "Šokinėju"},
+        {"en": "Swooping", "lt": "Neriu"},
+        {"en": "Waddling", "lt": "Krypuoju"},
+        {"en": "Wandering", "lt": "Klaidžioju"},
+        {"en": "Zigzagging", "lt": "Zigzaguoju"},
+        {"en": null, "lt": "Kulniuoju", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Šliumpinu", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Klipatinu", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Tursinu", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Klibinkščiuoju", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Pasiramstinėju", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Laigau", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Skrajoju", "note": "extra gait word, user-added"},
+        {"en": null, "lt": "Kėblinu", "note": "extra gait word, user-added"}
+      ]
+    },
+    "Nature/Organic Growth": {
+      "count": 19,
+      "locked": true,
+      "entries": [
+        {"en": "Fermenting", "lt": ["Rūgstu", "Rūginėju"]},
+        {"en": "Germinating", "lt": "Mikrobinu", "note": "replaced original Dygstu per user request; pseudo-scientific coinage (mikrobas+-inu), same pattern as Fotosintetinu/Branduoliuoju. Peliju (from pelėti/mold) considered and rejected — semantically opposite (decay vs sprouting)"},
+        {"en": "Incubating", "lt": ["Periu", "Išperinėju"]},
+        {"en": "Metamorphosing", "lt": ["Virstu", "Vartausi"], "note": "Vartausi from vartytis (to toss/roll over) — not an -inėju form but a playful alt the user proposed"},
+        {"en": "Nesting", "lt": "Lizdinu", "note": "Įsilizdinėju considered and rejected — sounded artificial"},
+        {"en": "Nucleating", "lt": "Branduoliuoju"},
+        {"en": "Osmosing", "lt": "Sunkiuosi"},
+        {"en": "Photosynthesizing", "lt": "Fotosintetinu"},
+        {"en": "Pollinating", "lt": ["Apdulkinu", "Apdulkinėju"]},
+        {"en": "Precipitating", "lt": "Nusėdu", "note": "Nusėdinėju considered and rejected — too close to sėdėti (to sit), confusing"},
+        {"en": "Propagating", "lt": ["Sklindu", "Sklaidausi"]},
+        {"en": "Sprouting", "lt": "Šakojuosi", "note": "Šakinėjuosi considered and rejected — sounded artificial"},
+        {"en": "Sublimating", "lt": ["Sublimuoju", "Susigerinėju"], "note": "Susigerinėju from susigerti (to soak in/absorb) — playful synonym, not a strict -inėju derivation of sublimuoti"}
+      ]
+    }
+  },
+  "unplaced_original_user_examples": [
+    {"lt": "Malinėju", "root": "malti (to grind/mill)", "earmarked_for": "Technical/Processing"},
+    {"lt": "Trupinu", "root": "crumble", "earmarked_for": "Technical/Processing"},
+    {"lt": "Kramtau", "note": "one of the user's original 6 example words — not yet explicitly confirmed placed; check against Cooking list (Kramtau=to chew, not currently in the 23 Cooking entries above)"}
+  ]
+}
