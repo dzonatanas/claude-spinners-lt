@@ -2,14 +2,14 @@
   "_meta": {
     "purpose": "Reconstructed from the transcript of a crashed session (session id 6d70bd2b-5ddd-4e7c-b528-bbc37f2c98c7, 2026-09-08 11:25-15:33). All translation here was done by Claude directly, no LLM (LT_AI_DLKVM) was used. Source dictionary: claudionary_source.json (187 entries).",
     "reconstructed_on": "2026-09-08",
-    "status": "ALL 9 semantic categories done and LOCKED (304 pool entries), all 187 source words from claudionary_source.json now have a Lithuanian home: Cooking/Food (23), Thinking/Cognition (21), Movement/Wandering (38), Nature/Organic Growth (19), Technical/Processing (43), Physics/Sci-fi (59), Bureaucratic/Corporate (16), Whimsical Nonsense Words (32), Weather & Misc final batch (53, locked 2026-09-10). Next: user requested brainstorming pure-LT bonus categories with no EN source (Statistics, Mathematics, Computer networks), same style as the Physics/Sci-fi bonus additions — not yet done. Then the two original deliverables (settings.json, LT documentation file) remain.",
+    "status": "ALL 9 EN-source semantic categories LOCKED, PLUS 3 pure-LT bonus categories LOCKED (350 pool entries total): the 9 original categories cover all 187 claudionary_source.json words; the 3 bonus categories (Statistics 15, Mathematics 16, Computer Networks 15, all locked 2026-09-10) have no EN source, same style as the 41 pure-LT Physics/Sci-fi additions. Next: user mentioned wanting more bonus topics later — Sports (Sportas), Philosophy (Filosofija), Medicine (Medicina) — not started yet. Then the two original deliverables (settings.json, LT documentation file) remain.",
     "outstanding_deliverables_from_original_request": [
       "~/.claude/settings.json spinnerVerbs config — NOT yet written",
       "Lithuanian claudionary-style documentation file — NOT yet written",
       "Local LT_AI_DLKVM model was run for the first time 2026-09-09/10 as a reliability probe (a constrained word-lookup query) to assess whether it's trustworthy enough to use as a supplementary variant source for this project — it FAILED, confirming the documented fact-lookup unreliability empirically. It has still never been used for actual spinner-verb translation/brainstorming."
     ],
     "remaining_categories_not_started": [
-      "Bonus pure-LT categories (no EN source word) requested by user: Statistics, Mathematics, Computer networks — same style as the 41 pure-LT Physics/Sci-fi additions"
+      "More bonus pure-LT topics user mentioned wanting later: Sports (Sportas), Philosophy (Filosofija), Medicine (Medicina) — not yet started"
     ]
   },
   "categories": {
@@ -301,6 +301,69 @@
         {"en": "Unfurling", "lt": "Išsiskleidžiu"},
         {"en": "Unravelling", "lt": "Suirstu"},
         {"en": "Whirlpooling", "lt": "Įsisukinėju"}
+      ]
+    },
+    "Statistics (bonus, no EN source)": {
+      "count": 15,
+      "locked": true,
+      "entries": [
+        {"en": null, "lt": "Vidurkinu", "note": "from vidurkis (average)"},
+        {"en": null, "lt": "Koreliuoju"},
+        {"en": null, "lt": "Regresuoju"},
+        {"en": null, "lt": "Normalizuoju"},
+        {"en": null, "lt": "Ekstrapoliuoju"},
+        {"en": null, "lt": "Interpoliuoju"},
+        {"en": null, "lt": "Imtinu", "note": "replaced original Imčiuoju per user request"},
+        {"en": null, "lt": "Medianinu"},
+        {"en": null, "lt": "Modinu", "note": "replaced original Modiniu per user request"},
+        {"en": null, "lt": "Kvartiliuoju"},
+        {"en": null, "lt": "Tikimybinu"},
+        {"en": null, "lt": "Hipotezuoju"},
+        {"en": null, "lt": "Reikšminguoju"},
+        {"en": null, "lt": "Standartizuoju"},
+        {"en": null, "lt": "Sluoksniuoju"}
+      ]
+    },
+    "Mathematics (bonus, no EN source)": {
+      "count": 16,
+      "locked": true,
+      "entries": [
+        {"en": null, "lt": "Integruoju"},
+        {"en": null, "lt": "Diferencijuoju"},
+        {"en": null, "lt": "Faktorizuoju"},
+        {"en": null, "lt": ["Apytikslinu", "Apvalinu"], "note": "replaced original Aproksimuoju per user request"},
+        {"en": null, "lt": "Konverguoju"},
+        {"en": null, "lt": "Diverguoju"},
+        {"en": null, "lt": "Aksiomatizuoju"},
+        {"en": null, "lt": "Įrodinėju", "note": "-inėju frequentative, to keep proving"},
+        {"en": null, "lt": "Geometrizuoju"},
+        {"en": null, "lt": "Topologizuoju"},
+        {"en": null, "lt": "Vektorinu"},
+        {"en": null, "lt": "Matricuoju"},
+        {"en": null, "lt": "Rekursuoju"},
+        {"en": null, "lt": "Begalybinu", "note": "from begalybė (infinity)"},
+        {"en": null, "lt": "Traukšakniuoju", "note": "pun on 'traukti šaknį' (to take a square root)"}
+      ]
+    },
+    "Computer Networks (bonus, no EN source)": {
+      "count": 15,
+      "locked": true,
+      "entries": [
+        {"en": null, "lt": "Maršrutizuoju"},
+        {"en": null, "lt": "Paketizuoju"},
+        {"en": null, "lt": "Tinklinu"},
+        {"en": null, "lt": "Prisijungiu"},
+        {"en": null, "lt": "Atsijungiu"},
+        {"en": null, "lt": "Sinchronizuoju"},
+        {"en": null, "lt": "Buferizuoju"},
+        {"en": null, "lt": "Kešuoju"},
+        {"en": null, "lt": "Vėluoju", "note": "fits network latency"},
+        {"en": null, "lt": "Autentifikuoju"},
+        {"en": null, "lt": "Kriptografinu", "note": "replaced original Kriptografuoju per user request; Šifruoju/Iššifruoju already used elsewhere (Technical/Processing: Hashing, Deciphering) so Dešifruoju was considered and skipped here to avoid redundancy"},
+        {"en": null, "lt": "Pinguoju"},
+        {"en": null, "lt": "Srautinu"},
+        {"en": null, "lt": "Užkraunu"},
+        {"en": null, "lt": "Trasuoju", "note": "fits traceroute"}
       ]
     }
   },

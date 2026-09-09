@@ -48,7 +48,7 @@ papildymai).
 
 ## Būklė (2026-09-09)
 
-**Visos 9 semantinės kategorijos užrakintos, 304 žodžiai (pool įrašai) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
+**Visos 9 semantinės kategorijos + 3 bonus temos užrakintos, 350 žodžių (pool įrašai) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
 
 - ✅ Cooking/Food — 23
 - ✅ Thinking/Cognition — 21
@@ -60,9 +60,15 @@ papildymai).
 - ✅ Whimsical Nonsense Words — 32 *(užrakinta 2026-09-10 — grynas garso žaismas/naujadarai: Kombobuliuoju/Diskombobuliuoju/Rekombobuliuoju šeima, Bandeliuoju/Bandelinuosi kalambūras su „bandele")*
 - ✅ Weather & Misc (final batch) — 53 *(užrakinta 2026-09-10 — paskutinė partija, uždaranti visus 187 originalius žodžius; įskaitant Cultivating ūkininkavimo klasterį Tręšiu/Akėju/Ariu/Sodinu ir Flowing→Tekinu/Ištekinu su netyčiniu kalambūru apie ištekinimą)*
 
+**Bonus temos (grynai lietuviškos, be angliško šaltinio, kaip Physics/Sci-fi papildymai):**
+
+- ✅ Statistika — 15
+- ✅ Matematika — 16 *(įskaitant Traukšakniuoju — kalambūras kvadratinei šaknai)*
+- ✅ Kompiuteriniai tinklai — 15
+
 **Liko:**
 
-- ⬜ Bonus grynai lietuviškos temos be angliško šaltinio (naudotojo prašymu): Statistika, Matematika, Kompiuteriniai tinklai — dar neaptartos
+- ⬜ Daugiau bonus temų (naudotojas paminėjo ateičiai): Sportas, Filosofija, Medicina
 - ⬜ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija
 - ⬜ Lietuviškas „claudionary" stiliaus dokumentacijos failas
 
