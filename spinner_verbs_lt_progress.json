@@ -6,7 +6,7 @@
     "outstanding_deliverables_from_original_request": [
       "~/.claude/settings.json spinnerVerbs config — NOT yet written",
       "Lithuanian claudionary-style documentation file — NOT yet written",
-      "Local LT_AI_DLKVM model was finally run on 2026-09-09/10 for a side task (finding a 7-letter Lithuanian word starting with B ending in s) — it FAILED both times, confirming the documented fact-lookup unreliability empirically. It has still never been used for actual spinner-verb translation/brainstorming, only that one side experiment."
+      "Local LT_AI_DLKVM model was run for the first time 2026-09-09/10 as a reliability probe (a constrained word-lookup query) to assess whether it's trustworthy enough to use as a supplementary variant source for this project — it FAILED, confirming the documented fact-lookup unreliability empirically. It has still never been used for actual spinner-verb translation/brainstorming."
     ],
     "remaining_categories_not_started": [
       "Weather/Fluid Dynamics (Evaporating, Percolating, Misting, Nebulizing, Undulating, Billowing, Drizzling, Swirling, Whirlpooling, Flowing, Fluttering, Spinning... — split off from Physics/Sci-fi as a separate cluster, not yet translated)",

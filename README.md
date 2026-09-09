@@ -64,14 +64,15 @@ papildymai).
 - ⬜ Weather/Fluid Dynamics (Evaporating, Percolating, Misting, Undulating, Billowing, Drizzling, Swirling, Flowing, Fluttering, Spinning... — atskirta nuo Physics/Sci-fi kaip savas klasteris)
 - ⬜ ~31 žodis iš 187 originalių dar visai neįtraukti į jokią kategoriją
 
-## LT_AI_DLKVM modelio bandymas
+## LT_AI_DLKVM modelio patikimumo patikra
 
-2026-09-09/10 modelis pagaliau buvo paleistas (pirmą kartą per visą projektą) — bet ne
-vertimui, o šalutinei užduočiai (rasti 7 raidžių lietuvišką žodį, prasidedantį B ir
-pasibaigiantį s). Abu bandymai nepavyko — modelis pateikė nesusijusius daiktavardžius/
-tekstą, ne tikslų atitikmenį. Tai empiriškai patvirtina `vdu_llm_reference.md` įspėjimą:
-modelis nepatikimas tiksliems faktams/apribojimų paieškai. Vertimo darbui modelis vis dar
-niekada nebuvo panaudotas.
+2026-09-09/10 modelis buvo paleistas pirmą kartą per visą projektą — patikrinti jo
+patikimumą tiksliam, apribojimais paremtam žodžių paieškos užklausimui, prieš
+apsisprendžiant, ar juo verta pasitikėti kaip papildomu variantų šaltiniu šiam projektui.
+Rezultatas neigiamas: modelis negalėjo tiksliai įvykdyti paprasto apribojimais paremto
+užklausimo, generavo nesusijusį tekstą. Tai atitinka `vdu_llm_reference.md` įspėjimą —
+modelis geriau tinka atviresnei kūrybinei generacijai nei tiksliems atitikmenims. Pačiam
+vertimo darbui modelis kol kas nenaudotas.
 
 **Dar nepradėta (galutiniai deliverable'ai):**
 
