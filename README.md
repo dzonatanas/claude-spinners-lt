@@ -48,7 +48,7 @@ papildymai).
 
 ## Būklė (2026-09-09)
 
-**Užrakinta 7 iš ~9 semantinių kategorijų, 219 žodžių (pool įrašai):**
+**Užrakinta 8 iš ~9 semantinių kategorijų, 251 žodis (pool įrašai):**
 
 - ✅ Cooking/Food — 23
 - ✅ Thinking/Cognition — 21
@@ -57,12 +57,21 @@ papildymai).
 - ✅ Technical/Processing — 43 *(užrakinta 2026-09-09 — čia pagaliau atsidūrė Malinėju ir Trupinu iš pradinių pavyzdžių; taip pat žaismingi meta-juokeliai Gitinu, Klaudinuosi/Debesuojuosi)*
 - ✅ Physics/Sci-fi — 59 *(užrakinta 2026-09-09 — 10 EN žodžių + 41 grynai lietuviškas papildymas be angliško atitikmens, fizikos/sci-fi žargono naujadarai: Kvarkinu, Bozoninu, Teraforminu, Kibernetizuoju ir pan.)*
 - ✅ Bureaucratic/Corporate — 16 *(užrakinta 2026-09-09 — Channeling/Channelling sujungti į vieną Kanalizuoju įrašą, nes JAV/britų rašybos juokelis lietuviškai neišsiverčia)*
+- ✅ Whimsical Nonsense Words — 32 *(užrakinta 2026-09-10 — grynas garso žaismas/naujadarai: Kombobuliuoju/Diskombobuliuoju/Rekombobuliuoju šeima, Bandeliuoju/Bandelinuosi kalambūras su „bandele")*
 
 **Liko nepradėta:**
 
-- ⬜ Whimsical Nonsense Words (Discombobulating, Flibbertigibbeting, Razzmatazzing...)
 - ⬜ Weather/Fluid Dynamics (Evaporating, Percolating, Misting, Undulating, Billowing, Drizzling, Swirling, Flowing, Fluttering, Spinning... — atskirta nuo Physics/Sci-fi kaip savas klasteris)
-- ⬜ ~61 žodis iš 187 originalių dar visai neįtraukti į jokią kategoriją
+- ⬜ ~31 žodis iš 187 originalių dar visai neįtraukti į jokią kategoriją
+
+## LT_AI_DLKVM modelio bandymas
+
+2026-09-09/10 modelis pagaliau buvo paleistas (pirmą kartą per visą projektą) — bet ne
+vertimui, o šalutinei užduočiai (rasti 7 raidžių lietuvišką žodį, prasidedantį B ir
+pasibaigiantį s). Abu bandymai nepavyko — modelis pateikė nesusijusius daiktavardžius/
+tekstą, ne tikslų atitikmenį. Tai empiriškai patvirtina `vdu_llm_reference.md` įspėjimą:
+modelis nepatikimas tiksliems faktams/apribojimų paieškai. Vertimo darbui modelis vis dar
+niekada nebuvo panaudotas.
 
 **Dar nepradėta (galutiniai deliverable'ai):**
 
