@@ -48,20 +48,21 @@ papildymai).
 
 ## Būklė (2026-09-09)
 
-**Užrakinta 5 iš ~8 semantinių kategorijų, ~140 žodžių (pool įrašai):**
+**Užrakinta 6 iš ~9 semantinių kategorijų, 203 žodžiai (pool įrašai):**
 
 - ✅ Cooking/Food — 23
 - ✅ Thinking/Cognition — 21
-- ✅ Movement/Wandering — ~34
+- ✅ Movement/Wandering — 38
 - ✅ Nature/Organic Growth — 19 *(peržiūrėta ir galutinai užrakinta 2026-09-09, pritaikius `-inėju` galūnės variantus: Rūginėju, Išperinėju, Apdulkinėju, Sklaidausi; Germinating pakeista į Mikrobinu; Metamorphosing papildyta Vartausi; Sublimating papildyta Susigerinėju)*
 - ✅ Technical/Processing — 43 *(užrakinta 2026-09-09 — čia pagaliau atsidūrė Malinėju ir Trupinu iš pradinių pavyzdžių; taip pat žaismingi meta-juokeliai Gitinu, Klaudinuosi/Debesuojuosi)*
+- ✅ Physics/Sci-fi — 59 *(užrakinta 2026-09-09 — 10 EN žodžių + 41 grynai lietuviškas papildymas be angliško atitikmens, fizikos/sci-fi žargono naujadarai: Kvarkinu, Bozoninu, Teraforminu, Kibernetizuoju ir pan.)*
 
 **Liko nepradėta:**
 
 - ⬜ Whimsical Nonsense Words (Discombobulating, Flibbertigibbeting, Razzmatazzing...)
 - ⬜ Bureaucratic/corporate jargon (Actioning, Actualizing, Architecting, Orchestrating...)
-- ⬜ Physics/sci-fi (Hyperspacing, Quantumizing, Levitating, Warping)
-- ⬜ ~87 žodžiai iš 187 originalių dar visai neįtraukti į jokią kategoriją
+- ⬜ Weather/Fluid Dynamics (Evaporating, Percolating, Misting, Undulating, Billowing, Drizzling, Swirling, Flowing, Fluttering, Spinning... — atskirta nuo Physics/Sci-fi kaip savas klasteris)
+- ⬜ ~77 žodžiai iš 187 originalių dar visai neįtraukti į jokią kategoriją
 
 **Dar nepradėta (galutiniai deliverable'ai):**
 
