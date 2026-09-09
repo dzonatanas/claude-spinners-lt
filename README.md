@@ -30,10 +30,16 @@ prie kitos. Vietinis LT LLM (`LT_AI_DLKVM`) numatytas kaip papildomas idėjų š
 kol kas nebuvo paleistas — visas darbas iki šiol yra tiesioginis vertimas/asociacija.
 
 Galutinis sąrašas nėra griežtas 1:1 atitikmuo anglų kalbos žodžiams — tai laisvas žodžių
-"baseinas" (`spinnerVerbs.add` priima paprastą masyvą), tad kai kuriems angliškiems
-žodžiams paliekami keli lietuviški variantai (pvz. Gusting → Gūsiuoju/Vėjinu/Vėduoju/Vėsinu),
-o kai kurie lietuviški žodžiai neturi tiesioginio angliško atitikmens (naudotojo pridėti
-papildymai).
+"baseinas" (`spinnerVerbs: { mode, verbs }` priima paprastą masyvą per `verbs`), tad kai
+kuriems angliškiems žodžiams paliekami keli lietuviški variantai (pvz. Gusting →
+Gūsiuoju/Vėjinu/Vėduoju/Vėsinu), o kai kurie lietuviški žodžiai neturi tiesioginio
+angliško atitikmens (naudotojo pridėti papildymai).
+
+**Rodymo mechanika** (patikrinta tiesiogiai `claude.exe` binare 2026-09-10): kiekvieną
+kartą spinneris tiesiog atsitiktinai išrenka VIENĄ žodį iš viso masyvo — jokio ryšio su
+tuo, ką Claude tuo metu realiai daro. `mode: "append"` sujungia numatytuosius (187 EN) su
+`verbs` sąrašu ir renkasi iš viso ~589 žodžių; `mode: "replace"` rodo TIK `verbs` sąrašą.
+Norint grynai lietuviško spinnerio — reikia `"replace"`.
 
 ### Stiliaus gairės (žr. taip pat atmintyje `feedback_lt_translation_style`)
 
