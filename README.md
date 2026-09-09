@@ -48,20 +48,20 @@ papildymai).
 
 ## Būklė (2026-09-09)
 
-**Užrakinta 4 iš ~7 semantinių kategorijų, ~97 žodžiai (pool įrašai):**
+**Užrakinta 5 iš ~8 semantinių kategorijų, ~140 žodžių (pool įrašai):**
 
 - ✅ Cooking/Food — 23
 - ✅ Thinking/Cognition — 21
 - ✅ Movement/Wandering — ~34
 - ✅ Nature/Organic Growth — 19 *(peržiūrėta ir galutinai užrakinta 2026-09-09, pritaikius `-inėju` galūnės variantus: Rūginėju, Išperinėju, Apdulkinėju, Sklaidausi; Germinating pakeista į Mikrobinu; Metamorphosing papildyta Vartausi; Sublimating papildyta Susigerinėju)*
+- ✅ Technical/Processing — 43 *(užrakinta 2026-09-09 — čia pagaliau atsidūrė Malinėju ir Trupinu iš pradinių pavyzdžių; taip pat žaismingi meta-juokeliai Gitinu, Klaudinuosi/Debesuojuosi)*
 
 **Liko nepradėta:**
 
 - ⬜ Whimsical Nonsense Words (Discombobulating, Flibbertigibbeting, Razzmatazzing...)
-- ⬜ Technical/Processing (čia turėtų atsidurti Malinėju, Trupinu iš pradinių pavyzdžių)
-- ⬜ Bureaucratic/corporate jargon (Actioning, Actualizing... — galimai praleisti arba
-  ieškoti LT biurokratizmų atitikmenų)
+- ⬜ Bureaucratic/corporate jargon (Actioning, Actualizing, Architecting, Orchestrating...)
 - ⬜ Physics/sci-fi (Hyperspacing, Quantumizing, Levitating, Warping)
+- ⬜ ~87 žodžiai iš 187 originalių dar visai neįtraukti į jokią kategoriją
 
 **Dar nepradėta (galutiniai deliverable'ai):**
 
