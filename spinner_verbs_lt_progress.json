@@ -2,15 +2,13 @@
   "_meta": {
     "purpose": "Reconstructed from the transcript of a crashed session (session id 6d70bd2b-5ddd-4e7c-b528-bbc37f2c98c7, 2026-09-08 11:25-15:33). All translation here was done by Claude directly, no LLM (LT_AI_DLKVM) was used. Source dictionary: claudionary_source.json (187 entries).",
     "reconstructed_on": "2026-09-08",
-    "status": "ALL 9 EN-source semantic categories LOCKED, PLUS 3 pure-LT bonus categories LOCKED (350 pool entries total): the 9 original categories cover all 187 claudionary_source.json words; the 3 bonus categories (Statistics 15, Mathematics 16, Computer Networks 15, all locked 2026-09-10) have no EN source, same style as the 41 pure-LT Physics/Sci-fi additions. Next: user mentioned wanting more bonus topics later — Sports (Sportas), Philosophy (Filosofija), Medicine (Medicina) — not started yet. Then the two original deliverables (settings.json, LT documentation file) remain.",
+    "status": "ALL 9 EN-source semantic categories LOCKED, PLUS 6 pure-LT bonus categories LOCKED (402 pool entries total, 15 categories, zero duplicate LT words verified): the 9 original categories cover all 187 claudionary_source.json words; the 6 bonus categories (Statistics 15, Mathematics 16, Computer Networks 15, Sports 21, Philosophy 13, Medicine 18 — all locked 2026-09-10) have no EN source, same style as the 41 pure-LT Physics/Sci-fi additions, each new bonus batch checked against the full existing pool to avoid repeats. Next: the two original deliverables (settings.json, LT documentation file) remain — no more bonus topics currently planned unless the user requests more.",
     "outstanding_deliverables_from_original_request": [
       "~/.claude/settings.json spinnerVerbs config — NOT yet written",
       "Lithuanian claudionary-style documentation file — NOT yet written",
       "Local LT_AI_DLKVM model was run for the first time 2026-09-09/10 as a reliability probe (a constrained word-lookup query) to assess whether it's trustworthy enough to use as a supplementary variant source for this project — it FAILED, confirming the documented fact-lookup unreliability empirically. It has still never been used for actual spinner-verb translation/brainstorming."
     ],
-    "remaining_categories_not_started": [
-      "More bonus pure-LT topics user mentioned wanting later: Sports (Sportas), Philosophy (Filosofija), Medicine (Medicina) — not yet started"
-    ]
+    "remaining_categories_not_started": []
   },
   "categories": {
     "Cooking/Food": {
@@ -364,6 +362,76 @@
         {"en": null, "lt": "Srautinu"},
         {"en": null, "lt": "Užkraunu"},
         {"en": null, "lt": "Trasuoju", "note": "fits traceroute"}
+      ]
+    },
+    "Sports (bonus, no EN source)": {
+      "count": 21,
+      "locked": true,
+      "entries": [
+        {"en": null, "lt": "Treniruojuosi"},
+        {"en": null, "lt": "Sportuoju"},
+        {"en": null, "lt": "Mankštinuosi"},
+        {"en": null, "lt": "Varžausi"},
+        {"en": null, "lt": "Finišuoju"},
+        {"en": null, "lt": "Startuoju"},
+        {"en": null, "lt": "Šildausi"},
+        {"en": null, "lt": "Rungtyniauju"},
+        {"en": null, "lt": "Čempionuoju"},
+        {"en": null, "lt": "Rekordinu"},
+        {"en": null, "lt": "Pergalinu"},
+        {"en": null, "lt": "Pralaimiu"},
+        {"en": null, "lt": "Laimiu"},
+        {"en": null, "lt": "Kamuoliuoju"},
+        {"en": null, "lt": "Spirdinu"},
+        {"en": null, "lt": "Irkluoju"},
+        {"en": null, "lt": "Kabliuoju"},
+        {"en": null, "lt": "Pumpuoju"},
+        {"en": null, "lt": "Lankstausi"},
+        {"en": null, "lt": "Tempiuosi"},
+        {"en": null, "lt": "Apšylu"}
+      ]
+    },
+    "Philosophy (bonus, no EN source)": {
+      "count": 13,
+      "locked": true,
+      "entries": [
+        {"en": null, "lt": "Egzistuoju"},
+        {"en": null, "lt": "Abejoju"},
+        {"en": null, "lt": "Samprotauju"},
+        {"en": null, "lt": "Dialektikuoju"},
+        {"en": null, "lt": "Metafizikuoju"},
+        {"en": null, "lt": "Etikuoju"},
+        {"en": null, "lt": "Racionalizuoju"},
+        {"en": null, "lt": "Egzistencializuoju"},
+        {"en": null, "lt": "Absurdinu"},
+        {"en": null, "lt": "Skepticizuoju"},
+        {"en": null, "lt": "Nihilistinu"},
+        {"en": null, "lt": "Paradoksuoju"},
+        {"en": null, "lt": "Sokratauju"}
+      ]
+    },
+    "Medicine (bonus, no EN source)": {
+      "count": 18,
+      "locked": true,
+      "entries": [
+        {"en": null, "lt": "Diagnozuoju"},
+        {"en": null, "lt": "Operuoju"},
+        {"en": null, "lt": "Skiepiju"},
+        {"en": null, "lt": "Gydau"},
+        {"en": null, "lt": "Sterilizuoju"},
+        {"en": null, "lt": "Suleidžiu"},
+        {"en": null, "lt": "Pulsuoju"},
+        {"en": null, "lt": "Palpuoju"},
+        {"en": null, "lt": "Anestezuoju"},
+        {"en": null, "lt": "Terapuoju"},
+        {"en": null, "lt": "Imunizuoju"},
+        {"en": null, "lt": "Chirurguoju"},
+        {"en": null, "lt": "Pjaustinėju", "note": "added alongside Chirurguoju per user request"},
+        {"en": null, "lt": "Termometruoju"},
+        {"en": null, "lt": "Bandažuoju"},
+        {"en": null, "lt": "Psichiatrinu"},
+        {"en": null, "lt": "Hipnotizuoju"},
+        {"en": null, "lt": "Lašelinizuoju"}
       ]
     }
   },

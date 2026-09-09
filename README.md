@@ -48,7 +48,7 @@ papildymai).
 
 ## Būklė (2026-09-09)
 
-**Visos 9 semantinės kategorijos + 3 bonus temos užrakintos, 350 žodžių (pool įrašai) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
+**Visos 9 semantinės kategorijos + 6 bonus temos užrakintos, 402 žodžiai (pool įrašai, patikrinta — nė vieno pasikartojimo) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
 
 - ✅ Cooking/Food — 23
 - ✅ Thinking/Cognition — 21
@@ -65,10 +65,12 @@ papildymai).
 - ✅ Statistika — 15
 - ✅ Matematika — 16 *(įskaitant Traukšakniuoju — kalambūras kvadratinei šaknai)*
 - ✅ Kompiuteriniai tinklai — 15
+- ✅ Sportas — 21
+- ✅ Filosofija — 13
+- ✅ Medicina — 18
 
 **Liko:**
 
-- ⬜ Daugiau bonus temų (naudotojas paminėjo ateičiai): Sportas, Filosofija, Medicina
 - ⬜ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija
 - ⬜ Lietuviškas „claudionary" stiliaus dokumentacijos failas
 
