@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "Reconstructed from the transcript of a crashed session (session id 6d70bd2b-5ddd-4e7c-b528-bbc37f2c98c7, 2026-09-08 11:25-15:33). All translation here was done by Claude directly, no LLM (LT_AI_DLKVM) was used. Source dictionary: claudionary_source.json (187 entries).",
     "reconstructed_on": "2026-09-08",
-    "status": "7 of ~9 semantic categories done and LOCKED (220 pool entries): Cooking/Food (23), Thinking/Cognition (21), Movement/Wandering (38), Nature/Organic Growth (19), Technical/Processing (43), Physics/Sci-fi (59), Bureaucratic/Corporate (17, locked 2026-09-09). Next: pick one of the remaining categories.",
+    "status": "7 of ~9 semantic categories done and LOCKED (219 pool entries): Cooking/Food (23), Thinking/Cognition (21), Movement/Wandering (38), Nature/Organic Growth (19), Technical/Processing (43), Physics/Sci-fi (59), Bureaucratic/Corporate (16, locked 2026-09-09; Channeling+Channelling merged into one LT entry since the US/UK spelling joke doesn't translate). Next: pick one of the remaining categories.",
     "outstanding_deliverables_from_original_request": [
       "~/.claude/settings.json spinnerVerbs config — NOT yet written",
       "Lithuanian claudionary-style documentation file — NOT yet written",
@@ -212,15 +212,14 @@
       ]
     },
     "Bureaucratic/Corporate": {
-      "count": 17,
+      "count": 16,
       "locked": true,
       "entries": [
         {"en": "Accomplishing", "lt": "Siekiu", "note": "replaced original Pasiekiu per user request — 'siekiu' (striving/reaching) also better matches the irony of announcing completion while still not done"},
         {"en": "Actioning", "lt": "Įveiksminu", "note": "replaced original Veiksminu per user request — į- prefix, mimics the corporate noun-to-verb jargon joke"},
         {"en": "Actualizing", "lt": "Aktualizuoju", "note": "direct loanword; in LT office jargon often misused for 'atnaujinti' (update) — a real bureaucratic language pet peeve, fits the theme"},
         {"en": "Architecting", "lt": ["Architektinu", "Braižau"], "note": "Architektinu replaced original Architektūruoju per user request; Braižau (to draft blueprints) added per user request"},
-        {"en": "Channeling", "lt": "Kanalizuoju"},
-        {"en": "Channelling", "lt": "Kanalizzuoju", "note": "doubled 'z' mirrors the source's own joke about the doubled 'l' 'adding gravitas' — confirmed these are two deliberately near-identical separate site entries (US/UK spelling joke)"},
+        {"en": ["Channeling", "Channelling"], "lt": "Kanalizuoju", "note": "user decided not to make a separate LT equivalent for Channelling — LT grammar has no US/UK spelling-variant concept, so the joke doesn't translate; one entry covers both source words"},
         {"en": "Choreographing", "lt": "Choreografuoju"},
         {"en": "Effecting", "lt": "Įgyvendinu"},
         {"en": "Harmonizing", "lt": "Harmonizuoju", "note": "real EU bureaucratic term ('teisės aktų harmonizavimas')"},
