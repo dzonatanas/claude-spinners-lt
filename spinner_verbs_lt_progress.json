@@ -2,15 +2,14 @@
   "_meta": {
     "purpose": "Reconstructed from the transcript of a crashed session (session id 6d70bd2b-5ddd-4e7c-b528-bbc37f2c98c7, 2026-09-08 11:25-15:33). All translation here was done by Claude directly, no LLM (LT_AI_DLKVM) was used. Source dictionary: claudionary_source.json (187 entries).",
     "reconstructed_on": "2026-09-08",
-    "status": "8 of ~9 semantic categories done and LOCKED (251 pool entries): Cooking/Food (23), Thinking/Cognition (21), Movement/Wandering (38), Nature/Organic Growth (19), Technical/Processing (43), Physics/Sci-fi (59), Bureaucratic/Corporate (16), Whimsical Nonsense Words (32, locked 2026-09-10). Next: Weather/Fluid Dynamics is the last planned category, plus ~31 words still fully uncategorized.",
+    "status": "ALL 9 semantic categories done and LOCKED (304 pool entries), all 187 source words from claudionary_source.json now have a Lithuanian home: Cooking/Food (23), Thinking/Cognition (21), Movement/Wandering (38), Nature/Organic Growth (19), Technical/Processing (43), Physics/Sci-fi (59), Bureaucratic/Corporate (16), Whimsical Nonsense Words (32), Weather & Misc final batch (53, locked 2026-09-10). Next: user requested brainstorming pure-LT bonus categories with no EN source (Statistics, Mathematics, Computer networks), same style as the Physics/Sci-fi bonus additions — not yet done. Then the two original deliverables (settings.json, LT documentation file) remain.",
     "outstanding_deliverables_from_original_request": [
       "~/.claude/settings.json spinnerVerbs config — NOT yet written",
       "Lithuanian claudionary-style documentation file — NOT yet written",
       "Local LT_AI_DLKVM model was run for the first time 2026-09-09/10 as a reliability probe (a constrained word-lookup query) to assess whether it's trustworthy enough to use as a supplementary variant source for this project — it FAILED, confirming the documented fact-lookup unreliability empirically. It has still never been used for actual spinner-verb translation/brainstorming."
     ],
     "remaining_categories_not_started": [
-      "Weather/Fluid Dynamics (Evaporating, Percolating, Misting, Nebulizing, Undulating, Billowing, Drizzling, Swirling, Whirlpooling, Flowing, Fluttering, Spinning... — split off from Physics/Sci-fi as a separate cluster, not yet translated)",
-      "~31 words from the source dictionary still not clustered into any category at all — see claudionary_source.json for full list, diff against 'en' fields used across categories in this file"
+      "Bonus pure-LT categories (no EN source word) requested by user: Statistics, Mathematics, Computer networks — same style as the 41 pure-LT Physics/Sci-fi additions"
     ]
   },
   "categories": {
@@ -265,6 +264,43 @@
         {"en": "Vibing", "lt": "Nuotaikuojuosi", "note": "replaced original Vibruoju per user request — from nuotaika (mood), matches slang 'vaibas'"},
         {"en": "Whatchamacalliting", "lt": "Prasivardžiuoju", "note": "replaced original Kaipjivadinasi per user request"},
         {"en": "Wibbling", "lt": "Svyruoju"}
+      ]
+    },
+    "Weather & Misc (final batch)": {
+      "count": 53,
+      "locked": true,
+      "entries": [
+        {"en": "Billowing", "lt": "Banguoju"},
+        {"en": "Burrowing", "lt": ["Kasuosi", "Tuneliuoju"]},
+        {"en": "Canoodling", "lt": ["Meiliuojuosi", "Myluojuosi"]},
+        {"en": "Cultivating", "lt": ["Puoselėju", "Tręšiu", "Akėju", "Ariu", "Sodinu", "Turtinu", "Praturtinu"], "note": "literal farming-verb cluster added per user request alongside the original metaphorical Puoselėju"},
+        {"en": "Doodling", "lt": ["Piešinėju", "Paišelioju", "Paišinėju"]},
+        {"en": "Drizzling", "lt": ["Krapnoju", "Lašnoju", "Lašinu", "Varvinu", "Purkšnoju"]},
+        {"en": "Embellishing", "lt": "Pagražinu"},
+        {"en": "Enchanting", "lt": ["Kerėju", "Buriu", "Užburiu", "Stebuklinu"]},
+        {"en": "Evaporating", "lt": "Ištirpinu", "note": "replaced original Ištirpstu per user request (causative form)"},
+        {"en": "Flowing", "lt": ["Tekinu", "Ištekinu"], "note": "replaced original Tekiu per user request — causative forms of tekėti; Ištekinu also colloquially means 'to marry off a daughter', an accidental bonus joke"},
+        {"en": "Fluttering", "lt": "Plazdenu"},
+        {"en": "Frolicking", "lt": "Šėliuoju"},
+        {"en": "Gesticulating", "lt": "Gestikuliuoju"},
+        {"en": "Hatching", "lt": "Išsiritu"},
+        {"en": "Improvising", "lt": "Improvizuoju"},
+        {"en": "Infusing", "lt": "Sodrinu"},
+        {"en": "Misting", "lt": ["Miglinu", "Rūkinu", "Dūminu"]},
+        {"en": "Nebulizing", "lt": "Nebulizuoju"},
+        {"en": "Percolating", "lt": "Prasisunkiu"},
+        {"en": "Pontificating", "lt": "Pamokslauju"},
+        {"en": "Puttering", "lt": "Kuistausi"},
+        {"en": "Sketching", "lt": ["Eskizuoju", "Draftinu"]},
+        {"en": "Spelunking", "lt": ["Landžioju", "Kalnakasiauju"]},
+        {"en": "Spinning", "lt": "Verpetuoju"},
+        {"en": "Swirling", "lt": "Sūkuriuoju"},
+        {"en": "Thundering", "lt": "Griaudėju"},
+        {"en": "Tinkering", "lt": "Krapštausi"},
+        {"en": "Undulating", "lt": "Vilnyju"},
+        {"en": "Unfurling", "lt": "Išsiskleidžiu"},
+        {"en": "Unravelling", "lt": "Suirstu"},
+        {"en": "Whirlpooling", "lt": "Įsisukinėju"}
       ]
     }
   },

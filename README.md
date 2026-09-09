@@ -48,7 +48,7 @@ papildymai).
 
 ## Būklė (2026-09-09)
 
-**Užrakinta 8 iš ~9 semantinių kategorijų, 251 žodis (pool įrašai):**
+**Visos 9 semantinės kategorijos užrakintos, 304 žodžiai (pool įrašai) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
 
 - ✅ Cooking/Food — 23
 - ✅ Thinking/Cognition — 21
@@ -58,11 +58,13 @@ papildymai).
 - ✅ Physics/Sci-fi — 59 *(užrakinta 2026-09-09 — 10 EN žodžių + 41 grynai lietuviškas papildymas be angliško atitikmens, fizikos/sci-fi žargono naujadarai: Kvarkinu, Bozoninu, Teraforminu, Kibernetizuoju ir pan.)*
 - ✅ Bureaucratic/Corporate — 16 *(užrakinta 2026-09-09 — Channeling/Channelling sujungti į vieną Kanalizuoju įrašą, nes JAV/britų rašybos juokelis lietuviškai neišsiverčia)*
 - ✅ Whimsical Nonsense Words — 32 *(užrakinta 2026-09-10 — grynas garso žaismas/naujadarai: Kombobuliuoju/Diskombobuliuoju/Rekombobuliuoju šeima, Bandeliuoju/Bandelinuosi kalambūras su „bandele")*
+- ✅ Weather & Misc (final batch) — 53 *(užrakinta 2026-09-10 — paskutinė partija, uždaranti visus 187 originalius žodžius; įskaitant Cultivating ūkininkavimo klasterį Tręšiu/Akėju/Ariu/Sodinu ir Flowing→Tekinu/Ištekinu su netyčiniu kalambūru apie ištekinimą)*
 
-**Liko nepradėta:**
+**Liko:**
 
-- ⬜ Weather/Fluid Dynamics (Evaporating, Percolating, Misting, Undulating, Billowing, Drizzling, Swirling, Flowing, Fluttering, Spinning... — atskirta nuo Physics/Sci-fi kaip savas klasteris)
-- ⬜ ~31 žodis iš 187 originalių dar visai neįtraukti į jokią kategoriją
+- ⬜ Bonus grynai lietuviškos temos be angliško šaltinio (naudotojo prašymu): Statistika, Matematika, Kompiuteriniai tinklai — dar neaptartos
+- ⬜ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija
+- ⬜ Lietuviškas „claudionary" stiliaus dokumentacijos failas
 
 ## LT_AI_DLKVM modelio patikimumo patikra
 
@@ -73,12 +75,6 @@ Rezultatas neigiamas: modelis negalėjo tiksliai įvykdyti paprasto apribojimais
 užklausimo, generavo nesusijusį tekstą. Tai atitinka `vdu_llm_reference.md` įspėjimą —
 modelis geriau tinka atviresnei kūrybinei generacijai nei tiksliems atitikmenims. Pačiam
 vertimo darbui modelis kol kas nenaudotas.
-
-**Dar nepradėta (galutiniai deliverable'ai):**
-
-- ⬜ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija (schema patvirtinta:
-  `{"spinnerVerbs": {"add": [...]}}`, Unicode/lietuviškos raidės palaikomos)
-- ⬜ Lietuviškas "claudionary" stiliaus dokumentacijos failas
 
 ## Pastaba dėl istorijos
 
