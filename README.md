@@ -16,6 +16,8 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 
 ### Paprastas būdas — skriptas
 
+**Windows:** tiesiog dukart paspausk `install.bat` (arba paleisk iš terminalo).
+**Bet kuri OS:**
 ```
 python install.py
 ```
@@ -24,7 +26,7 @@ Paklaus dviejų klausimų (kur diegti — globaliai ar konkrečiam projektui; ir
 `append`), tada pats saugiai sujungs `spinnerVerbs` su tavo esamu `settings.json` (jei
 toks jau yra — jo TURINYS nepradingsta, tik prisideda naujas raktas), padarydamas
 `.bak` atsarginę kopiją prieš rašydamas. Reikalingas tik Python 3, jokių papildomų
-bibliotekų.
+bibliotekų — `install.bat` pats patikrina ar `python`/`py` įdiegtas ir praneša, jei ne.
 
 Neinteraktyviam naudojimui (pvz. automatizacijai):
 ```
@@ -58,6 +60,7 @@ python install.py --scope project --project-dir /kelias/iki/projekto --mode appe
 | `spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
 | `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — naudojamas `install.py` skripto arba rankiniam kopijavimui |
 | `install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
+| `install.bat` | Windows apvalkalas `install.py` — dukart paspaudus paleidžia skriptą (patikrina ar Python įdiegtas) |
 | `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `spinner_verbs_lt_progress.json` |
 | `README.md` | Šis failas |
 
