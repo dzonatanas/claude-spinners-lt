@@ -20,6 +20,7 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 | `claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
 | `vdu_llm_reference.md` | Instrukcija dviem vietiniams lietuviškiems LLM (`D:\VDU_LLM\`) — encoderiui (nepatikimas panašumui) ir generatyviam 1B modeliui (geras kūrybai, fabrikuoja faktus). Skirtas kaip PAPILDOMAS variantų šaltinis, ne pirminis vertėjas |
 | `spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
+| `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — nukopijuok jo turinį į savo `~/.claude/settings.json` (arba `.claude/settings.json` projekto lygmeniu), jei nori naudoti šį sąrašą |
 | `README.md` | Šis failas |
 
 ## Metodas
@@ -75,9 +76,13 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
 - ✅ Filosofija — 13
 - ✅ Medicina — 18
 
+- ✅ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija — **užrašyta 2026-09-10**,
+  `mode: "replace"` (globaliai visam kompiuteriui, ne tik šiam projektui — sąmoningas
+  pasirinkimas), esami nustatymai (`tui`, `theme`, `enabledPlugins`) išsaugoti nepaliesti.
+  Ta pati konfigūracija taip pat saugoma `spinnerVerbs.settings.json` faile šiame repo.
+
 **Liko:**
 
-- ⬜ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija
 - ⬜ Lietuviškas „claudionary" stiliaus dokumentacijos failas
 
 ## LT_AI_DLKVM modelio patikimumo patikra
