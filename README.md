@@ -21,6 +21,7 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 | `vdu_llm_reference.md` | Instrukcija dviem vietiniams lietuviškiems LLM (`D:\VDU_LLM\`) — encoderiui (nepatikimas panašumui) ir generatyviam 1B modeliui (geras kūrybai, fabrikuoja faktus). Skirtas kaip PAPILDOMAS variantų šaltinis, ne pirminis vertėjas |
 | `spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
 | `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — nukopijuok jo turinį į savo `~/.claude/settings.json` (arba `.claude/settings.json` projekto lygmeniu), jei nori naudoti šį sąrašą |
+| `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `spinner_verbs_lt_progress.json` |
 | `README.md` | Šis failas |
 
 ## Metodas
@@ -81,9 +82,11 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
   pasirinkimas), esami nustatymai (`tui`, `theme`, `enabledPlugins`) išsaugoti nepaliesti.
   Ta pati konfigūracija taip pat saugoma `spinnerVerbs.settings.json` faile šiame repo.
 
-**Liko:**
+- ✅ Lietuviškas „claudionary" stiliaus dokumentacijos failas — `claudionary_lt.md`,
+  žaismingas priedas su 17 rinktinių žodžių istorijų (ne pilnas žodynas — pagrindinis
+  turinys visada lieka `spinner_verbs_lt_progress.json`).
 
-- ⬜ Lietuviškas „claudionary" stiliaus dokumentacijos failas
+Visi 3 pradiniai deliverable'ai užbaigti.
 
 ## LT_AI_DLKVM modelio patikimumo patikra
 
