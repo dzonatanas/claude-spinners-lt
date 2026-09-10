@@ -3,7 +3,7 @@
 *Lietuviškas Claude spinnerio žodynėlis — pseudo-akademinis, absurdiškas priedas.*
 
 Šis failas nėra pilnas žodynas — pilnas 402 žodžių sąrašas gyvena
-[`spinner_verbs_lt_progress.json`](spinner_verbs_lt_progress.json) ir yra tikrasis šio
+[`spinner_verbs_lt_progress.json`](data/spinner_verbs_lt_progress.json) ir yra tikrasis šio
 projekto branduolys. Čia — tik geriausių/įdomiausių žodžių istorijos, ta pačia
 pseudo-akademine, absurdiška [claudionary.com](https://claudionary.com/) tonacija, kaip
 smagus priedas prie darbo.
@@ -244,5 +244,5 @@ dozuotomis porcijomis, vietoj vieno staigaus informacijos antplūdžio, apibūdi
 ## Pilnas sąrašas
 
 Visi 402 žodžiai, sugrupuoti pagal kategorijas, su pastabomis apie kilmę ir pakeitimus,
-yra [`spinner_verbs_lt_progress.json`](spinner_verbs_lt_progress.json). Paruoštas
-`settings.json` blokas jiems naudoti — [`spinnerVerbs.settings.json`](spinnerVerbs.settings.json).
+yra [`spinner_verbs_lt_progress.json`](data/spinner_verbs_lt_progress.json). Paruoštas
+`settings.json` blokas jiems naudoti — [`spinnerVerbs.settings.json`](data/spinnerVerbs.settings.json).

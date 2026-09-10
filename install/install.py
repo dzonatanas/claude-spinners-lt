@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-VERBS_FILE = SCRIPT_DIR / "spinnerVerbs.settings.json"
+VERBS_FILE = SCRIPT_DIR.parent / "data" / "spinnerVerbs.settings.json"
 
 
 def load_verbs():

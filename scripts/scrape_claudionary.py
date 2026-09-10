@@ -10,11 +10,13 @@ Outputs:
 import json
 import re
 import urllib.request
+from pathlib import Path
 from bs4 import BeautifulSoup
 
 URL = "https://claudionary.com/"
-OUT_HTML = "claudionary_raw.html"
-OUT_JSON = "claudionary.json"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+OUT_HTML = DATA_DIR / "claudionary_raw.html"
+OUT_JSON = DATA_DIR / "claudionary_source.json"
 
 
 def fetch_html():
@@ -81,6 +83,7 @@ def parse_entries(html):
 
 
 def main():
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
     html = fetch_html()
     entries = parse_entries(html)
     with open(OUT_JSON, "w", encoding="utf-8") as f:

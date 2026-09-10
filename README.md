@@ -16,10 +16,10 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 
 ### Paprastas būdas — skriptas
 
-**Windows:** tiesiog dukart paspausk `install.bat` (arba paleisk iš terminalo).
+**Windows:** tiesiog dukart paspausk `install/install.bat` (arba paleisk iš terminalo).
 **Bet kuri OS:**
 ```
-python install.py
+python install/install.py
 ```
 
 Paklaus dviejų klausimų (kur diegti — globaliai ar konkrečiam projektui; ir `replace` ar
@@ -30,19 +30,19 @@ bibliotekų — `install.bat` pats patikrina ar `python`/`py` įdiegtas ir prane
 
 Neinteraktyviam naudojimui (pvz. automatizacijai):
 ```
-python install.py --scope global --mode replace
-python install.py --scope project --project-dir /kelias/iki/projekto --mode append
+python install/install.py --scope global --mode replace
+python install/install.py --scope project --project-dir /kelias/iki/projekto --mode append
 ```
 
 ### Windows be Python
 
-Jei Python neįdiegtas, `install_nopython.bat` atlieka tą patį grynu batch tekstu (be
-jokių priklausomybių):
+Jei Python neįdiegtas, `install/install_nopython.bat` atlieka tą patį grynu batch tekstu
+(be jokių priklausomybių):
 ```
-install_nopython.bat
-install_nopython.bat project
-install_nopython.bat project "C:\mano\projektas" append
-install_nopython.bat global append
+install\install_nopython.bat
+install\install_nopython.bat project
+install\install_nopython.bat project "C:\mano\projektas" append
+install\install_nopython.bat global append
 ```
 Be argumentų — numatytieji: globaliai, `replace`. Paklaus tik VIENO patvirtinimo
 (Y/n) prieš rašydamas — sąmoningai vengiama kelių `set /p` klausimų iš eilės, nes tai
@@ -53,7 +53,7 @@ išsivalyk ranka, jei nori švaraus failo).
 
 ### Rankinis būdas
 
-1. Atsidaryk `spinnerVerbs.settings.json` šiame repo — jame yra paruoštas
+1. Atsidaryk `data/spinnerVerbs.settings.json` šiame repo — jame yra paruoštas
    `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas su visais 402 žodžiais.
 2. Nuspręsk, kur jį dėti:
    - **Globaliai, visiems savo projektams šiame kompiuteryje** → `~/.claude/settings.json`
@@ -68,18 +68,35 @@ išsivalyk ranka, jei nori švaraus failo).
    realiai veikiančioje sesijoje 2026-09-10 (Claude Code turi `settings_sync` mechanizmą,
    sekantį nustatymų failo pokyčius gyvai).
 
-## Failai
+## Struktūra
+
+```
+claude-spinners-lt/
+├── README.md              — šis failas
+├── claudionary_lt.md       — žaismingas priedas (žr. žemiau)
+├── LICENSE                 — MIT
+├── data/                   — JSON duomenys
+│   ├── claudionary_source.json
+│   ├── spinner_verbs_lt_progress.json
+│   └── spinnerVerbs.settings.json
+├── scripts/                — pagalbiniai (vienkartiniai) skriptai
+│   └── scrape_claudionary.py
+└── install/                — diegimo skriptai
+    ├── install.py
+    ├── install.bat
+    └── install_nopython.bat
+```
 
 | Failas | Paskirtis |
 |---|---|
-| `scrape_claudionary.py` | Scraperis, ištraukiantis visą claudionary.com žodyną |
-| `claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
-| `spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
-| `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — naudojamas `install.py` skripto arba rankiniam kopijavimui |
-| `install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
-| `install.bat` | Windows apvalkalas `install.py` — dukart paspaudus paleidžia skriptą (patikrina ar Python įdiegtas) |
-| `install_nopython.bat` | Diegimas be Python — grynas batch tekstas, jokių priklausomybių. Žr. „Naudojimas" žemiau |
-| `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `spinner_verbs_lt_progress.json` |
+| `scripts/scrape_claudionary.py` | Scraperis, ištraukiantis visą claudionary.com žodyną |
+| `data/claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
+| `data/spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
+| `data/spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — naudojamas diegimo skriptų arba rankiniam kopijavimui |
+| `install/install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
+| `install/install.bat` | Windows apvalkalas `install.py` — dukart paspaudus paleidžia skriptą (patikrina ar Python įdiegtas) |
+| `install/install_nopython.bat` | Diegimas be Python — grynas batch tekstas, jokių priklausomybių. Žr. „Naudojimas" žemiau |
+| `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `data/spinner_verbs_lt_progress.json` |
 | `README.md` | Šis failas |
 
 ## Metodas
@@ -137,11 +154,11 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
 - ✅ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija — **užrašyta 2026-09-10**,
   `mode: "replace"` (globaliai visam kompiuteriui, ne tik šiam projektui — sąmoningas
   pasirinkimas), esami nustatymai (`tui`, `theme`, `enabledPlugins`) išsaugoti nepaliesti.
-  Ta pati konfigūracija taip pat saugoma `spinnerVerbs.settings.json` faile šiame repo.
+  Ta pati konfigūracija taip pat saugoma `data/spinnerVerbs.settings.json` faile šiame repo.
 
 - ✅ Lietuviškas „claudionary" stiliaus dokumentacijos failas — `claudionary_lt.md`,
   žaismingas priedas su 17 rinktinių žodžių istorijų (ne pilnas žodynas — pagrindinis
-  turinys visada lieka `spinner_verbs_lt_progress.json`).
+  turinys visada lieka `data/spinner_verbs_lt_progress.json`).
 
 Visi 3 pradiniai deliverable'ai užbaigti.
 
@@ -149,8 +166,8 @@ Visi 3 pradiniai deliverable'ai užbaigti.
 
 Šis projektas kartą jau prarado darbą, kai sesija netikėtai nutrūko — visas vertimas buvo
 tik pokalbyje, niekur neišsaugotas. Atkurta iš žalios `.jsonl` sesijos transkripcijos.
-**Nuo šiol progresas fiksuojamas `spinner_verbs_lt_progress.json` po kiekvienos baigtos
-kategorijos**, kad taip nepasikartotų.
+**Nuo šiol progresas fiksuojamas `data/spinner_verbs_lt_progress.json` po kiekvienos
+baigtos kategorijos**, kad taip nepasikartotų.
 
 ## Prisidėjimas
 

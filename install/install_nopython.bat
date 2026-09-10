@@ -30,7 +30,7 @@ rem which this project's path does). Line skipping instead uses a "lag by one
 rem line" print pattern that needs no line count at all.
 
 set "SCRIPT_DIR=%~dp0"
-set "VERBS_FILE=%SCRIPT_DIR%spinnerVerbs.settings.json"
+set "VERBS_FILE=%SCRIPT_DIR%..\data\spinnerVerbs.settings.json"
 
 set "MISSING_VERBS="
 if not exist "%VERBS_FILE%" set "MISSING_VERBS=1"
