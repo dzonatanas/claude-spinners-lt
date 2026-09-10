@@ -12,6 +12,25 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 3. Parašyti lietuvišką "claudionary" stiliaus dokumentaciją (žaismingas žodynėlis su
    kiekvieno žodžio "etimologija"/apibrėžimu, ta pačia humoro linija kaip originale).
 
+## Parsisiuntimas
+
+Pirmiausia gauk repo turinį į savo kompiuterį — vienu iš dviejų būdų:
+
+**A) Su git** (rekomenduojama, jei turi git įdiegtą):
+```
+git clone https://github.com/dzonatanas/claude-spinners-lt.git
+cd claude-spinners-lt
+```
+
+**B) Be git** — atsisiųsk ZIP:
+1. Eik į https://github.com/dzonatanas/claude-spinners-lt
+2. Spausk žalią mygtuką **„Code"** → **„Download ZIP"**
+3. Išarchyvuok ZIP failą bet kur savo kompiuteryje
+4. Atsidaryk terminalą/Explorer tame išarchyvuotame kataloge
+
+Toliau visos komandos žemiau paleidžiamos **iš to katalogo** (kur yra `README.md`,
+`data/`, `install/` ir t.t.).
+
 ## Naudojimas
 
 ### Paprastas būdas — skriptas
