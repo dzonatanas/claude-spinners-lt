@@ -1,458 +1,1774 @@
 {
   "_meta": {
-    "purpose": "Reconstructed from the transcript of a crashed session (session id 6d70bd2b-5ddd-4e7c-b528-bbc37f2c98c7, 2026-09-08 11:25-15:33). All translation here was done by Claude directly, no LLM (LT_AI_DLKVM) was used. Source dictionary: claudionary_source.json (187 entries).",
-    "reconstructed_on": "2026-09-08",
-    "status": "ALL 9 EN-source semantic categories LOCKED, PLUS 7 pure-LT bonus categories LOCKED (423 pool entries total, 16 categories, zero duplicate LT words verified): the 9 original categories cover all 187 claudionary_source.json words; the 7 bonus categories (Statistics 15, Mathematics 16, Computer Networks 15, Sports 21, Philosophy 13, Medicine 18, Sounds 19 — Sounds added 2026-09-10, onomatopoeia with no EN source) have no EN source, same style as the 41 pure-LT Physics/Sci-fi additions, each new bonus batch checked against the full existing pool to avoid repeats. All 3 original deliverables (settings.json config, the 400+ word translation, and claudionary_lt.md) are DONE. No more bonus topics currently planned unless the user requests more.",
-    "outstanding_deliverables_from_original_request": [],
-    "remaining_categories_not_started": []
+    "purpose": "Authoritative word list for the Claude Spinners LT project, grouped by semantic category. Source dictionary: claudionary_source.json (187 entries).",
+    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds). 423 pool entries across 16 categories, zero duplicates."
   },
   "categories": {
     "Cooking/Food": {
       "count": 24,
       "entries": [
-        {"en": "Baking", "lt": "Kepu"},
-        {"en": "Blanching", "lt": "Apvirinu"},
-        {"en": "Brewing", "lt": "Plikau"},
-        {"en": "Caramelizing", "lt": "Karamelizuoju"},
-        {"en": "Churning", "lt": "Grūdu"},
-        {"en": "Cooking", "lt": "Gaminu"},
-        {"en": "Crunching", "lt": ["Traškinu", "Kramtau"], "note": "Kramtau (to chew) was one of the user's original 6 example words from the very first prompt, but was never actually added to the real pool until 2026-09-10 -- caught while reviewing the file"},
-        {"en": "Flambeing", "lt": "Liepsninu", "note": "replaced original Flambiruoju per user request"},
-        {"en": "Frosting", "lt": "Glazūruoju"},
-        {"en": "Garnishing", "lt": "Puošiu"},
-        {"en": "Julienning", "lt": "Smulkinu"},
-        {"en": "Kneading", "lt": "Minkau"},
-        {"en": "Leavening", "lt": "Raugiu"},
-        {"en": "Marinating", "lt": "Marinuoju"},
-        {"en": "Proofing", "lt": "Pampstu", "note": "replaced original Kylu per user request"},
-        {"en": "Sauteing", "lt": "Spirginu"},
-        {"en": "Seasoning", "lt": "Skaninu"},
-        {"en": "Simmering", "lt": "Kunkuliuoju"},
-        {"en": "Smooshing", "lt": "Traiškau"},
-        {"en": "Stewing", "lt": "Troškinu"},
-        {"en": "Tempering", "lt": "Grūdinu"},
-        {"en": "Whisking", "lt": "Plaku"},
-        {"en": "Zesting", "lt": "Tarkuoju"}
+        {
+          "en": "Baking",
+          "lt": "Kepu"
+        },
+        {
+          "en": "Blanching",
+          "lt": "Apvirinu"
+        },
+        {
+          "en": "Brewing",
+          "lt": "Plikau"
+        },
+        {
+          "en": "Caramelizing",
+          "lt": "Karamelizuoju"
+        },
+        {
+          "en": "Churning",
+          "lt": "Grūdu"
+        },
+        {
+          "en": "Cooking",
+          "lt": "Gaminu"
+        },
+        {
+          "en": "Crunching",
+          "lt": [
+            "Traškinu",
+            "Kramtau"
+          ],
+          "note": "Kramtau (to chew) — one of the project's earliest example words, added alongside Traškinu"
+        },
+        {
+          "en": "Flambeing",
+          "lt": "Liepsninu",
+          "note": "causative from liepsna (flame) — chosen over an earlier candidate (Flambiruoju) for clarity"
+        },
+        {
+          "en": "Frosting",
+          "lt": "Glazūruoju"
+        },
+        {
+          "en": "Garnishing",
+          "lt": "Puošiu"
+        },
+        {
+          "en": "Julienning",
+          "lt": "Smulkinu"
+        },
+        {
+          "en": "Kneading",
+          "lt": "Minkau"
+        },
+        {
+          "en": "Leavening",
+          "lt": "Raugiu"
+        },
+        {
+          "en": "Marinating",
+          "lt": "Marinuoju"
+        },
+        {
+          "en": "Proofing",
+          "lt": "Pampstu",
+          "note": "from pampti (to swell) — chosen over an earlier candidate (Kylu) for precision"
+        },
+        {
+          "en": "Sauteing",
+          "lt": "Spirginu"
+        },
+        {
+          "en": "Seasoning",
+          "lt": "Skaninu"
+        },
+        {
+          "en": "Simmering",
+          "lt": "Kunkuliuoju"
+        },
+        {
+          "en": "Smooshing",
+          "lt": "Traiškau"
+        },
+        {
+          "en": "Stewing",
+          "lt": "Troškinu"
+        },
+        {
+          "en": "Tempering",
+          "lt": "Grūdinu"
+        },
+        {
+          "en": "Whisking",
+          "lt": "Plaku"
+        },
+        {
+          "en": "Zesting",
+          "lt": "Tarkuoju"
+        }
       ]
     },
     "Thinking/Cognition": {
       "count": 22,
       "entries": [
-        {"en": "Cerebrating", "lt": "Smegenuoju"},
-        {"en": "Cogitating", "lt": "Mąstau"},
-        {"en": "Considering", "lt": "Svarstau"},
-        {"en": "Contemplating", "lt": "Apmąstau"},
-        {"en": "Deliberating", "lt": "Dvejoju"},
-        {"en": "Determining", "lt": "Nusprendžiu"},
-        {"en": "Elucidating", "lt": "Aiškinu"},
-        {"en": "Envisioning", "lt": "Numatau"},
-        {"en": "Ideating", "lt": "Prasimanau"},
-        {"en": "Imagining", "lt": "Įsivaizduoju"},
-        {"en": "Inferring", "lt": "Numanau"},
-        {"en": "Mulling", "lt": "Kaitinu"},
-        {"en": "Musing", "lt": "Fantazuoju"},
-        {"en": "Philosophising", "lt": "Filosofuoju"},
-        {"en": "Pondering", "lt": "Sveriu"},
-        {"en": "Puzzling", "lt": "Kvaištu"},
-        {"en": "Ruminating", "lt": "Gromuluoju"},
-        {"en": "Thinking", "lt": "Galvoju"},
-        {"en": null, "lt": "Mintiju", "note": "user-added extra, kept alongside Galvoju"},
-        {"en": null, "lt": "Svarstinėju", "note": "user-added extra, kept alongside Sveriu"},
-        {"en": null, "lt": "Narplioju", "note": "user-added extra, kept alongside Kvaištu"},
-        {"en": null, "lt": "Nagrinėju", "note": "nagrinėti = to examine/analyze; added 2026-09-10 — traced back to Claude's own throwaway illustrative example from the very first planning chat that led to this project, never actually part of the real word list until now"}
+        {
+          "en": "Cerebrating",
+          "lt": "Smegenuoju"
+        },
+        {
+          "en": "Cogitating",
+          "lt": "Mąstau"
+        },
+        {
+          "en": "Considering",
+          "lt": "Svarstau"
+        },
+        {
+          "en": "Contemplating",
+          "lt": "Apmąstau"
+        },
+        {
+          "en": "Deliberating",
+          "lt": "Dvejoju"
+        },
+        {
+          "en": "Determining",
+          "lt": "Nusprendžiu"
+        },
+        {
+          "en": "Elucidating",
+          "lt": "Aiškinu"
+        },
+        {
+          "en": "Envisioning",
+          "lt": "Numatau"
+        },
+        {
+          "en": "Ideating",
+          "lt": "Prasimanau"
+        },
+        {
+          "en": "Imagining",
+          "lt": "Įsivaizduoju"
+        },
+        {
+          "en": "Inferring",
+          "lt": "Numanau"
+        },
+        {
+          "en": "Mulling",
+          "lt": "Kaitinu"
+        },
+        {
+          "en": "Musing",
+          "lt": "Fantazuoju"
+        },
+        {
+          "en": "Philosophising",
+          "lt": "Filosofuoju"
+        },
+        {
+          "en": "Pondering",
+          "lt": "Sveriu"
+        },
+        {
+          "en": "Puzzling",
+          "lt": "Kvaištu"
+        },
+        {
+          "en": "Ruminating",
+          "lt": "Gromuluoju"
+        },
+        {
+          "en": "Thinking",
+          "lt": "Galvoju"
+        },
+        {
+          "en": null,
+          "lt": "Mintiju",
+          "note": "from mintis (thought) — supplementary entry alongside Galvoju"
+        },
+        {
+          "en": null,
+          "lt": "Svarstinėju",
+          "note": "frequentative of svarstyti — supplementary entry alongside Sveriu"
+        },
+        {
+          "en": null,
+          "lt": "Narplioju",
+          "note": "narplioti = to untangle — supplementary entry alongside Kvaištu"
+        },
+        {
+          "en": null,
+          "lt": "Nagrinėju",
+          "note": "nagrinėti = to examine/analyze"
+        }
       ]
     },
     "Movement/Wandering": {
       "count_approx": 34,
       "entries": [
-        {"en": "Ebbing", "lt": "Atslūgstu"},
-        {"en": "Gallivanting", "lt": "Slampinėju"},
-        {"en": "Galloping", "lt": "Šuoliuoju"},
-        {"en": "Gusting", "lt": ["Gūsiuoju", "Vėjinu", "Vėduoju", "Vėsinu"]},
-        {"en": "Lollygagging", "lt": ["Grybauju", "Čiulptukauju"], "note": "Čiulptukauju kept as silly bonus"},
-        {"en": "Meandering", "lt": "Vingiuoju"},
-        {"en": "Moonwalking", "lt": ["Atbulauju", "Mėnuleigiauju"]},
-        {"en": "Moseying", "lt": "Trypinėju"},
-        {"en": "Orbiting", "lt": "Skrieju"},
-        {"en": "Perambulating", "lt": "Vaikštinėju"},
-        {"en": "Pouncing", "lt": ["Puolu", "Puolinėju"]},
-        {"en": "Roosting", "lt": ["Tupiu", "Tupinėju"]},
-        {"en": "Scampering", "lt": "Straksinėju"},
-        {"en": "Schlepping", "lt": "Valkiojuosi", "note": "replaced original Vilkstu per user request"},
-        {"en": "Scurrying", "lt": "Skuodžiu"},
-        {"en": "Skedaddling", "lt": "Sprunku"},
-        {"en": "Slithering", "lt": "Šliaužiu"},
-        {"en": "Sock-hopping", "lt": "Šokinėju"},
-        {"en": "Swooping", "lt": "Neriu"},
-        {"en": "Waddling", "lt": "Krypuoju"},
-        {"en": "Wandering", "lt": "Klaidžioju"},
-        {"en": "Zigzagging", "lt": "Zigzaguoju"},
-        {"en": null, "lt": "Kulniuoju", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Šliumpinu", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Klipatinu", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Tursinu", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Klibinkščiuoju", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Pasiramstinėju", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Laigau", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Skrajoju", "note": "extra gait word, user-added"},
-        {"en": null, "lt": "Kėblinu", "note": "extra gait word, user-added"}
+        {
+          "en": "Ebbing",
+          "lt": "Atslūgstu"
+        },
+        {
+          "en": "Gallivanting",
+          "lt": "Slampinėju"
+        },
+        {
+          "en": "Galloping",
+          "lt": "Šuoliuoju"
+        },
+        {
+          "en": "Gusting",
+          "lt": [
+            "Gūsiuoju",
+            "Vėjinu",
+            "Vėduoju",
+            "Vėsinu"
+          ]
+        },
+        {
+          "en": "Lollygagging",
+          "lt": [
+            "Grybauju",
+            "Čiulptukauju"
+          ],
+          "note": "Čiulptukauju kept as silly bonus"
+        },
+        {
+          "en": "Meandering",
+          "lt": "Vingiuoju"
+        },
+        {
+          "en": "Moonwalking",
+          "lt": [
+            "Atbulauju",
+            "Mėnuleigiauju"
+          ]
+        },
+        {
+          "en": "Moseying",
+          "lt": "Trypinėju"
+        },
+        {
+          "en": "Orbiting",
+          "lt": "Skrieju"
+        },
+        {
+          "en": "Perambulating",
+          "lt": "Vaikštinėju"
+        },
+        {
+          "en": "Pouncing",
+          "lt": [
+            "Puolu",
+            "Puolinėju"
+          ]
+        },
+        {
+          "en": "Roosting",
+          "lt": [
+            "Tupiu",
+            "Tupinėju"
+          ]
+        },
+        {
+          "en": "Scampering",
+          "lt": "Straksinėju"
+        },
+        {
+          "en": "Schlepping",
+          "lt": "Valkiojuosi",
+          "note": "valkiotis = to drag oneself around wearily — chosen over an earlier candidate (Vilkstu) for vividness"
+        },
+        {
+          "en": "Scurrying",
+          "lt": "Skuodžiu"
+        },
+        {
+          "en": "Skedaddling",
+          "lt": "Sprunku"
+        },
+        {
+          "en": "Slithering",
+          "lt": "Šliaužiu"
+        },
+        {
+          "en": "Sock-hopping",
+          "lt": "Šokinėju"
+        },
+        {
+          "en": "Swooping",
+          "lt": "Neriu"
+        },
+        {
+          "en": "Waddling",
+          "lt": "Krypuoju"
+        },
+        {
+          "en": "Wandering",
+          "lt": "Klaidžioju"
+        },
+        {
+          "en": "Zigzagging",
+          "lt": "Zigzaguoju"
+        },
+        {
+          "en": null,
+          "lt": "Kulniuoju",
+          "note": "brisk, determined trudge (kulniuoti)"
+        },
+        {
+          "en": null,
+          "lt": "Šliumpinu",
+          "note": "heavy, shuffling gait"
+        },
+        {
+          "en": null,
+          "lt": "Klipatinu",
+          "note": "hobbling/limping along"
+        },
+        {
+          "en": null,
+          "lt": "Tursinu",
+          "note": "restless bustling about"
+        },
+        {
+          "en": null,
+          "lt": "Klibinkščiuoju",
+          "note": "cute, wobbly gait"
+        },
+        {
+          "en": null,
+          "lt": "Pasiramstinėju",
+          "note": "shuffling while propping oneself up"
+        },
+        {
+          "en": null,
+          "lt": "Laigau",
+          "note": "frolicking/gamboling about"
+        },
+        {
+          "en": null,
+          "lt": "Skrajoju",
+          "note": "flitting/soaring about erratically"
+        },
+        {
+          "en": null,
+          "lt": "Kėblinu",
+          "note": "stumbling awkwardly along"
+        }
       ]
     },
     "Nature/Organic Growth": {
       "count": 19,
       "locked": true,
       "entries": [
-        {"en": "Fermenting", "lt": ["Rūgstu", "Rūginėju"]},
-        {"en": "Germinating", "lt": "Mikrobinu", "note": "replaced original Dygstu per user request; pseudo-scientific coinage (mikrobas+-inu), same pattern as Fotosintetinu/Branduoliuoju. Peliju (from pelėti/mold) considered and rejected — semantically opposite (decay vs sprouting)"},
-        {"en": "Incubating", "lt": ["Periu", "Išperinėju"]},
-        {"en": "Metamorphosing", "lt": ["Virstu", "Vartausi"], "note": "Vartausi from vartytis (to toss/roll over) — not an -inėju form but a playful alt the user proposed"},
-        {"en": "Nesting", "lt": "Lizdinu", "note": "Įsilizdinėju considered and rejected — sounded artificial"},
-        {"en": "Nucleating", "lt": "Branduoliuoju"},
-        {"en": "Osmosing", "lt": "Sunkiuosi"},
-        {"en": "Photosynthesizing", "lt": "Fotosintetinu"},
-        {"en": "Pollinating", "lt": ["Apdulkinu", "Apdulkinėju"]},
-        {"en": "Precipitating", "lt": "Nusėdu", "note": "Nusėdinėju considered and rejected — too close to sėdėti (to sit), confusing"},
-        {"en": "Propagating", "lt": ["Sklindu", "Sklaidausi"]},
-        {"en": "Sprouting", "lt": "Šakojuosi", "note": "Šakinėjuosi considered and rejected — sounded artificial"},
-        {"en": "Sublimating", "lt": ["Sublimuoju", "Susigerinėju"], "note": "Susigerinėju from susigerti (to soak in/absorb) — playful synonym, not a strict -inėju derivation of sublimuoti"}
+        {
+          "en": "Fermenting",
+          "lt": [
+            "Rūgstu",
+            "Rūginėju"
+          ]
+        },
+        {
+          "en": "Germinating",
+          "lt": "Mikrobinu",
+          "note": "pseudo-scientific coinage (mikrobas+-inu), same pattern as Fotosintetinu/Branduoliuoju"
+        },
+        {
+          "en": "Incubating",
+          "lt": [
+            "Periu",
+            "Išperinėju"
+          ]
+        },
+        {
+          "en": "Metamorphosing",
+          "lt": [
+            "Virstu",
+            "Vartausi"
+          ],
+          "note": "Vartausi from vartytis (to toss/roll over) — not an -inėju form, but still a playful fit"
+        },
+        {
+          "en": "Nesting",
+          "lt": "Lizdinu",
+          "note": "coinage from lizdas (nest), same causative pattern as Trupinu/Liepsninu"
+        },
+        {
+          "en": "Nucleating",
+          "lt": "Branduoliuoju"
+        },
+        {
+          "en": "Osmosing",
+          "lt": "Sunkiuosi"
+        },
+        {
+          "en": "Photosynthesizing",
+          "lt": "Fotosintetinu"
+        },
+        {
+          "en": "Pollinating",
+          "lt": [
+            "Apdulkinu",
+            "Apdulkinėju"
+          ]
+        },
+        {
+          "en": "Precipitating",
+          "lt": "Nusėdu",
+          "note": "nusėsti = to precipitate/settle out (chemistry)"
+        },
+        {
+          "en": "Propagating",
+          "lt": [
+            "Sklindu",
+            "Sklaidausi"
+          ]
+        },
+        {
+          "en": "Sprouting",
+          "lt": "Šakojuosi",
+          "note": "šakotis = to branch out"
+        },
+        {
+          "en": "Sublimating",
+          "lt": [
+            "Sublimuoju",
+            "Susigerinėju"
+          ],
+          "note": "Susigerinėju from susigerti (to soak in/absorb) — playful synonym, not a strict -inėju derivation of sublimuoti"
+        }
       ]
     },
     "Technical/Processing": {
       "count": 43,
       "locked": true,
       "entries": [
-        {"en": "Calculating", "lt": ["Skaičiuoju", "Apskaičiuoju"]},
-        {"en": "Computing", "lt": "Kompiuteriuoju", "note": "playful coinage (kompiuteris+-uoju), same pattern as Fotosintetinu"},
-        {"en": "Processing", "lt": "Apdoroju"},
-        {"en": "Hashing", "lt": ["Malinėju", "Kontrolinsumuoju", "Koduoju", "Šifruoju"], "note": "Malinėju was one of the user's original 6 example words, finally placed here — grinding down into a fixed representation"},
-        {"en": "Bootstrapping", "lt": "Užsivedu", "note": "užsivesti = engine self-starting, matches 'loading context to load context'. Krovimdiržiuoju (conveyor-belt coinage) considered and rejected by user as too odd"},
-        {"en": "Deciphering", "lt": "Iššifruoju"},
-        {"en": "Generating", "lt": "Generuoju"},
-        {"en": "Synthesizing", "lt": "Sintezuoju", "note": "replaced original Sintetinu per user request"},
-        {"en": "Reticulating", "lt": ["Raizgau", "Makalioju"]},
-        {"en": "Coalescing", "lt": "Susilieju"},
-        {"en": "Cascading", "lt": ["Griūvu", "Drimbalioju", "Griuvinėju"]},
-        {"en": "Ionizing", "lt": ["Jonizuoju", "Joninu", "Trupinu"], "note": "Joninu is a pun on jonai/ions + the name Jonas. Trupinu was one of the user's original 6 example words, finally placed here"},
-        {"en": "Crystallizing", "lt": "Kristalizuoju", "note": "replaced original reflexive Kristalizuojuosi per user request"},
-        {"en": "Symbioting", "lt": ["Susigyvenu", "Simuliuoju"]},
-        {"en": "Gitifying", "lt": "Gitinu", "note": "meta joke about git, matches original's insider-joke tone"},
-        {"en": "Clauding", "lt": ["Klaudinuosi", "Debesuojuosi"], "note": "Debesuojuosi is a pun on debesis (cloud) — Claude/cloud"},
-        {"en": "Concocting", "lt": ["Sumaišau", "Miksuoju", "Mikstūruoju", "Chimičinu"], "note": "Chimičinu from chemija (chemistry)"},
-        {"en": "Crafting", "lt": "Meistrauju"},
-        {"en": "Creating", "lt": "Kuriu", "note": "the plain fundamental verb for the most cosmologically ambitious entry, same pattern as Thinking's Galvoju"},
-        {"en": "Doing", "lt": "Darau"},
-        {"en": "Forging", "lt": ["Kalu", "Kalinėju", "Išsikalinėju", "Kalvinu", "Kalviauju"], "note": "Kalvinu/Kalviauju from kalvis (blacksmith)"},
-        {"en": "Forming", "lt": "Formuoju"},
-        {"en": "Working", "lt": "Dirbu"},
-        {"en": "Composing", "lt": ["Komponuoju", "Dėlioju"]}
+        {
+          "en": "Calculating",
+          "lt": [
+            "Skaičiuoju",
+            "Apskaičiuoju"
+          ]
+        },
+        {
+          "en": "Computing",
+          "lt": "Kompiuteriuoju",
+          "note": "playful coinage (kompiuteris+-uoju), same pattern as Fotosintetinu"
+        },
+        {
+          "en": "Processing",
+          "lt": "Apdoroju"
+        },
+        {
+          "en": "Hashing",
+          "lt": [
+            "Malinėju",
+            "Kontrolinsumuoju",
+            "Koduoju",
+            "Šifruoju"
+          ],
+          "note": "Malinėju — one of the project's earliest example words, finally placed here: grinding down into a fixed representation"
+        },
+        {
+          "en": "Bootstrapping",
+          "lt": "Užsivedu",
+          "note": "užsivesti = engine self-starting, matches 'loading context to load context'"
+        },
+        {
+          "en": "Deciphering",
+          "lt": "Iššifruoju"
+        },
+        {
+          "en": "Generating",
+          "lt": "Generuoju"
+        },
+        {
+          "en": "Synthesizing",
+          "lt": "Sintezuoju",
+          "note": "from sintezė (synthesis)"
+        },
+        {
+          "en": "Reticulating",
+          "lt": [
+            "Raizgau",
+            "Makalioju"
+          ]
+        },
+        {
+          "en": "Coalescing",
+          "lt": "Susilieju"
+        },
+        {
+          "en": "Cascading",
+          "lt": [
+            "Griūvu",
+            "Drimbalioju",
+            "Griuvinėju"
+          ]
+        },
+        {
+          "en": "Ionizing",
+          "lt": [
+            "Jonizuoju",
+            "Joninu",
+            "Trupinu"
+          ],
+          "note": "Joninu is a pun on jonai/ions + the name Jonas. Trupinu — one of the project's earliest example words, finally placed here"
+        },
+        {
+          "en": "Crystallizing",
+          "lt": "Kristalizuoju",
+          "note": "from kristalizuotis (to crystallize)"
+        },
+        {
+          "en": "Symbioting",
+          "lt": [
+            "Susigyvenu",
+            "Simuliuoju"
+          ]
+        },
+        {
+          "en": "Gitifying",
+          "lt": "Gitinu",
+          "note": "meta joke about git, matches original's insider-joke tone"
+        },
+        {
+          "en": "Clauding",
+          "lt": [
+            "Klaudinuosi",
+            "Debesuojuosi"
+          ],
+          "note": "Debesuojuosi is a pun on debesis (cloud) — Claude/cloud"
+        },
+        {
+          "en": "Concocting",
+          "lt": [
+            "Sumaišau",
+            "Miksuoju",
+            "Mikstūruoju",
+            "Chimičinu"
+          ],
+          "note": "Chimičinu from chemija (chemistry)"
+        },
+        {
+          "en": "Crafting",
+          "lt": "Meistrauju"
+        },
+        {
+          "en": "Creating",
+          "lt": "Kuriu",
+          "note": "the plain fundamental verb for the most cosmologically ambitious entry, same pattern as Thinking's Galvoju"
+        },
+        {
+          "en": "Doing",
+          "lt": "Darau"
+        },
+        {
+          "en": "Forging",
+          "lt": [
+            "Kalu",
+            "Kalinėju",
+            "Išsikalinėju",
+            "Kalvinu",
+            "Kalviauju"
+          ],
+          "note": "Kalvinu/Kalviauju from kalvis (blacksmith)"
+        },
+        {
+          "en": "Forming",
+          "lt": "Formuoju"
+        },
+        {
+          "en": "Working",
+          "lt": "Dirbu"
+        },
+        {
+          "en": "Composing",
+          "lt": [
+            "Komponuoju",
+            "Dėlioju"
+          ]
+        }
       ]
     },
     "Physics/Sci-fi": {
       "count": 59,
       "locked": true,
       "entries": [
-        {"en": "Hyperspacing", "lt": ["Hipererdvinu", "Hyperšoliuoju"]},
-        {"en": "Quantumizing", "lt": ["Kvantuoju", "Kvantizuoju"]},
-        {"en": "Levitating", "lt": "Levituoju"},
-        {"en": "Warping", "lt": ["Kreivinu", "Trumpinu"], "note": "Trumpinu = 'cutting the corner' pun, from user"},
-        {"en": "Beaming", "lt": ["Spinduliuoju", "Teleportuoju"], "note": "Teleportuoju = Star Trek 'beam me up' reference"},
-        {"en": "Catapulting", "lt": "Katapultuoju"},
-        {"en": "Whirring", "lt": "Ūžiu"},
-        {"en": "Twisting", "lt": ["Sukuosi", "Susuku"]},
-        {"en": "Transfiguring", "lt": ["Atsimainau", "Transfigūruoju", "Transfigūrinu"], "note": "Atsimainau also carries the religious 'Transfiguration' connotation, matching the original's grandiosity"},
-        {"en": "Transmuting", "lt": ["Transmutuoju", "Transformuoju"]},
-        {"en": null, "lt": "Blasterinu", "note": "pure LT physics/sci-fi addition, no direct EN source word"},
-        {"en": null, "lt": "Mazerinu", "note": "from maser"},
-        {"en": null, "lt": "Kvarkinu", "note": "from kvarkas (quark)"},
-        {"en": null, "lt": "Hidrogenizuoju"},
-        {"en": null, "lt": "Elektrifikuoju"},
-        {"en": null, "lt": "Elektronizuoju"},
-        {"en": null, "lt": "Atomizuoju", "note": "typo-corrected from user's 'Aomizuoju'"},
-        {"en": null, "lt": "Molekulinu"},
-        {"en": null, "lt": "Radijuoju"},
-        {"en": null, "lt": "Katijonuoju"},
-        {"en": null, "lt": "Anijonuoju"},
-        {"en": null, "lt": "Radikalizuoju"},
-        {"en": null, "lt": "Protonizuoju"},
-        {"en": null, "lt": "Neutrinizuoju", "note": "user listed this twice, deduplicated to one entry"},
-        {"en": null, "lt": "Poliarizuoju"},
-        {"en": null, "lt": "Leptonizuoju"},
-        {"en": null, "lt": "Bozoninu"},
-        {"en": null, "lt": "Pozitronizuoju"},
-        {"en": null, "lt": "Fotonizuoju"},
-        {"en": null, "lt": "Deformuoju"},
-        {"en": null, "lt": "Garuoju"},
-        {"en": null, "lt": "Tirpstu"},
-        {"en": null, "lt": "Atspindžiu"},
-        {"en": null, "lt": "Dispersinu"},
-        {"en": null, "lt": "Reflektuoju"},
-        {"en": null, "lt": "Refraktuoju"},
-        {"en": null, "lt": "Žaibuoju"},
-        {"en": null, "lt": "Teslinu", "note": "from Tesla"},
-        {"en": null, "lt": "Magnetizuoju"},
-        {"en": null, "lt": "Šviesmetinu", "note": "from šviesmetis (light-year)"},
-        {"en": null, "lt": "Hiperbolizuoju"},
-        {"en": null, "lt": "Androidinu"},
-        {"en": null, "lt": "Kiborgizuoju"},
-        {"en": null, "lt": "Teraforminu"},
-        {"en": null, "lt": "Nanotechnologizuoju"},
-        {"en": null, "lt": "Tankinu"},
-        {"en": null, "lt": "Binarizuoju"},
-        {"en": null, "lt": "Biotechnologizuoju"},
-        {"en": null, "lt": "Užšaldau"},
-        {"en": null, "lt": "Kibernetizuoju"},
-        {"en": null, "lt": "Skaitmenizuoju"}
+        {
+          "en": "Hyperspacing",
+          "lt": [
+            "Hipererdvinu",
+            "Hyperšoliuoju"
+          ]
+        },
+        {
+          "en": "Quantumizing",
+          "lt": [
+            "Kvantuoju",
+            "Kvantizuoju"
+          ]
+        },
+        {
+          "en": "Levitating",
+          "lt": "Levituoju"
+        },
+        {
+          "en": "Warping",
+          "lt": [
+            "Kreivinu",
+            "Trumpinu"
+          ],
+          "note": "Trumpinu = 'cutting the corner' pun"
+        },
+        {
+          "en": "Beaming",
+          "lt": [
+            "Spinduliuoju",
+            "Teleportuoju"
+          ],
+          "note": "Teleportuoju = Star Trek 'beam me up' reference"
+        },
+        {
+          "en": "Catapulting",
+          "lt": "Katapultuoju"
+        },
+        {
+          "en": "Whirring",
+          "lt": "Ūžiu"
+        },
+        {
+          "en": "Twisting",
+          "lt": [
+            "Sukuosi",
+            "Susuku"
+          ]
+        },
+        {
+          "en": "Transfiguring",
+          "lt": [
+            "Atsimainau",
+            "Transfigūruoju",
+            "Transfigūrinu"
+          ],
+          "note": "Atsimainau also carries the religious 'Transfiguration' connotation, matching the original's grandiosity"
+        },
+        {
+          "en": "Transmuting",
+          "lt": [
+            "Transmutuoju",
+            "Transformuoju"
+          ]
+        },
+        {
+          "en": null,
+          "lt": "Blasterinu",
+          "note": "pure LT physics/sci-fi coinage, no direct EN source word"
+        },
+        {
+          "en": null,
+          "lt": "Mazerinu",
+          "note": "from maser"
+        },
+        {
+          "en": null,
+          "lt": "Kvarkinu",
+          "note": "from kvarkas (quark)"
+        },
+        {
+          "en": null,
+          "lt": "Hidrogenizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Elektrifikuoju"
+        },
+        {
+          "en": null,
+          "lt": "Elektronizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Atomizuoju",
+          "note": "from atomas (atom)"
+        },
+        {
+          "en": null,
+          "lt": "Molekulinu"
+        },
+        {
+          "en": null,
+          "lt": "Radijuoju"
+        },
+        {
+          "en": null,
+          "lt": "Katijonuoju"
+        },
+        {
+          "en": null,
+          "lt": "Anijonuoju"
+        },
+        {
+          "en": null,
+          "lt": "Radikalizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Protonizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Neutrinizuoju",
+          "note": "from neutrinas (neutrino)"
+        },
+        {
+          "en": null,
+          "lt": "Poliarizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Leptonizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Bozoninu"
+        },
+        {
+          "en": null,
+          "lt": "Pozitronizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Fotonizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Deformuoju"
+        },
+        {
+          "en": null,
+          "lt": "Garuoju"
+        },
+        {
+          "en": null,
+          "lt": "Tirpstu"
+        },
+        {
+          "en": null,
+          "lt": "Atspindžiu"
+        },
+        {
+          "en": null,
+          "lt": "Dispersinu"
+        },
+        {
+          "en": null,
+          "lt": "Reflektuoju"
+        },
+        {
+          "en": null,
+          "lt": "Refraktuoju"
+        },
+        {
+          "en": null,
+          "lt": "Žaibuoju"
+        },
+        {
+          "en": null,
+          "lt": "Teslinu",
+          "note": "from Tesla"
+        },
+        {
+          "en": null,
+          "lt": "Magnetizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Šviesmetinu",
+          "note": "from šviesmetis (light-year)"
+        },
+        {
+          "en": null,
+          "lt": "Hiperbolizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Androidinu"
+        },
+        {
+          "en": null,
+          "lt": "Kiborgizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Teraforminu"
+        },
+        {
+          "en": null,
+          "lt": "Nanotechnologizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Tankinu"
+        },
+        {
+          "en": null,
+          "lt": "Binarizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Biotechnologizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Užšaldau"
+        },
+        {
+          "en": null,
+          "lt": "Kibernetizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Skaitmenizuoju"
+        }
       ]
     },
     "Bureaucratic/Corporate": {
       "count": 16,
       "locked": true,
       "entries": [
-        {"en": "Accomplishing", "lt": "Siekiu", "note": "replaced original Pasiekiu per user request — 'siekiu' (striving/reaching) also better matches the irony of announcing completion while still not done"},
-        {"en": "Actioning", "lt": "Įveiksminu", "note": "replaced original Veiksminu per user request — į- prefix, mimics the corporate noun-to-verb jargon joke"},
-        {"en": "Actualizing", "lt": "Aktualizuoju", "note": "direct loanword; in LT office jargon often misused for 'atnaujinti' (update) — a real bureaucratic language pet peeve, fits the theme"},
-        {"en": "Architecting", "lt": ["Architektinu", "Braižau"], "note": "Architektinu replaced original Architektūruoju per user request; Braižau (to draft blueprints) added per user request"},
-        {"en": ["Channeling", "Channelling"], "lt": "Kanalizuoju", "note": "user decided not to make a separate LT equivalent for Channelling — LT grammar has no US/UK spelling-variant concept, so the joke doesn't translate; one entry covers both source words"},
-        {"en": "Choreographing", "lt": "Choreografuoju"},
-        {"en": "Effecting", "lt": "Įgyvendinu"},
-        {"en": "Harmonizing", "lt": "Harmonizuoju", "note": "real EU bureaucratic term ('teisės aktų harmonizavimas')"},
-        {"en": "Herding", "lt": "Ganau"},
-        {"en": "Manifesting", "lt": "Manifestuoju"},
-        {"en": "Mustering", "lt": "Sutelkiu"},
-        {"en": "Orchestrating", "lt": "Orkestruoju"},
-        {"en": "Wrangling", "lt": "Malšinu"},
-        {"en": "Perusing", "lt": "Peržvelgiu"},
-        {"en": "Boondoggling", "lt": "Švaistausi"}
+        {
+          "en": "Accomplishing",
+          "lt": "Siekiu",
+          "note": "siekti (to strive/reach) — matches the irony of announcing completion while still not done"
+        },
+        {
+          "en": "Actioning",
+          "lt": "Įveiksminu",
+          "note": "į- prefix + veiksmas (action), mimics the corporate noun-to-verb jargon joke"
+        },
+        {
+          "en": "Actualizing",
+          "lt": "Aktualizuoju",
+          "note": "direct loanword; in LT office jargon often misused for 'atnaujinti' (update) — a real bureaucratic language pet peeve, fits the theme"
+        },
+        {
+          "en": "Architecting",
+          "lt": [
+            "Architektinu",
+            "Braižau"
+          ],
+          "note": "Architektinu from architektūra; Braižau = to draft blueprints"
+        },
+        {
+          "en": [
+            "Channeling",
+            "Channelling"
+          ],
+          "lt": "Kanalizuoju",
+          "note": "covers both Channeling/Channelling — the US/UK spelling joke doesn't translate into Lithuanian grammar, so one entry serves both source words"
+        },
+        {
+          "en": "Choreographing",
+          "lt": "Choreografuoju"
+        },
+        {
+          "en": "Effecting",
+          "lt": "Įgyvendinu"
+        },
+        {
+          "en": "Harmonizing",
+          "lt": "Harmonizuoju",
+          "note": "real EU bureaucratic term ('teisės aktų harmonizavimas')"
+        },
+        {
+          "en": "Herding",
+          "lt": "Ganau"
+        },
+        {
+          "en": "Manifesting",
+          "lt": "Manifestuoju"
+        },
+        {
+          "en": "Mustering",
+          "lt": "Sutelkiu"
+        },
+        {
+          "en": "Orchestrating",
+          "lt": "Orkestruoju"
+        },
+        {
+          "en": "Wrangling",
+          "lt": "Malšinu"
+        },
+        {
+          "en": "Perusing",
+          "lt": "Peržvelgiu"
+        },
+        {
+          "en": "Boondoggling",
+          "lt": "Švaistausi"
+        }
       ]
     },
     "Whimsical Nonsense Words": {
       "count": 32,
       "locked": true,
       "entries": [
-        {"en": "Beboppin'", "lt": "Bibopuoju", "note": "phonetic loan-coinage from bebop (jazz)"},
-        {"en": "Befuddling", "lt": "Apsvaigstu"},
-        {"en": "Bloviating", "lt": "Tauzyju"},
-        {"en": "Boogieing", "lt": "Snarglinu", "note": "replaced original Bugiuoju per user request"},
-        {"en": "Booping", "lt": ["Baksiu", "Durinėju"], "note": "replaced original Bukšteliu per user request — Durinėju uses the -inėju frequentative pattern"},
-        {"en": "Bunning", "lt": ["Bandeliuoju", "Bandelinuosi"], "note": "Bandelinuosi added per user request alongside Bandeliuoju; both pun on bandelė (bun/roll), matching the EN 'bun' pun"},
-        {"en": "Combobulating", "lt": "Kombobuliuoju", "note": "phonetic-coinage family with Discombobulating/Recombobulating"},
-        {"en": "Dilly-dallying", "lt": "Dūlinėju"},
-        {"en": "Discombobulating", "lt": "Diskombobuliuoju"},
-        {"en": "Fiddle-faddling", "lt": "Knebinėju"},
-        {"en": "Finagling", "lt": "Išsisukinėju"},
-        {"en": "Flibbertigibbeting", "lt": "Flibirgibetuoju", "note": "phonetic loan-coinage"},
-        {"en": "Flummoxing", "lt": "Suglumstu"},
-        {"en": "Grooving", "lt": "Įsivažiuoju"},
-        {"en": "Honking", "lt": "Gagenu", "note": "gagenti = goose honking, literal match"},
-        {"en": "Hullaballooing", "lt": "Triukšmauju"},
-        {"en": "Jitterbugging", "lt": "Džiterbaguoju", "note": "phonetic loan-coinage from the dance"},
-        {"en": "Newspapering", "lt": "Laikraštinu", "note": "coinage from laikraštis (newspaper), mirrors original's noun-verbing joke"},
-        {"en": "Noodling", "lt": "Kapstausi"},
-        {"en": "Prestidigitating", "lt": "Fokusuoju"},
-        {"en": "Razzle-dazzling", "lt": "Blizgučiuoju"},
-        {"en": "Razzmatazzing", "lt": "Spindžiuosi", "note": "a step up from Blizgučiuoju/Razzle-dazzling per the source's own escalation"},
-        {"en": "Recombobulating", "lt": "Rekombobuliuoju"},
-        {"en": "Shenaniganing", "lt": "Šelmiuoju"},
-        {"en": "Shimmying", "lt": "Šimiuoju", "note": "phonetic loan-coinage from the dance"},
-        {"en": "Tomfoolering", "lt": "Kvailioju"},
-        {"en": "Topsy-turvying", "lt": "Apsiverčiu"},
-        {"en": "Vibing", "lt": "Nuotaikuojuosi", "note": "replaced original Vibruoju per user request — from nuotaika (mood), matches slang 'vaibas'"},
-        {"en": "Whatchamacalliting", "lt": "Prasivardžiuoju", "note": "replaced original Kaipjivadinasi per user request"},
-        {"en": "Wibbling", "lt": "Svyruoju"}
+        {
+          "en": "Beboppin'",
+          "lt": "Bibopuoju",
+          "note": "phonetic loan-coinage from bebop (jazz)"
+        },
+        {
+          "en": "Befuddling",
+          "lt": "Apsvaigstu"
+        },
+        {
+          "en": "Bloviating",
+          "lt": "Tauzyju"
+        },
+        {
+          "en": "Boogieing",
+          "lt": "Snarglinu"
+        },
+        {
+          "en": "Booping",
+          "lt": [
+            "Baksiu",
+            "Durinėju"
+          ],
+          "note": "Durinėju uses the -inėju frequentative pattern (durti = to poke)"
+        },
+        {
+          "en": "Bunning",
+          "lt": [
+            "Bandeliuoju",
+            "Bandelinuosi"
+          ],
+          "note": "both pun on bandelė (bun/roll), matching the English 'bun' pun in Bunning"
+        },
+        {
+          "en": "Combobulating",
+          "lt": "Kombobuliuoju",
+          "note": "phonetic-coinage family with Discombobulating/Recombobulating"
+        },
+        {
+          "en": "Dilly-dallying",
+          "lt": "Dūlinėju"
+        },
+        {
+          "en": "Discombobulating",
+          "lt": "Diskombobuliuoju"
+        },
+        {
+          "en": "Fiddle-faddling",
+          "lt": "Knebinėju"
+        },
+        {
+          "en": "Finagling",
+          "lt": "Išsisukinėju"
+        },
+        {
+          "en": "Flibbertigibbeting",
+          "lt": "Flibirgibetuoju",
+          "note": "phonetic loan-coinage"
+        },
+        {
+          "en": "Flummoxing",
+          "lt": "Suglumstu"
+        },
+        {
+          "en": "Grooving",
+          "lt": "Įsivažiuoju"
+        },
+        {
+          "en": "Honking",
+          "lt": "Gagenu",
+          "note": "gagenti = goose honking, literal match"
+        },
+        {
+          "en": "Hullaballooing",
+          "lt": "Triukšmauju"
+        },
+        {
+          "en": "Jitterbugging",
+          "lt": "Džiterbaguoju",
+          "note": "phonetic loan-coinage from the dance"
+        },
+        {
+          "en": "Newspapering",
+          "lt": "Laikraštinu",
+          "note": "coinage from laikraštis (newspaper), mirrors original's noun-verbing joke"
+        },
+        {
+          "en": "Noodling",
+          "lt": "Kapstausi"
+        },
+        {
+          "en": "Prestidigitating",
+          "lt": "Fokusuoju"
+        },
+        {
+          "en": "Razzle-dazzling",
+          "lt": "Blizgučiuoju"
+        },
+        {
+          "en": "Razzmatazzing",
+          "lt": "Spindžiuosi",
+          "note": "a step up from Blizgučiuoju/Razzle-dazzling per the source's own escalation"
+        },
+        {
+          "en": "Recombobulating",
+          "lt": "Rekombobuliuoju"
+        },
+        {
+          "en": "Shenaniganing",
+          "lt": "Šelmiuoju"
+        },
+        {
+          "en": "Shimmying",
+          "lt": "Šimiuoju",
+          "note": "phonetic loan-coinage from the dance"
+        },
+        {
+          "en": "Tomfoolering",
+          "lt": "Kvailioju"
+        },
+        {
+          "en": "Topsy-turvying",
+          "lt": "Apsiverčiu"
+        },
+        {
+          "en": "Vibing",
+          "lt": "Nuotaikuojuosi",
+          "note": "from nuotaika (mood), matches slang 'vaibas'"
+        },
+        {
+          "en": "Whatchamacalliting",
+          "lt": "Prasivardžiuoju",
+          "note": "from vardas (name)"
+        },
+        {
+          "en": "Wibbling",
+          "lt": "Svyruoju"
+        }
       ]
     },
     "Weather & Misc (final batch)": {
       "count": 53,
       "locked": true,
       "entries": [
-        {"en": "Billowing", "lt": "Banguoju"},
-        {"en": "Burrowing", "lt": ["Kasuosi", "Tuneliuoju"]},
-        {"en": "Canoodling", "lt": ["Meiliuojuosi", "Myluojuosi"]},
-        {"en": "Cultivating", "lt": ["Puoselėju", "Tręšiu", "Akėju", "Ariu", "Sodinu", "Turtinu", "Praturtinu"], "note": "literal farming-verb cluster added per user request alongside the original metaphorical Puoselėju"},
-        {"en": "Doodling", "lt": ["Piešinėju", "Paišelioju", "Paišinėju"]},
-        {"en": "Drizzling", "lt": ["Krapnoju", "Lašnoju", "Lašinu", "Varvinu", "Purkšnoju"]},
-        {"en": "Embellishing", "lt": "Pagražinu"},
-        {"en": "Enchanting", "lt": ["Kerėju", "Buriu", "Užburiu", "Stebuklinu"]},
-        {"en": "Evaporating", "lt": "Ištirpinu", "note": "replaced original Ištirpstu per user request (causative form)"},
-        {"en": "Flowing", "lt": ["Tekinu", "Ištekinu"], "note": "replaced original Tekiu per user request — causative forms of tekėti; Ištekinu also colloquially means 'to marry off a daughter', an accidental bonus joke"},
-        {"en": "Fluttering", "lt": "Plazdenu"},
-        {"en": "Frolicking", "lt": "Šėliuoju"},
-        {"en": "Gesticulating", "lt": "Gestikuliuoju"},
-        {"en": "Hatching", "lt": "Išsiritu"},
-        {"en": "Improvising", "lt": "Improvizuoju"},
-        {"en": "Infusing", "lt": "Sodrinu"},
-        {"en": "Misting", "lt": ["Miglinu", "Rūkinu", "Dūminu"]},
-        {"en": "Nebulizing", "lt": "Nebulizuoju"},
-        {"en": "Percolating", "lt": "Prasisunkiu"},
-        {"en": "Pontificating", "lt": "Pamokslauju"},
-        {"en": "Puttering", "lt": "Kuistausi"},
-        {"en": "Sketching", "lt": ["Eskizuoju", "Draftinu"]},
-        {"en": "Spelunking", "lt": ["Landžioju", "Kalnakasiauju"]},
-        {"en": "Spinning", "lt": "Verpetuoju"},
-        {"en": "Swirling", "lt": "Sūkuriuoju"},
-        {"en": "Thundering", "lt": "Griaudėju"},
-        {"en": "Tinkering", "lt": "Krapštausi"},
-        {"en": "Undulating", "lt": "Vilnyju"},
-        {"en": "Unfurling", "lt": "Išsiskleidžiu"},
-        {"en": "Unravelling", "lt": "Suirstu"},
-        {"en": "Whirlpooling", "lt": "Įsisukinėju"}
+        {
+          "en": "Billowing",
+          "lt": "Banguoju"
+        },
+        {
+          "en": "Burrowing",
+          "lt": [
+            "Kasuosi",
+            "Tuneliuoju"
+          ]
+        },
+        {
+          "en": "Canoodling",
+          "lt": [
+            "Meiliuojuosi",
+            "Myluojuosi"
+          ]
+        },
+        {
+          "en": "Cultivating",
+          "lt": [
+            "Puoselėju",
+            "Tręšiu",
+            "Akėju",
+            "Ariu",
+            "Sodinu",
+            "Turtinu",
+            "Praturtinu"
+          ],
+          "note": "literal farming-verb cluster (tręšti/akėti/arti/sodinti/turtinti) alongside the original metaphorical Puoselėju"
+        },
+        {
+          "en": "Doodling",
+          "lt": [
+            "Piešinėju",
+            "Paišelioju",
+            "Paišinėju"
+          ]
+        },
+        {
+          "en": "Drizzling",
+          "lt": [
+            "Krapnoju",
+            "Lašnoju",
+            "Lašinu",
+            "Varvinu",
+            "Purkšnoju"
+          ]
+        },
+        {
+          "en": "Embellishing",
+          "lt": "Pagražinu"
+        },
+        {
+          "en": "Enchanting",
+          "lt": [
+            "Kerėju",
+            "Buriu",
+            "Užburiu",
+            "Stebuklinu"
+          ]
+        },
+        {
+          "en": "Evaporating",
+          "lt": "Ištirpinu",
+          "note": "causative form of tirpti (to dissolve/melt)"
+        },
+        {
+          "en": "Flowing",
+          "lt": [
+            "Tekinu",
+            "Ištekinu"
+          ],
+          "note": "causative forms of tekėti (to flow); Ištekinu also colloquially means 'to marry off a daughter' — an accidental bonus joke"
+        },
+        {
+          "en": "Fluttering",
+          "lt": "Plazdenu"
+        },
+        {
+          "en": "Frolicking",
+          "lt": "Šėliuoju"
+        },
+        {
+          "en": "Gesticulating",
+          "lt": "Gestikuliuoju"
+        },
+        {
+          "en": "Hatching",
+          "lt": "Išsiritu"
+        },
+        {
+          "en": "Improvising",
+          "lt": "Improvizuoju"
+        },
+        {
+          "en": "Infusing",
+          "lt": "Sodrinu"
+        },
+        {
+          "en": "Misting",
+          "lt": [
+            "Miglinu",
+            "Rūkinu",
+            "Dūminu"
+          ]
+        },
+        {
+          "en": "Nebulizing",
+          "lt": "Nebulizuoju"
+        },
+        {
+          "en": "Percolating",
+          "lt": "Prasisunkiu"
+        },
+        {
+          "en": "Pontificating",
+          "lt": "Pamokslauju"
+        },
+        {
+          "en": "Puttering",
+          "lt": "Kuistausi"
+        },
+        {
+          "en": "Sketching",
+          "lt": [
+            "Eskizuoju",
+            "Draftinu"
+          ]
+        },
+        {
+          "en": "Spelunking",
+          "lt": [
+            "Landžioju",
+            "Kalnakasiauju"
+          ]
+        },
+        {
+          "en": "Spinning",
+          "lt": "Verpetuoju"
+        },
+        {
+          "en": "Swirling",
+          "lt": "Sūkuriuoju"
+        },
+        {
+          "en": "Thundering",
+          "lt": "Griaudėju"
+        },
+        {
+          "en": "Tinkering",
+          "lt": "Krapštausi"
+        },
+        {
+          "en": "Undulating",
+          "lt": "Vilnyju"
+        },
+        {
+          "en": "Unfurling",
+          "lt": "Išsiskleidžiu"
+        },
+        {
+          "en": "Unravelling",
+          "lt": "Suirstu"
+        },
+        {
+          "en": "Whirlpooling",
+          "lt": "Įsisukinėju"
+        }
       ]
     },
     "Statistics (bonus, no EN source)": {
       "count": 15,
       "locked": true,
       "entries": [
-        {"en": null, "lt": "Vidurkinu", "note": "from vidurkis (average)"},
-        {"en": null, "lt": "Koreliuoju"},
-        {"en": null, "lt": "Regresuoju"},
-        {"en": null, "lt": "Normalizuoju"},
-        {"en": null, "lt": "Ekstrapoliuoju"},
-        {"en": null, "lt": "Interpoliuoju"},
-        {"en": null, "lt": "Imtinu", "note": "replaced original Imčiuoju per user request"},
-        {"en": null, "lt": "Medianinu"},
-        {"en": null, "lt": "Modinu", "note": "replaced original Modiniu per user request"},
-        {"en": null, "lt": "Kvartiliuoju"},
-        {"en": null, "lt": "Tikimybinu"},
-        {"en": null, "lt": "Hipotezuoju"},
-        {"en": null, "lt": "Reikšminguoju"},
-        {"en": null, "lt": "Standartizuoju"},
-        {"en": null, "lt": "Sluoksniuoju"}
+        {
+          "en": null,
+          "lt": "Vidurkinu",
+          "note": "from vidurkis (average)"
+        },
+        {
+          "en": null,
+          "lt": "Koreliuoju"
+        },
+        {
+          "en": null,
+          "lt": "Regresuoju"
+        },
+        {
+          "en": null,
+          "lt": "Normalizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Ekstrapoliuoju"
+        },
+        {
+          "en": null,
+          "lt": "Interpoliuoju"
+        },
+        {
+          "en": null,
+          "lt": "Imtinu",
+          "note": "from imtis (sample)"
+        },
+        {
+          "en": null,
+          "lt": "Medianinu"
+        },
+        {
+          "en": null,
+          "lt": "Modinu",
+          "note": "from moda (statistical mode)"
+        },
+        {
+          "en": null,
+          "lt": "Kvartiliuoju"
+        },
+        {
+          "en": null,
+          "lt": "Tikimybinu"
+        },
+        {
+          "en": null,
+          "lt": "Hipotezuoju"
+        },
+        {
+          "en": null,
+          "lt": "Reikšminguoju"
+        },
+        {
+          "en": null,
+          "lt": "Standartizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Sluoksniuoju"
+        }
       ]
     },
     "Mathematics (bonus, no EN source)": {
       "count": 16,
       "locked": true,
       "entries": [
-        {"en": null, "lt": "Integruoju"},
-        {"en": null, "lt": "Diferencijuoju"},
-        {"en": null, "lt": "Faktorizuoju"},
-        {"en": null, "lt": ["Apytikslinu", "Apvalinu"], "note": "replaced original Aproksimuoju per user request"},
-        {"en": null, "lt": "Konverguoju"},
-        {"en": null, "lt": "Diverguoju"},
-        {"en": null, "lt": "Aksiomatizuoju"},
-        {"en": null, "lt": "Įrodinėju", "note": "-inėju frequentative, to keep proving"},
-        {"en": null, "lt": "Geometrizuoju"},
-        {"en": null, "lt": "Topologizuoju"},
-        {"en": null, "lt": "Vektorinu"},
-        {"en": null, "lt": "Matricuoju"},
-        {"en": null, "lt": "Rekursuoju"},
-        {"en": null, "lt": "Begalybinu", "note": "from begalybė (infinity)"},
-        {"en": null, "lt": "Traukšakniuoju", "note": "pun on 'traukti šaknį' (to take a square root)"}
+        {
+          "en": null,
+          "lt": "Integruoju"
+        },
+        {
+          "en": null,
+          "lt": "Diferencijuoju"
+        },
+        {
+          "en": null,
+          "lt": "Faktorizuoju"
+        },
+        {
+          "en": null,
+          "lt": [
+            "Apytikslinu",
+            "Apvalinu"
+          ],
+          "note": "from apytikslis (approximate) / apvalinti (to round)"
+        },
+        {
+          "en": null,
+          "lt": "Konverguoju"
+        },
+        {
+          "en": null,
+          "lt": "Diverguoju"
+        },
+        {
+          "en": null,
+          "lt": "Aksiomatizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Įrodinėju",
+          "note": "-inėju frequentative, to keep proving"
+        },
+        {
+          "en": null,
+          "lt": "Geometrizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Topologizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Vektorinu"
+        },
+        {
+          "en": null,
+          "lt": "Matricuoju"
+        },
+        {
+          "en": null,
+          "lt": "Rekursuoju"
+        },
+        {
+          "en": null,
+          "lt": "Begalybinu",
+          "note": "from begalybė (infinity)"
+        },
+        {
+          "en": null,
+          "lt": "Traukšakniuoju",
+          "note": "pun on 'traukti šaknį' (to take a square root)"
+        }
       ]
     },
     "Computer Networks (bonus, no EN source)": {
       "count": 15,
       "locked": true,
       "entries": [
-        {"en": null, "lt": "Maršrutizuoju"},
-        {"en": null, "lt": "Paketizuoju"},
-        {"en": null, "lt": "Tinklinu"},
-        {"en": null, "lt": "Prisijungiu"},
-        {"en": null, "lt": "Atsijungiu"},
-        {"en": null, "lt": "Sinchronizuoju"},
-        {"en": null, "lt": "Buferizuoju"},
-        {"en": null, "lt": "Kešuoju"},
-        {"en": null, "lt": "Vėluoju", "note": "fits network latency"},
-        {"en": null, "lt": "Autentifikuoju"},
-        {"en": null, "lt": "Kriptografinu", "note": "replaced original Kriptografuoju per user request; Šifruoju/Iššifruoju already used elsewhere (Technical/Processing: Hashing, Deciphering) so Dešifruoju was considered and skipped here to avoid redundancy"},
-        {"en": null, "lt": "Pinguoju"},
-        {"en": null, "lt": "Srautinu"},
-        {"en": null, "lt": "Užkraunu"},
-        {"en": null, "lt": "Trasuoju", "note": "fits traceroute"}
+        {
+          "en": null,
+          "lt": "Maršrutizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Paketizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Tinklinu"
+        },
+        {
+          "en": null,
+          "lt": "Prisijungiu"
+        },
+        {
+          "en": null,
+          "lt": "Atsijungiu"
+        },
+        {
+          "en": null,
+          "lt": "Sinchronizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Buferizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Kešuoju"
+        },
+        {
+          "en": null,
+          "lt": "Vėluoju",
+          "note": "fits network latency"
+        },
+        {
+          "en": null,
+          "lt": "Autentifikuoju"
+        },
+        {
+          "en": null,
+          "lt": "Kriptografinu",
+          "note": "from kriptografija (cryptography); Šifruoju/Iššifruoju already cover encryption elsewhere (Technical/Processing)"
+        },
+        {
+          "en": null,
+          "lt": "Pinguoju"
+        },
+        {
+          "en": null,
+          "lt": "Srautinu"
+        },
+        {
+          "en": null,
+          "lt": "Užkraunu"
+        },
+        {
+          "en": null,
+          "lt": "Trasuoju",
+          "note": "fits traceroute"
+        }
       ]
     },
     "Sports (bonus, no EN source)": {
       "count": 21,
       "locked": true,
       "entries": [
-        {"en": null, "lt": "Treniruojuosi"},
-        {"en": null, "lt": "Sportuoju"},
-        {"en": null, "lt": "Mankštinuosi"},
-        {"en": null, "lt": "Varžausi"},
-        {"en": null, "lt": "Finišuoju"},
-        {"en": null, "lt": "Startuoju"},
-        {"en": null, "lt": "Šildausi"},
-        {"en": null, "lt": "Rungtyniauju"},
-        {"en": null, "lt": "Čempionuoju"},
-        {"en": null, "lt": "Rekordinu"},
-        {"en": null, "lt": "Pergalinu"},
-        {"en": null, "lt": "Pralaimiu"},
-        {"en": null, "lt": "Laimiu"},
-        {"en": null, "lt": "Kamuoliuoju"},
-        {"en": null, "lt": "Spirdinu"},
-        {"en": null, "lt": "Irkluoju"},
-        {"en": null, "lt": "Kabliuoju"},
-        {"en": null, "lt": "Pumpuoju"},
-        {"en": null, "lt": "Lankstausi"},
-        {"en": null, "lt": "Tempiuosi"},
-        {"en": null, "lt": "Apšylu"}
+        {
+          "en": null,
+          "lt": "Treniruojuosi"
+        },
+        {
+          "en": null,
+          "lt": "Sportuoju"
+        },
+        {
+          "en": null,
+          "lt": "Mankštinuosi"
+        },
+        {
+          "en": null,
+          "lt": "Varžausi"
+        },
+        {
+          "en": null,
+          "lt": "Finišuoju"
+        },
+        {
+          "en": null,
+          "lt": "Startuoju"
+        },
+        {
+          "en": null,
+          "lt": "Šildausi"
+        },
+        {
+          "en": null,
+          "lt": "Rungtyniauju"
+        },
+        {
+          "en": null,
+          "lt": "Čempionuoju"
+        },
+        {
+          "en": null,
+          "lt": "Rekordinu"
+        },
+        {
+          "en": null,
+          "lt": "Pergalinu"
+        },
+        {
+          "en": null,
+          "lt": "Pralaimiu"
+        },
+        {
+          "en": null,
+          "lt": "Laimiu"
+        },
+        {
+          "en": null,
+          "lt": "Kamuoliuoju"
+        },
+        {
+          "en": null,
+          "lt": "Spirdinu"
+        },
+        {
+          "en": null,
+          "lt": "Irkluoju"
+        },
+        {
+          "en": null,
+          "lt": "Kabliuoju"
+        },
+        {
+          "en": null,
+          "lt": "Pumpuoju"
+        },
+        {
+          "en": null,
+          "lt": "Lankstausi"
+        },
+        {
+          "en": null,
+          "lt": "Tempiuosi"
+        },
+        {
+          "en": null,
+          "lt": "Apšylu"
+        }
       ]
     },
     "Philosophy (bonus, no EN source)": {
       "count": 13,
       "locked": true,
       "entries": [
-        {"en": null, "lt": "Egzistuoju"},
-        {"en": null, "lt": "Abejoju"},
-        {"en": null, "lt": "Samprotauju"},
-        {"en": null, "lt": "Dialektikuoju"},
-        {"en": null, "lt": "Metafizikuoju"},
-        {"en": null, "lt": "Etikuoju"},
-        {"en": null, "lt": "Racionalizuoju"},
-        {"en": null, "lt": "Egzistencializuoju"},
-        {"en": null, "lt": "Absurdinu"},
-        {"en": null, "lt": "Skepticizuoju"},
-        {"en": null, "lt": "Nihilistinu"},
-        {"en": null, "lt": "Paradoksuoju"},
-        {"en": null, "lt": "Sokratauju"}
+        {
+          "en": null,
+          "lt": "Egzistuoju"
+        },
+        {
+          "en": null,
+          "lt": "Abejoju"
+        },
+        {
+          "en": null,
+          "lt": "Samprotauju"
+        },
+        {
+          "en": null,
+          "lt": "Dialektikuoju"
+        },
+        {
+          "en": null,
+          "lt": "Metafizikuoju"
+        },
+        {
+          "en": null,
+          "lt": "Etikuoju"
+        },
+        {
+          "en": null,
+          "lt": "Racionalizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Egzistencializuoju"
+        },
+        {
+          "en": null,
+          "lt": "Absurdinu"
+        },
+        {
+          "en": null,
+          "lt": "Skepticizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Nihilistinu"
+        },
+        {
+          "en": null,
+          "lt": "Paradoksuoju"
+        },
+        {
+          "en": null,
+          "lt": "Sokratauju"
+        }
       ]
     },
     "Medicine (bonus, no EN source)": {
       "count": 18,
       "locked": true,
       "entries": [
-        {"en": null, "lt": "Diagnozuoju"},
-        {"en": null, "lt": "Operuoju"},
-        {"en": null, "lt": "Skiepiju"},
-        {"en": null, "lt": "Gydau"},
-        {"en": null, "lt": "Sterilizuoju"},
-        {"en": null, "lt": "Suleidžiu"},
-        {"en": null, "lt": "Pulsuoju"},
-        {"en": null, "lt": "Palpuoju"},
-        {"en": null, "lt": "Anestezuoju"},
-        {"en": null, "lt": "Terapuoju"},
-        {"en": null, "lt": "Imunizuoju"},
-        {"en": null, "lt": "Chirurguoju"},
-        {"en": null, "lt": "Pjaustinėju", "note": "added alongside Chirurguoju per user request"},
-        {"en": null, "lt": "Termometruoju"},
-        {"en": null, "lt": "Bandažuoju"},
-        {"en": null, "lt": "Psichiatrinu"},
-        {"en": null, "lt": "Hipnotizuoju"},
-        {"en": null, "lt": "Lašelinizuoju"}
+        {
+          "en": null,
+          "lt": "Diagnozuoju"
+        },
+        {
+          "en": null,
+          "lt": "Operuoju"
+        },
+        {
+          "en": null,
+          "lt": "Skiepiju"
+        },
+        {
+          "en": null,
+          "lt": "Gydau"
+        },
+        {
+          "en": null,
+          "lt": "Sterilizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Suleidžiu"
+        },
+        {
+          "en": null,
+          "lt": "Pulsuoju"
+        },
+        {
+          "en": null,
+          "lt": "Palpuoju"
+        },
+        {
+          "en": null,
+          "lt": "Anestezuoju"
+        },
+        {
+          "en": null,
+          "lt": "Terapuoju"
+        },
+        {
+          "en": null,
+          "lt": "Imunizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Chirurguoju"
+        },
+        {
+          "en": null,
+          "lt": "Pjaustinėju",
+          "note": "frequentative of pjauti (to cut) — pairs with Chirurguoju"
+        },
+        {
+          "en": null,
+          "lt": "Termometruoju"
+        },
+        {
+          "en": null,
+          "lt": "Bandažuoju"
+        },
+        {
+          "en": null,
+          "lt": "Psichiatrinu"
+        },
+        {
+          "en": null,
+          "lt": "Hipnotizuoju"
+        },
+        {
+          "en": null,
+          "lt": "Lašelinizuoju"
+        }
       ]
     },
     "Sounds (bonus, no EN source)": {
       "count": 19,
       "locked": true,
       "entries": [
-        {"en": null, "lt": "Tarškinu", "note": "tarškėti — keyboard/typewriter clatter"},
-        {"en": null, "lt": "Barškinu", "note": "barškėti — rattling"},
-        {"en": null, "lt": "Cypsiu", "note": "cypti — squeak"},
-        {"en": null, "lt": "Girgždu", "note": "girgždėti — creak"},
-        {"en": null, "lt": "Dundu", "note": "dundėti — rumble/thud"},
-        {"en": null, "lt": "Trinksiu", "note": "trinksėti — bang/slam"},
-        {"en": null, "lt": "Cinksiu", "note": "cinksėti — clink/jingle"},
-        {"en": null, "lt": ["Švilpiu", "Švilpčioju"], "note": "švilpti — whistle; Švilpčioju is the frequentative/casual form, added per user request"},
-        {"en": null, "lt": "Ošiu", "note": "ošti — rustle of wind/trees"},
-        {"en": null, "lt": "Šnypščiu", "note": "šnypšti — hiss"},
-        {"en": null, "lt": "Skambinu", "note": "skambėti/skambinti — ring/chime"},
-        {"en": null, "lt": "Dzingsiu", "note": "dzingsėti — ding"},
-        {"en": null, "lt": "Klegu", "note": "klegėti — clamor of voices/birds"},
-        {"en": null, "lt": "Čežinu", "note": "čežėti — rustle of paper/leaves"},
-        {"en": null, "lt": "Bumbsiu", "note": "bumbsėti — thud/bump"},
-        {"en": null, "lt": "Trimituoju", "note": "trimituoti — to trumpet"},
-        {"en": null, "lt": "Kankliuoju", "note": "kankliuoti — to play the kanklės, a traditional Lithuanian instrument"},
-        {"en": null, "lt": "Armonikuoju", "note": "coinage from armonika (accordion)"}
+        {
+          "en": null,
+          "lt": "Tarškinu",
+          "note": "tarškėti — keyboard/typewriter clatter"
+        },
+        {
+          "en": null,
+          "lt": "Barškinu",
+          "note": "barškėti — rattling"
+        },
+        {
+          "en": null,
+          "lt": "Cypsiu",
+          "note": "cypti — squeak"
+        },
+        {
+          "en": null,
+          "lt": "Girgždu",
+          "note": "girgždėti — creak"
+        },
+        {
+          "en": null,
+          "lt": "Dundu",
+          "note": "dundėti — rumble/thud"
+        },
+        {
+          "en": null,
+          "lt": "Trinksiu",
+          "note": "trinksėti — bang/slam"
+        },
+        {
+          "en": null,
+          "lt": "Cinksiu",
+          "note": "cinksėti — clink/jingle"
+        },
+        {
+          "en": null,
+          "lt": [
+            "Švilpiu",
+            "Švilpčioju"
+          ],
+          "note": "švilpti = whistle; Švilpčioju is the frequentative/casual form"
+        },
+        {
+          "en": null,
+          "lt": "Ošiu",
+          "note": "ošti — rustle of wind/trees"
+        },
+        {
+          "en": null,
+          "lt": "Šnypščiu",
+          "note": "šnypšti — hiss"
+        },
+        {
+          "en": null,
+          "lt": "Skambinu",
+          "note": "skambėti/skambinti — ring/chime"
+        },
+        {
+          "en": null,
+          "lt": "Dzingsiu",
+          "note": "dzingsėti — ding"
+        },
+        {
+          "en": null,
+          "lt": "Klegu",
+          "note": "klegėti — clamor of voices/birds"
+        },
+        {
+          "en": null,
+          "lt": "Čežinu",
+          "note": "čežėti — rustle of paper/leaves"
+        },
+        {
+          "en": null,
+          "lt": "Bumbsiu",
+          "note": "bumbsėti — thud/bump"
+        },
+        {
+          "en": null,
+          "lt": "Trimituoju",
+          "note": "trimituoti — to trumpet"
+        },
+        {
+          "en": null,
+          "lt": "Kankliuoju",
+          "note": "kankliuoti — to play the kanklės, a traditional Lithuanian instrument"
+        },
+        {
+          "en": null,
+          "lt": "Armonikuoju",
+          "note": "coinage from armonika (accordion)"
+        }
       ]
     }
   }
