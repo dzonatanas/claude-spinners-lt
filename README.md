@@ -12,6 +12,23 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 3. Parašyti lietuvišką "claudionary" stiliaus dokumentaciją (žaismingas žodynėlis su
    kiekvieno žodžio "etimologija"/apibrėžimu, ta pačia humoro linija kaip originale).
 
+## Naudojimas
+
+1. Atsidaryk `spinnerVerbs.settings.json` šiame repo — jame yra paruoštas
+   `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas su visais 402 žodžiais.
+2. Nuspręsk, kur jį dėti:
+   - **Globaliai, visiems savo projektams šiame kompiuteryje** → `~/.claude/settings.json`
+   - **Tik konkrečiam projektui** → `<projekto katalogas>/.claude/settings.json`
+3. Jei tame faile jau yra kitų nustatymų (pvz. `theme`, `enabledPlugins`) — **NEPERRAŠYK**
+   viso failo, o įklijuok tik `"spinnerVerbs": { ... }` raktą į jau esantį JSON objektą,
+   kaip papildomą lauką šalia kitų.
+4. Pasirink `mode`:
+   - `"replace"` — rodys TIK lietuviškus žodžius (angliški numatytieji dingsta)
+   - `"append"` — sujungs su 187 angliškais numatytaisiais, spinneris rodys mišinį
+5. Išsaugok failą. **Pakeitimas pritaikomas iš karto**, be perkrovimo — patikrinta
+   realiai veikiančioje sesijoje 2026-09-10 (Claude Code turi `settings_sync` mechanizmą,
+   sekantį nustatymų failo pokyčius gyvai).
+
 ## Failai
 
 | Failas | Paskirtis |
