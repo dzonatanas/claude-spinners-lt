@@ -12,7 +12,7 @@
   },
   "categories": {
     "Cooking/Food": {
-      "count": 23,
+      "count": 24,
       "entries": [
         {"en": "Baking", "lt": "Kepu"},
         {"en": "Blanching", "lt": "Apvirinu"},
@@ -20,7 +20,7 @@
         {"en": "Caramelizing", "lt": "Karamelizuoju"},
         {"en": "Churning", "lt": "Grūdu"},
         {"en": "Cooking", "lt": "Gaminu"},
-        {"en": "Crunching", "lt": "Traškinu"},
+        {"en": "Crunching", "lt": ["Traškinu", "Kramtau"], "note": "Kramtau (to chew) was one of the user's original 6 example words from the very first prompt, but was never actually added to the real pool until 2026-09-10 -- caught while reviewing the file"},
         {"en": "Flambeing", "lt": "Liepsninu", "note": "replaced original Flambiruoju per user request"},
         {"en": "Frosting", "lt": "Glazūruoju"},
         {"en": "Garnishing", "lt": "Puošiu"},
@@ -434,10 +434,30 @@
         {"en": null, "lt": "Hipnotizuoju"},
         {"en": null, "lt": "Lašelinizuoju"}
       ]
+    },
+    "Sounds (bonus, no EN source)": {
+      "count": 19,
+      "locked": true,
+      "entries": [
+        {"en": null, "lt": "Tarškinu", "note": "tarškėti — keyboard/typewriter clatter"},
+        {"en": null, "lt": "Barškinu", "note": "barškėti — rattling"},
+        {"en": null, "lt": "Cypsiu", "note": "cypti — squeak"},
+        {"en": null, "lt": "Girgždu", "note": "girgždėti — creak"},
+        {"en": null, "lt": "Dundu", "note": "dundėti — rumble/thud"},
+        {"en": null, "lt": "Trinksiu", "note": "trinksėti — bang/slam"},
+        {"en": null, "lt": "Cinksiu", "note": "cinksėti — clink/jingle"},
+        {"en": null, "lt": ["Švilpiu", "Švilpčioju"], "note": "švilpti — whistle; Švilpčioju is the frequentative/casual form, added per user request"},
+        {"en": null, "lt": "Ošiu", "note": "ošti — rustle of wind/trees"},
+        {"en": null, "lt": "Šnypščiu", "note": "šnypšti — hiss"},
+        {"en": null, "lt": "Skambinu", "note": "skambėti/skambinti — ring/chime"},
+        {"en": null, "lt": "Dzingsiu", "note": "dzingsėti — ding"},
+        {"en": null, "lt": "Klegu", "note": "klegėti — clamor of voices/birds"},
+        {"en": null, "lt": "Čežinu", "note": "čežėti — rustle of paper/leaves"},
+        {"en": null, "lt": "Bumbsiu", "note": "bumbsėti — thud/bump"},
+        {"en": null, "lt": "Trimituoju", "note": "trimituoti — to trumpet"},
+        {"en": null, "lt": "Kankliuoju", "note": "kankliuoti — to play the kanklės, a traditional Lithuanian instrument"},
+        {"en": null, "lt": "Armonikuoju", "note": "coinage from armonika (accordion)"}
+      ]
     }
-  },
-  "unplaced_original_user_examples": [
-
-    {"lt": "Kramtau", "note": "one of the user's original 6 example words — not yet explicitly confirmed placed; check against Cooking list (Kramtau=to chew, not currently in the 23 Cooking entries above)"}
-  ]
+  }
 }

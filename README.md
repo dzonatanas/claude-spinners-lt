@@ -80,7 +80,7 @@ išsivalyk ranka, jei nori švaraus failo).
 ### Rankinis būdas
 
 1. Atsidaryk `data/spinnerVerbs.settings.json` šiame repo — jame yra paruoštas
-   `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas su visais 403 žodžiais.
+   `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas su visais 423 žodžiais.
 2. Nuspręsk, kur jį dėti:
    - **Globaliai, visiems savo projektams šiame kompiuteryje** → `~/.claude/settings.json`
    - **Tik konkrečiam projektui** → `<projekto katalogas>/.claude/settings.json`
@@ -118,7 +118,7 @@ claude-spinners-lt/
 | `scripts/scrape_claudionary.py` | Scraperis, ištraukiantis visą claudionary.com žodyną |
 | `data/claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
 | `data/spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
-| `data/spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 403 žodžiai) — naudojamas diegimo skriptų arba rankiniam kopijavimui |
+| `data/spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 423 žodžiai) — naudojamas diegimo skriptų arba rankiniam kopijavimui |
 | `install/install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
 | `install/install.bat` | Windows apvalkalas `install.py` — dukart paspaudus paleidžia skriptą (patikrina ar Python įdiegtas) |
 | `install/install_nopython.bat` | Diegimas be Python — grynas batch tekstas, jokių priklausomybių. Žr. „Naudojimas" žemiau |
@@ -156,9 +156,9 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
 
 ## Būklė (2026-09-09)
 
-**Visos 9 semantinės kategorijos + 6 bonus temos užrakintos, 403 žodžiai (pool įrašai, patikrinta — nė vieno pasikartojimo) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
+**Visos 9 semantinės kategorijos + 6 bonus temos užrakintos, 423 žodžiai (pool įrašai, patikrinta — nė vieno pasikartojimo) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
 
-- ✅ Cooking/Food — 23
+- ✅ Cooking/Food — 24 *(pridėtas Kramtau 2026-09-10 — vienas iš pradinių 6 pavyzdinių žodžių, kuris per klaidą taip ir nebuvo įtrauktas iki šiol)*
 - ✅ Thinking/Cognition — 22 *(pridėtas Nagrinėju 2026-09-10 — nukelta iš paties Claude pirminio demonstracinio pavyzdžio, kilusio dar prieš prasidedant projektui)*
 - ✅ Movement/Wandering — 38
 - ✅ Nature/Organic Growth — 19 *(peržiūrėta ir galutinai užrakinta 2026-09-09, pritaikius `-inėju` galūnės variantus: Rūginėju, Išperinėju, Apdulkinėju, Sklaidausi; Germinating pakeista į Mikrobinu; Metamorphosing papildyta Vartausi; Sublimating papildyta Susigerinėju)*
@@ -176,6 +176,7 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
 - ✅ Sportas — 21
 - ✅ Filosofija — 13
 - ✅ Medicina — 18
+- ✅ Garsai — 19 *(onomatopėjos: Tarškinu/Barškinu klaviatūros klabenimui, Kankliuoju/Armonikuoju/Trimituoju instrumentams)*
 
 - ✅ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija — **užrašyta 2026-09-10**,
   `mode: "replace"` (globaliai visam kompiuteriui, ne tik šiam projektui — sąmoningas
