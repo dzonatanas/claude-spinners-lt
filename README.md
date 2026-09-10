@@ -31,6 +31,13 @@ cd claude-spinners-lt
 Toliau visos komandos žemiau paleidžiamos **iš to katalogo** (kur yra `README.md`,
 `data/`, `install/` ir t.t.).
 
+**Admin teisių nereikia.** `~/.claude/settings.json` yra tavo paties vartotojo profilio
+kataloge (`%USERPROFILE%\.claude\settings.json`), ne sistemos lygmens vietoje — kiekvienas
+standartinis Windows vartotojas ten turi pilnas rašymo teises be jokio administravimo.
+„Globaliai" šiame projekte reiškia „globaliai tavo vartotojui šiame kompiuteryje", ne
+visiems kompiuterio vartotojams. (Vienintelė išimtis — griežtai IT valdomi kompiuteriai su
+užrakintais profiliais, bet tai nestandartinis atvejis.)
+
 ## Naudojimas
 
 ### Paprastas būdas — skriptas
