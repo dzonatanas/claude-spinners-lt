@@ -18,7 +18,6 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 |---|---|
 | `scrape_claudionary.py` | Scraperis, ištraukiantis visą claudionary.com žodyną |
 | `claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
-| `vdu_llm_reference.md` | Instrukcija dviem vietiniams lietuviškiems LLM (`D:\VDU_LLM\`) — encoderiui (nepatikimas panašumui) ir generatyviam 1B modeliui (geras kūrybai, fabrikuoja faktus). Skirtas kaip PAPILDOMAS variantų šaltinis, ne pirminis vertėjas |
 | `spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
 | `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — nukopijuok jo turinį į savo `~/.claude/settings.json` (arba `.claude/settings.json` projekto lygmeniu), jei nori naudoti šį sąrašą |
 | `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `spinner_verbs_lt_progress.json` |
@@ -28,8 +27,7 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 
 Žodžiai verčiami/kuriami **tiesiogiai Claude**, kategorija po kategorijos (ne masiškai visi
 187 iš karto) — kartu su naudotoju peržiūrint ir koreguojant kiekvieną grupę prieš pereinant
-prie kitos. Vietinis LT LLM (`LT_AI_DLKVM`) numatytas kaip papildomas idėjų šaltinis, bet
-kol kas nebuvo paleistas — visas darbas iki šiol yra tiesioginis vertimas/asociacija.
+prie kitos.
 
 Galutinis sąrašas nėra griežtas 1:1 atitikmuo anglų kalbos žodžiams — tai laisvas žodžių
 "baseinas" (`spinnerVerbs: { mode, verbs }` priima paprastą masyvą per `verbs`), tad kai
@@ -87,16 +85,6 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
   turinys visada lieka `spinner_verbs_lt_progress.json`).
 
 Visi 3 pradiniai deliverable'ai užbaigti.
-
-## LT_AI_DLKVM modelio patikimumo patikra
-
-2026-09-09/10 modelis buvo paleistas pirmą kartą per visą projektą — patikrinti jo
-patikimumą tiksliam, apribojimais paremtam žodžių paieškos užklausimui, prieš
-apsisprendžiant, ar juo verta pasitikėti kaip papildomu variantų šaltiniu šiam projektui.
-Rezultatas neigiamas: modelis negalėjo tiksliai įvykdyti paprasto apribojimais paremto
-užklausimo, generavo nesusijusį tekstą. Tai atitinka `vdu_llm_reference.md` įspėjimą —
-modelis geriau tinka atviresnei kūrybinei generacijai nei tiksliems atitikmenims. Pačiam
-vertimo darbui modelis kol kas nenaudotas.
 
 ## Pastaba dėl istorijos
 
