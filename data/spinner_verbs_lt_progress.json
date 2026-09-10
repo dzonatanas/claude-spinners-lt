@@ -2,12 +2,8 @@
   "_meta": {
     "purpose": "Reconstructed from the transcript of a crashed session (session id 6d70bd2b-5ddd-4e7c-b528-bbc37f2c98c7, 2026-09-08 11:25-15:33). All translation here was done by Claude directly, no LLM (LT_AI_DLKVM) was used. Source dictionary: claudionary_source.json (187 entries).",
     "reconstructed_on": "2026-09-08",
-    "status": "ALL 9 EN-source semantic categories LOCKED, PLUS 6 pure-LT bonus categories LOCKED (403 pool entries total, 15 categories, zero duplicate LT words verified): the 9 original categories cover all 187 claudionary_source.json words; the 6 bonus categories (Statistics 15, Mathematics 16, Computer Networks 15, Sports 21, Philosophy 13, Medicine 18 — all locked 2026-09-10) have no EN source, same style as the 41 pure-LT Physics/Sci-fi additions, each new bonus batch checked against the full existing pool to avoid repeats. Next: the two original deliverables (settings.json, LT documentation file) remain — no more bonus topics currently planned unless the user requests more.",
-    "outstanding_deliverables_from_original_request": [
-      "~/.claude/settings.json spinnerVerbs config — DONE 2026-09-10. Written with mode:\"replace\" (user chose GLOBAL scope deliberately, affects every project on this machine, not just this one), all 403 LT pool words as verbs, merged into the existing settings.json (preserved tui/theme/enabledPlugins keys). Also saved as spinnerVerbs.settings.json in the repo for reference/reuse.",
-      "Lithuanian claudionary-style documentation file — NOT yet written",
-      "Local LT_AI_DLKVM model was run for the first time 2026-09-09/10 as a reliability probe (a constrained word-lookup query) to assess whether it's trustworthy enough to use as a supplementary variant source for this project — it FAILED, confirming the documented fact-lookup unreliability empirically. It has still never been used for actual spinner-verb translation/brainstorming."
-    ],
+    "status": "ALL 9 EN-source semantic categories LOCKED, PLUS 7 pure-LT bonus categories LOCKED (423 pool entries total, 16 categories, zero duplicate LT words verified): the 9 original categories cover all 187 claudionary_source.json words; the 7 bonus categories (Statistics 15, Mathematics 16, Computer Networks 15, Sports 21, Philosophy 13, Medicine 18, Sounds 19 — Sounds added 2026-09-10, onomatopoeia with no EN source) have no EN source, same style as the 41 pure-LT Physics/Sci-fi additions, each new bonus batch checked against the full existing pool to avoid repeats. All 3 original deliverables (settings.json config, the 400+ word translation, and claudionary_lt.md) are DONE. No more bonus topics currently planned unless the user requests more.",
+    "outstanding_deliverables_from_original_request": [],
     "remaining_categories_not_started": []
   },
   "categories": {
