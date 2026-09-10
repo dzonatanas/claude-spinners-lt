@@ -34,6 +34,23 @@ python install.py --scope global --mode replace
 python install.py --scope project --project-dir /kelias/iki/projekto --mode append
 ```
 
+### Windows be Python
+
+Jei Python neįdiegtas, `install_nopython.bat` atlieka tą patį grynu batch tekstu (be
+jokių priklausomybių):
+```
+install_nopython.bat
+install_nopython.bat project
+install_nopython.bat project "C:\mano\projektas" append
+install_nopython.bat global append
+```
+Be argumentų — numatytieji: globaliai, `replace`. Paklaus tik VIENO patvirtinimo
+(Y/n) prieš rašydamas — sąmoningai vengiama kelių `set /p` klausimų iš eilės, nes tai
+žinomai nepatikima `cmd.exe` (antras klausimas gali tiesiog negauti atsakymo, jei
+skriptas paleidžiamas ne iš tikros konsolės). Taip pat daro `.bak` atsarginę kopiją ir
+įspėja, jei faile jau yra `spinnerVerbs` raktas (nepašalins seno, tik pridės naują —
+išsivalyk ranka, jei nori švaraus failo).
+
 ### Rankinis būdas
 
 1. Atsidaryk `spinnerVerbs.settings.json` šiame repo — jame yra paruoštas
@@ -61,6 +78,7 @@ python install.py --scope project --project-dir /kelias/iki/projekto --mode appe
 | `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — naudojamas `install.py` skripto arba rankiniam kopijavimui |
 | `install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
 | `install.bat` | Windows apvalkalas `install.py` — dukart paspaudus paleidžia skriptą (patikrina ar Python įdiegtas) |
+| `install_nopython.bat` | Diegimas be Python — grynas batch tekstas, jokių priklausomybių. Žr. „Naudojimas" žemiau |
 | `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `spinner_verbs_lt_progress.json` |
 | `README.md` | Šis failas |
 
