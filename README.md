@@ -14,6 +14,26 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 
 ## Naudojimas
 
+### Paprastas būdas — skriptas
+
+```
+python install.py
+```
+
+Paklaus dviejų klausimų (kur diegti — globaliai ar konkrečiam projektui; ir `replace` ar
+`append`), tada pats saugiai sujungs `spinnerVerbs` su tavo esamu `settings.json` (jei
+toks jau yra — jo TURINYS nepradingsta, tik prisideda naujas raktas), padarydamas
+`.bak` atsarginę kopiją prieš rašydamas. Reikalingas tik Python 3, jokių papildomų
+bibliotekų.
+
+Neinteraktyviam naudojimui (pvz. automatizacijai):
+```
+python install.py --scope global --mode replace
+python install.py --scope project --project-dir /kelias/iki/projekto --mode append
+```
+
+### Rankinis būdas
+
 1. Atsidaryk `spinnerVerbs.settings.json` šiame repo — jame yra paruoštas
    `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas su visais 402 žodžiais.
 2. Nuspręsk, kur jį dėti:
@@ -36,7 +56,8 @@ tipo žodžių, rodomų kol Claude dirba) lokalizavimo projektas. Šaltinis —
 | `scrape_claudionary.py` | Scraperis, ištraukiantis visą claudionary.com žodyną |
 | `claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
 | `spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
-| `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — nukopijuok jo turinį į savo `~/.claude/settings.json` (arba `.claude/settings.json` projekto lygmeniu), jei nori naudoti šį sąrašą |
+| `spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 402 žodžiai) — naudojamas `install.py` skripto arba rankiniam kopijavimui |
+| `install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
 | `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `spinner_verbs_lt_progress.json` |
 | `README.md` | Šis failas |
 
