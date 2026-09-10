@@ -99,9 +99,8 @@ naudok jį, jei nori stipriausios garantijos, kad niekas iš esamų nustatymų
 4. Pasirink `mode`:
    - `"replace"` — rodys TIK lietuviškus žodžius (angliški numatytieji dingsta)
    - `"append"` — sujungs su 187 angliškais numatytaisiais, spinneris rodys mišinį
-5. Išsaugok failą. **Pakeitimas pritaikomas iš karto**, be perkrovimo — patikrinta
-   realiai veikiančioje sesijoje 2026-09-10 (Claude Code turi `settings_sync` mechanizmą,
-   sekantį nustatymų failo pokyčius gyvai).
+5. Išsaugok failą. **Pakeitimas pritaikomas iš karto**, be perkrovimo — Claude Code turi
+   vidinį `settings_sync` mechanizmą, sekantį nustatymų failo pokyčius gyvai.
 
 ## Struktūra
 
@@ -146,13 +145,13 @@ kuriems angliškiems žodžiams paliekami keli lietuviški variantai (pvz. Gusti
 Gūsiuoju/Vėjinu/Vėduoju/Vėsinu), o kai kurie lietuviški žodžiai neturi tiesioginio
 angliško atitikmens (naudotojo pridėti papildymai).
 
-**Rodymo mechanika** (patikrinta tiesiogiai `claude.exe` binare 2026-09-10): kiekvieną
-kartą spinneris tiesiog atsitiktinai išrenka VIENĄ žodį iš viso masyvo — jokio ryšio su
+**Rodymo mechanika**: kiekvieną kartą spinneris tiesiog atsitiktinai išrenka VIENĄ žodį
+iš viso masyvo — jokio ryšio su
 tuo, ką Claude tuo metu realiai daro. `mode: "append"` sujungia numatytuosius (187 EN) su
 `verbs` sąrašu ir renkasi iš viso ~589 žodžių; `mode: "replace"` rodo TIK `verbs` sąrašą.
 Norint grynai lietuviško spinnerio — reikia `"replace"`.
 
-### Stiliaus gairės (žr. taip pat atmintyje `feedback_lt_translation_style`)
+### Stiliaus gairės
 
 - Pirmenybė tikriems, natūraliai skambantiems lietuviškiems veiksmažodžiams; kai tikslaus
   atitikmens nėra — kuriamos naujadarai/asociacijos (pvz. Fotosintetinu, Lizdinu).
@@ -163,53 +162,36 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
 - Žaismingi/absurdiški naujadarai (pvz. Čiulptukauju) laikomi taip pat vertingi kaip
   "rimtas" pasirinkimas — atitinka originalo toną.
 
-## Būklė (2026-09-09)
+## Būklė
 
-**Visos 9 semantinės kategorijos + 6 bonus temos užrakintos, 423 žodžiai (pool įrašai, patikrinta — nė vieno pasikartojimo) — visi 187 šaltinio žodžiai jau turi lietuvišką atitikmenį:**
+Visi 187 originalūs claudionary.com žodžiai turi lietuvišką atitikmenį, papildyta bonus
+temomis be angliško šaltinio — iš viso **423 žodžiai, 16 kategorijų**, patikrinta be
+pasikartojimų:
 
-- ✅ Cooking/Food — 24 *(pridėtas Kramtau 2026-09-10 — vienas iš pradinių 6 pavyzdinių žodžių, kuris per klaidą taip ir nebuvo įtrauktas iki šiol)*
-- ✅ Thinking/Cognition — 22 *(pridėtas Nagrinėju 2026-09-10 — nukelta iš paties Claude pirminio demonstracinio pavyzdžio, kilusio dar prieš prasidedant projektui)*
-- ✅ Movement/Wandering — 38
-- ✅ Nature/Organic Growth — 19 *(peržiūrėta ir galutinai užrakinta 2026-09-09, pritaikius `-inėju` galūnės variantus: Rūginėju, Išperinėju, Apdulkinėju, Sklaidausi; Germinating pakeista į Mikrobinu; Metamorphosing papildyta Vartausi; Sublimating papildyta Susigerinėju)*
-- ✅ Technical/Processing — 43 *(užrakinta 2026-09-09 — čia pagaliau atsidūrė Malinėju ir Trupinu iš pradinių pavyzdžių; taip pat žaismingi meta-juokeliai Gitinu, Klaudinuosi/Debesuojuosi)*
-- ✅ Physics/Sci-fi — 59 *(užrakinta 2026-09-09 — 10 EN žodžių + 41 grynai lietuviškas papildymas be angliško atitikmens, fizikos/sci-fi žargono naujadarai: Kvarkinu, Bozoninu, Teraforminu, Kibernetizuoju ir pan.)*
-- ✅ Bureaucratic/Corporate — 16 *(užrakinta 2026-09-09 — Channeling/Channelling sujungti į vieną Kanalizuoju įrašą, nes JAV/britų rašybos juokelis lietuviškai neišsiverčia)*
-- ✅ Whimsical Nonsense Words — 32 *(užrakinta 2026-09-10 — grynas garso žaismas/naujadarai: Kombobuliuoju/Diskombobuliuoju/Rekombobuliuoju šeima, Bandeliuoju/Bandelinuosi kalambūras su „bandele")*
-- ✅ Weather & Misc (final batch) — 53 *(užrakinta 2026-09-10 — paskutinė partija, uždaranti visus 187 originalius žodžius; įskaitant Cultivating ūkininkavimo klasterį Tręšiu/Akėju/Ariu/Sodinu ir Flowing→Tekinu/Ištekinu su netyčiniu kalambūru apie ištekinimą)*
+- Cooking/Food — 24
+- Thinking/Cognition — 22
+- Movement/Wandering — 38
+- Nature/Organic Growth — 19
+- Technical/Processing — 43
+- Physics/Sci-fi — 59 *(10 iš originalaus žodyno + 41 grynai lietuviškas fizikos/sci-fi žargonas)*
+- Bureaucratic/Corporate — 16
+- Whimsical Nonsense Words — 32
+- Weather & Misc — 53
+- Statistika — 15
+- Matematika — 16
+- Kompiuteriniai tinklai — 15
+- Sportas — 21
+- Filosofija — 13
+- Medicina — 18
+- Garsai — 19
 
-**Bonus temos (grynai lietuviškos, be angliško šaltinio, kaip Physics/Sci-fi papildymai):**
-
-- ✅ Statistika — 15
-- ✅ Matematika — 16 *(įskaitant Traukšakniuoju — kalambūras kvadratinei šaknai)*
-- ✅ Kompiuteriniai tinklai — 15
-- ✅ Sportas — 21
-- ✅ Filosofija — 13
-- ✅ Medicina — 18
-- ✅ Garsai — 19 *(onomatopėjos: Tarškinu/Barškinu klaviatūros klabenimui, Kankliuoju/Armonikuoju/Trimituoju instrumentams)*
-
-- ✅ `~/.claude/settings.json` su `spinnerVerbs` konfigūracija — **užrašyta 2026-09-10**,
-  `mode: "replace"` (globaliai visam kompiuteriui, ne tik šiam projektui — sąmoningas
-  pasirinkimas), esami nustatymai (`tui`, `theme`, `enabledPlugins`) išsaugoti nepaliesti.
-  Ta pati konfigūracija taip pat saugoma `data/spinnerVerbs.settings.json` faile šiame repo.
-
-- ✅ Lietuviškas „claudionary" stiliaus dokumentacijos failas — `claudionary_lt.md`,
-  žaismingas priedas su 17 rinktinių žodžių istorijų (ne pilnas žodynas — pagrindinis
-  turinys visada lieka `data/spinner_verbs_lt_progress.json`).
-
-Visi 3 pradiniai deliverable'ai užbaigti.
-
-## Pastaba dėl istorijos
-
-Šis projektas kartą jau prarado darbą, kai sesija netikėtai nutrūko — visas vertimas buvo
-tik pokalbyje, niekur neišsaugotas. Atkurta iš žalios `.jsonl` sesijos transkripcijos.
-**Nuo šiol progresas fiksuojamas `data/spinner_verbs_lt_progress.json` po kiekvienos
-baigtos kategorijos**, kad taip nepasikartotų.
+Visi trys pradiniai tikslai (žr. „Tikslas" viršuje) įgyvendinti: `settings.json`
+konfigūracija paruošta, žodžių sąrašas pilnas, `claudionary_lt.md` dokumentacija parašyta.
 
 ## Prisidėjimas
 
-PR'ai ir Issues laukiami — ypač pasiūlymai likusioms kategorijoms (žr. "Liko nepradėta"
-aukščiau) arba geresni variantai jau užrakintiems žodžiams. Žr. stiliaus gaires aukščiau
-prieš siūlant naujus žodžius.
+PR'ai ir Issues laukiami — ypač naujos temos/kategorijos arba geresni variantai jau
+esantiems žodžiams. Žr. stiliaus gaires aukščiau prieš siūlant naujus žodžius.
 
 ## Licencija
 
