@@ -16,6 +16,15 @@ rem Claude Code itself writes. If yours has been hand-edited with blank lines
 rem or comments, use install.py instead (more robust) -- this script backs up
 rem your file first regardless, so it's safe to try.
 rem
+rem SAFETY: batch has no real JSON parser, so this script can only do a rough
+rem line-count sanity check after writing (the merged file should never end up
+rem SHORTER than the original -- if it does, something went wrong and the
+rem original is restored automatically from its timestamped backup). This is
+rem weaker than install.py's exact key-by-key verification, which actually
+rem re-parses both files and confirms every original key's VALUE is untouched
+rem -- prefer install.py when you want the strongest guarantee that no
+rem existing custom setting (statusLine, hooks, permissions, etc.) was lost.
+rem
 rem NOTE: only ONE interactive prompt (a yes/no confirmation) is used, on
 rem purpose -- cmd.exe's "set /p" is unreliable for a SECOND prompt later in
 rem a script when input isn't a real interactive console (e.g. when piped for
@@ -67,13 +76,25 @@ echo   Tikslo failas: !TARGET!
 echo.
 echo Nera Python priklausomybiu -- viskas atliekama grynu batch tekstu.
 echo Jei tikslo faile jau yra kitu nustatymu, jie NEBUS istrinti; failas bus
-echo sujungtas, o originalas issaugotas kaip .bak prieš rasant.
+echo sujungtas, o originalas issaugotas kaip .bak.N prieš rasant.
 echo.
 set /p CONFIRM="Testi? (Y/n): "
 if /i "%CONFIRM%"=="n" goto :cancelled
 
+echo.
+echo (Batch apdoroja kiekviena zodi atskirai, tai gali uztrukti iki minutes -
+echo  tai normalu, palauk, langas neuzstrigo.)
+
 for %%F in ("!TARGET!") do set "TARGET_DIR=%%~dpF"
 if not exist "!TARGET_DIR!" mkdir "!TARGET_DIR!" >nul 2>nul
+
+rem Find an unused numbered backup name up front (top-level goto/label, never
+rem nested inside parens -- see the safety note in the header comment).
+set "BN=0"
+:find_backup_name
+set /a BN+=1
+set "BACKUP=!TARGET!.bak.!BN!"
+if exist "!BACKUP!" goto :find_backup_name
 
 set "TLINES=0"
 set "NEED_FRESH="
@@ -90,7 +111,8 @@ if not exist "!TARGET!" (
         echo rankiniu budu po sio veiksmo ^(originalas issaugotas .bak faile^).
         echo.
     )
-    copy /y "!TARGET!" "!TARGET!.bak" >nul
+    copy /y "!TARGET!" "!BACKUP!" >nul
+    echo Atsargine kopija: !BACKUP!
     set "P1="
     set "P2="
     set "N=0"
@@ -141,12 +163,34 @@ rem line (preserved from VERBS_FILE), so only the root "}" needs adding here.
 ) > "!TARGET!.new"
 
 del "!TARGET!.body"
+
+rem Safety check: a merge should never make the file SHORTER than the
+rem original (we only ever add content) -- if it did, something went wrong,
+rem so leave the original untouched and bail instead of overwriting it.
+set "NEWLINES=0"
+for /f "usebackq delims=" %%X in ("!TARGET!.new") do set /a NEWLINES+=1
+
+set "SAFE=1"
+if defined NEED_FRESH (
+    if !NEWLINES! LSS 10 set "SAFE="
+) else (
+    if !NEWLINES! LEQ !TLINES! set "SAFE="
+)
+
+if not defined SAFE (
+    echo.
+    echo KLAIDA: rezultatas atrodo neteisingas ^(per trumpas^) - originalas NEPALIESTAS.
+    del "!TARGET!.new"
+    if not defined NEED_FRESH echo Atsargine kopija vis tiek issaugota: !BACKUP!
+    goto :end
+)
+
 move /y "!TARGET!.new" "!TARGET!" >nul
 
 echo.
 echo Sekmingai irasyta i: !TARGET!
 echo mode: !MODE!
-if not defined NEED_FRESH echo Jei kazkas atrodo sugadinta - originalas issaugotas kaip !TARGET!.bak
+if not defined NEED_FRESH echo Jei kazkas atrodo sugadinta - originalas issaugotas kaip !BACKUP!
 goto :end
 
 :cancelled

@@ -73,9 +73,18 @@ install\install_nopython.bat global append
 Be argumentų — numatytieji: globaliai, `replace`. Paklaus tik VIENO patvirtinimo
 (Y/n) prieš rašydamas — sąmoningai vengiama kelių `set /p` klausimų iš eilės, nes tai
 žinomai nepatikima `cmd.exe` (antras klausimas gali tiesiog negauti atsakymo, jei
-skriptas paleidžiamas ne iš tikros konsolės). Taip pat daro `.bak` atsarginę kopiją ir
-įspėja, jei faile jau yra `spinnerVerbs` raktas (nepašalins seno, tik pridės naują —
-išsivalyk ranka, jei nori švaraus failo).
+skriptas paleidžiamas ne iš tikros konsolės). Kiekvienas paleidimas daro **naują,
+numeruotą** atsarginę kopiją (`.bak.1`, `.bak.2`, ...) — ankstesnės niekada
+neperrašomos. Po įrašymo patikrina, ar rezultatas nėra trumpesnis už originalą (jei
+kažkas nutiktų klaidingai — originalas paliekamas nepaliestas, praneša apie klaidą).
+Taip pat įspėja, jei faile jau yra `spinnerVerbs` raktas (nepašalins seno, tik pridės
+naują — išsivalyk ranka, jei nori švaraus failo).
+
+**Batch versija gali užtrukti iki minutės** (kiekvieną žodį apdoroja atskirai) —
+tai normalu, palauk. `install.py` (jei turi Python) yra greitesnis IR saugesnis —
+jis tikrai perskaito/patikrina JSON turinį po įrašymo (ne tik eilučių skaičių), tad
+naudok jį, jei nori stipriausios garantijos, kad niekas iš esamų nustatymų
+(pvz. `statusLine`, `hooks`, teisės) neprapuls.
 
 ### Rankinis būdas
 
