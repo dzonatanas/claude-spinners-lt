@@ -43,7 +43,11 @@ užrakintais profiliais, bet tai nestandartinis atvejis.)
 ### Paprastas būdas — skriptas
 
 **Windows:** tiesiog dukart paspausk `install/install.bat` (arba paleisk iš terminalo).
-**Bet kuri OS:**
+**macOS/Linux:**
+```
+install/install.sh
+```
+**Bet kuri OS (tiesiogiai):**
 ```
 python install/install.py
 ```
@@ -52,7 +56,8 @@ Paklaus dviejų klausimų (kur diegti — globaliai ar konkrečiam projektui; ir
 `append`), tada pats saugiai sujungs `spinnerVerbs` su tavo esamu `settings.json` (jei
 toks jau yra — jo TURINYS nepradingsta, tik prisideda naujas raktas), padarydamas
 `.bak` atsarginę kopiją prieš rašydamas. Reikalingas tik Python 3, jokių papildomų
-bibliotekų — `install.bat` pats patikrina ar `python`/`py` įdiegtas ir praneša, jei ne.
+bibliotekų — `install.bat`/`install.sh` patys patikrina ar `python`/`python3`/`py`
+įdiegtas ir praneša, jei ne.
 
 Neinteraktyviam naudojimui (pvz. automatizacijai):
 ```
@@ -60,30 +65,40 @@ python install/install.py --scope global --mode replace
 python install/install.py --scope project --project-dir /kelias/iki/projekto --mode append
 ```
 
-### Windows be Python
+### Be Python (Windows arba macOS/Linux)
 
-Jei Python neįdiegtas, `install/install_nopython.bat` atlieka tą patį grynu batch tekstu
-(be jokių priklausomybių):
+Jei Python neįdiegtas, `install/install_nopython.bat` (Windows) arba
+`install/install_nopython.sh` (macOS/Linux) atlieka tą patį grynu batch/shell tekstu
+(be jokių priklausomybių — shell versijai reikia tik standartinių `sh`, `sed`, `grep`
+įrankių, kurie yra kiekviename macOS/Linux):
 ```
 install\install_nopython.bat
 install\install_nopython.bat project
 install\install_nopython.bat project "C:\mano\projektas" append
 install\install_nopython.bat global append
 ```
+```
+install/install_nopython.sh
+install/install_nopython.sh project
+install/install_nopython.sh project /mano/projektas append
+install/install_nopython.sh global append
+```
 Be argumentų — numatytieji: globaliai, `replace`. Paklaus tik VIENO patvirtinimo
-(Y/n) prieš rašydamas — sąmoningai vengiama kelių `set /p` klausimų iš eilės, nes tai
-žinomai nepatikima `cmd.exe` (antras klausimas gali tiesiog negauti atsakymo, jei
-skriptas paleidžiamas ne iš tikros konsolės). Kiekvienas paleidimas daro **naują,
-numeruotą** atsarginę kopiją (`.bak.1`, `.bak.2`, ...) — ankstesnės niekada
-neperrašomos. Po įrašymo patikrina, ar rezultatas nėra trumpesnis už originalą (jei
-kažkas nutiktų klaidingai — originalas paliekamas nepaliestas, praneša apie klaidą).
-Taip pat įspėja, jei faile jau yra `spinnerVerbs` raktas (nepašalins seno, tik pridės
-naują — išsivalyk ranka, jei nori švaraus failo).
+(Y/n) prieš rašydamas — sąmoningai vengiama kelių eilučių klausimų iš eilės (batch
+versijoje `cmd.exe` `set /p` yra žinomai nepatikimas antram klausimui, jei skriptas
+paleidžiamas ne iš tikros konsolės), tad scope/mode imami iš argumentų arba
+numatytųjų reikšmių. Kiekvienas paleidimas daro **naują, numeruotą** atsarginę
+kopiją (`.bak.1`, `.bak.2`, ...) — ankstesnės niekada neperrašomos. Po įrašymo
+patikrina, ar rezultatas nėra trumpesnis už originalą (jei kažkas nutiktų
+klaidingai — originalas paliekamas nepaliestas, praneša apie klaidą). Taip pat
+įspėja, jei faile jau yra `spinnerVerbs` raktas (nepašalins seno, tik pridės naują —
+išsivalyk ranka, jei nori švaraus failo).
 
-**Batch versija gali užtrukti iki minutės** (kiekvieną žodį apdoroja atskirai) —
-tai normalu, palauk. `install.py` (jei turi Python) yra greitesnis IR saugesnis —
-jis tikrai perskaito/patikrina JSON turinį po įrašymo (ne tik eilučių skaičių), tad
-naudok jį, jei nori stipriausios garantijos, kad niekas iš esamų nustatymų
+**Batch versija gali užtrukti iki minutės** (kiekvieną žodį apdoroja atskirai) — tai
+normalu, palauk; shell versija (`install_nopython.sh`) yra greita, nes `sed` dirba su
+visu failu iš karto. `install.py`/`install.sh` (jei turi Python) yra dar saugesni —
+jie tikrai perskaito/patikrina JSON turinį po įrašymo (ne tik eilučių skaičių), tad
+naudok juos, jei nori stipriausios garantijos, kad niekas iš esamų nustatymų
 (pvz. `statusLine`, `hooks`, teisės) neprapuls.
 
 ### Rankinis būdas
@@ -118,7 +133,9 @@ claude-spinners-lt/
 └── install/                — diegimo skriptai
     ├── install.py
     ├── install.bat
-    └── install_nopython.bat
+    ├── install.sh
+    ├── install_nopython.bat
+    └── install_nopython.sh
 ```
 
 | Failas | Paskirtis |
@@ -129,7 +146,9 @@ claude-spinners-lt/
 | `data/spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 423 žodžiai) — naudojamas diegimo skriptų arba rankiniam kopijavimui |
 | `install/install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
 | `install/install.bat` | Windows apvalkalas `install.py` — dukart paspaudus paleidžia skriptą (patikrina ar Python įdiegtas) |
-| `install/install_nopython.bat` | Diegimas be Python — grynas batch tekstas, jokių priklausomybių. Žr. „Naudojimas" žemiau |
+| `install/install.sh` | macOS/Linux apvalkalas `install.py` — paleidžia skriptą iš terminalo (patikrina ar `python3`/`python` įdiegtas) |
+| `install/install_nopython.bat` | Windows diegimas be Python — grynas batch tekstas, jokių priklausomybių. Žr. „Naudojimas" žemiau |
+| `install/install_nopython.sh` | macOS/Linux diegimas be Python — grynas shell (`sh`/`sed`) tekstas, jokių priklausomybių. Žr. „Naudojimas" žemiau |
 | `claudionary_lt.md` | **Žaismingas priedas** — 17 rinktinių žodžių pseudo-akademiniu claudionary.com stiliumi (etimologija, apibrėžimas, citata). Ne pilnas žodynas — tik geriausios istorijos; pagrindinis turinys visada yra `data/spinner_verbs_lt_progress.json` |
 | `README.md` | Šis failas |
 

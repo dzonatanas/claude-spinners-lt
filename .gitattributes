@@ -1,0 +1,6 @@
+# Force consistent line endings regardless of the cloning platform's
+# core.autocrlf setting -- shell scripts with CRLF line endings fail to run
+# on Linux/macOS (bad interpreter: /bin/sh^M), and .bat files need CRLF.
+*.sh text eol=lf
+*.py text eol=lf
+*.bat text eol=crlf
