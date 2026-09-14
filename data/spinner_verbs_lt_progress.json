@@ -1,7 +1,7 @@
 {
   "_meta": {
     "purpose": "Authoritative word list for the Claude Spinners LT project, grouped by semantic category. Source dictionary: claudionary_source.json (187 entries).",
-    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds). 423 pool entries across 16 categories, zero duplicates."
+    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds). 466 pool entries across 16 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed)."
   },
   "categories": {
     "Cooking/Food": {
@@ -108,7 +108,7 @@
       ]
     },
     "Thinking/Cognition": {
-      "count": 22,
+      "count": 27,
       "entries": [
         {
           "en": "Cerebrating",
@@ -201,11 +201,36 @@
           "en": null,
           "lt": "Nagrinėju",
           "note": "nagrinėti = to examine/analyze"
+        },
+        {
+          "en": null,
+          "lt": "Nuobodžiauju",
+          "note": "from nuobodžiauti — to be bored; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Pavyduliauju",
+          "note": "from pavyduliauti — to be enviously jealous, ongoing; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Dūsauju",
+          "note": "from dūsauti — to sigh; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Burbu",
+          "note": "from burbėti — to grumble/mutter; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Krūpčioju",
+          "note": "from krūpčioti — to flinch/startle repeatedly; ispell-lt verb list (corrected from an initial Krūptelėju guess)"
         }
       ]
     },
     "Movement/Wandering": {
-      "count_approx": 34,
+      "count_approx": 44,
       "entries": [
         {
           "en": "Ebbing",
@@ -358,6 +383,36 @@
           "en": null,
           "lt": "Kėblinu",
           "note": "stumbling awkwardly along"
+        },
+        {
+          "en": null,
+          "lt": "Plūduriuoju",
+          "note": "from plūduriuoti — to float/drift; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Sliūkinu",
+          "note": "from sliūkinti — to slither/sneak; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Striksiu",
+          "note": "from striksėti — to hop/skip; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Skėsčioju",
+          "note": "from skėsčioti — to spread arms repeatedly; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Linguoju",
+          "note": "from linguoti — to sway/rock; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Brendu",
+          "note": "from bristi — to wade; ispell-lt verb list (irregular conjugation)"
         }
       ]
     },
@@ -444,7 +499,7 @@
       ]
     },
     "Technical/Processing": {
-      "count": 43,
+      "count": 50,
       "locked": true,
       "entries": [
         {
@@ -592,6 +647,41 @@
             "Komponuoju",
             "Dėlioju"
           ]
+        },
+        {
+          "en": null,
+          "lt": "Inicializuoju",
+          "note": "from inicializuoti — to initialize; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Konfigūruoju",
+          "note": "from konfigūruoti — to configure; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Indeksuoju",
+          "note": "from indeksuoti — to index; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Testuoju",
+          "note": "from testuoti — to test; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Instaliuoju",
+          "note": "from instaliuoti — to install; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Verifikuoju",
+          "note": "from verifikuoti — to verify; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Sumuoju",
+          "note": "from sumuoti — to sum; ispell-lt verb list (plain generic form, distinct from the existing checksum pun Kontrolinsumuoju)"
         }
       ]
     },
@@ -838,7 +928,7 @@
       ]
     },
     "Bureaucratic/Corporate": {
-      "count": 16,
+      "count": 21,
       "locked": true,
       "entries": [
         {
@@ -912,11 +1002,36 @@
         {
           "en": "Boondoggling",
           "lt": "Švaistausi"
+        },
+        {
+          "en": null,
+          "lt": "Ratifikuoju",
+          "note": "from ratifikuoti — to ratify; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Anuliuoju",
+          "note": "from anuliuoti — to annul/cancel; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Licencijuoju",
+          "note": "from licencijuoti — to license; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Piktnaudžiauju",
+          "note": "from piktnaudžiauti — to abuse/misuse; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Administruoju",
+          "note": "from administruoti — to administer; ispell-lt verb list"
         }
       ]
     },
     "Whimsical Nonsense Words": {
-      "count": 32,
+      "count": 39,
       "locked": true,
       "entries": [
         {
@@ -1056,11 +1171,46 @@
         {
           "en": "Wibbling",
           "lt": "Svyruoju"
+        },
+        {
+          "en": null,
+          "lt": "Kiškiakopūstėliauju",
+          "note": "from kiškiakopūstėliauti — to forage/gather wood-sorrel (kiškiakopūstis, lit. \"hare's little cabbage\"); ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Blevyzgoju",
+          "note": "from blevyzgoti — to babble nonsense; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Keverzoju",
+          "note": "from keverzoti — to scribble/doodle; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Gūžčioju",
+          "note": "from gūžčioti — to shrug repeatedly; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Nusivaipau",
+          "note": "from nusivaipyti — to pull a face/grimace; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Švepluoju",
+          "note": "from švepluoti — to lisp; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Repečkoju",
+          "note": "from repečkoti — to scramble/crawl; ispell-lt verb list"
         }
       ]
     },
     "Weather & Misc (final batch)": {
-      "count": 53,
+      "count": 54,
       "locked": true,
       "entries": [
         {
@@ -1231,11 +1381,16 @@
         {
           "en": "Whirlpooling",
           "lt": "Įsisukinėju"
+        },
+        {
+          "en": null,
+          "lt": "Brėkšta",
+          "note": "from brėkšti — impersonal \"it's dawning,\" same pattern as the category's other impersonal weather words; ispell-lt verb list"
         }
       ]
     },
     "Statistics (bonus, no EN source)": {
-      "count": 15,
+      "count": 16,
       "locked": true,
       "entries": [
         {
@@ -1300,6 +1455,11 @@
         {
           "en": null,
           "lt": "Sluoksniuoju"
+        },
+        {
+          "en": null,
+          "lt": "Tabuliuoju",
+          "note": "from tabuliuoti — to tabulate; ispell-lt verb list"
         }
       ]
     },
@@ -1446,7 +1606,7 @@
       ]
     },
     "Sports (bonus, no EN source)": {
-      "count": 21,
+      "count": 23,
       "locked": true,
       "entries": [
         {
@@ -1532,6 +1692,16 @@
         {
           "en": null,
           "lt": "Apšylu"
+        },
+        {
+          "en": null,
+          "lt": "Spurtuoju",
+          "note": "from spurtuoti — to sprint; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Lenktyniauju",
+          "note": "from lenktyniauti — to race/compete; ispell-lt verb list"
         }
       ]
     },
@@ -1673,7 +1843,7 @@
       ]
     },
     "Sounds (bonus, no EN source)": {
-      "count": 19,
+      "count": 28,
       "locked": true,
       "entries": [
         {
@@ -1768,6 +1938,51 @@
           "en": null,
           "lt": "Armonikuoju",
           "note": "coinage from armonika (accordion)"
+        },
+        {
+          "en": null,
+          "lt": "Amčioju",
+          "note": "from amčioti — dog's yap; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Karksiu",
+          "note": "from karksėti — crow's caw; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Kliuksiu",
+          "note": "from kliuksėti — gurgle; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Knapsiu",
+          "note": "from knapsėti — tap/hiccup sound; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Šniokščiu",
+          "note": "from šniokšti — wind/water roar; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Tauškiu",
+          "note": "from tauškėti — chatter/rattle; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Zyziu",
+          "note": "from zyzti — insect buzz/whine; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Žvygauju",
+          "note": "from žvygauti — squeal; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Žybsiu",
+          "note": "from žybsėti — flicker/sparkle; ispell-lt verb list"
         }
       ]
     }

@@ -104,7 +104,7 @@ naudok juos, jei nori stipriausios garantijos, kad niekas iš esamų nustatymų
 ### Rankinis būdas
 
 1. Atsidaryk `data/spinnerVerbs.settings.json` šiame repo — jame yra paruoštas
-   `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas su visais 423 žodžiais.
+   `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas su visais 466 žodžiais.
 2. Nuspręsk, kur jį dėti:
    - **Globaliai, visiems savo projektams šiame kompiuteryje** → `~/.claude/settings.json`
    - **Tik konkrečiam projektui** → `<projekto katalogas>/.claude/settings.json`
@@ -145,7 +145,7 @@ claude-spinners-lt/
 | `scripts/scrape_dlkz.py` | Scraperis, tikrinantis realius lietuviškus veiksmažodžius iš gyvo [DLKŽ](https://ekalba.lt/dabartines-lietuviu-kalbos-zodynas/) (naujų kandidatų paieškai) — reikalauja Playwright + Chromium (žr. skripto docstring dėl naudojimo/venv) |
 | `data/claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
 | `data/spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
-| `data/spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 423 žodžiai) — naudojamas diegimo skriptų arba rankiniam kopijavimui |
+| `data/spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 466 žodžiai) — naudojamas diegimo skriptų arba rankiniam kopijavimui |
 | `install/install.py` | Diegimo skriptas — automatiškai sujungia `spinnerVerbs` su tavo `settings.json`, klausdamas scope (global/project) ir mode (replace/append), darydamas atsarginę kopiją. Žr. „Naudojimas" žemiau |
 | `install/install.bat` | Windows apvalkalas `install.py` — dukart paspaudus paleidžia skriptą (patikrina ar Python įdiegtas) |
 | `install/install.sh` | macOS/Linux apvalkalas `install.py` — paleidžia skriptą iš terminalo (patikrina ar `python3`/`python` įdiegtas) |
@@ -169,7 +169,7 @@ angliško atitikmens (naudotojo pridėti papildymai).
 **Rodymo mechanika**: kiekvieną kartą spinneris tiesiog atsitiktinai išrenka VIENĄ žodį
 iš viso masyvo — jokio ryšio su
 tuo, ką Claude tuo metu realiai daro. `mode: "append"` sujungia numatytuosius (187 EN) su
-`verbs` sąrašu ir renkasi iš viso ~589 žodžių; `mode: "replace"` rodo TIK `verbs` sąrašą.
+`verbs` sąrašu ir renkasi iš viso 653 žodžius (187+466); `mode: "replace"` rodo TIK `verbs` sąrašą.
 Norint grynai lietuviško spinnerio — reikia `"replace"`.
 
 ### Stiliaus gairės
@@ -186,25 +186,25 @@ Norint grynai lietuviško spinnerio — reikia `"replace"`.
 ## Būklė
 
 Visi 187 originalūs claudionary.com žodžiai turi lietuvišką atitikmenį, papildyta bonus
-temomis be angliško šaltinio — iš viso **423 žodžiai, 16 kategorijų**, patikrinta be
+temomis be angliško šaltinio — iš viso **466 žodžiai, 16 kategorijų**, patikrinta be
 pasikartojimų:
 
 - Cooking/Food — 24
-- Thinking/Cognition — 22
-- Movement/Wandering — 38
+- Thinking/Cognition — 27
+- Movement/Wandering — 44
 - Nature/Organic Growth — 19
-- Technical/Processing — 43
+- Technical/Processing — 50
 - Physics/Sci-fi — 59 *(10 iš originalaus žodyno + 41 grynai lietuviškas fizikos/sci-fi žargonas)*
-- Bureaucratic/Corporate — 16
-- Whimsical Nonsense Words — 32
-- Weather & Misc — 53
-- Statistika — 15
+- Bureaucratic/Corporate — 21
+- Whimsical Nonsense Words — 39
+- Weather & Misc — 54
+- Statistika — 16
 - Matematika — 16
 - Kompiuteriniai tinklai — 15
-- Sportas — 21
+- Sportas — 23
 - Filosofija — 13
 - Medicina — 18
-- Garsai — 19
+- Garsai — 28
 
 Visi trys pradiniai tikslai (žr. „Tikslas" viršuje) įgyvendinti: `settings.json`
 konfigūracija paruošta, žodžių sąrašas pilnas, `claudionary_lt.md` dokumentacija parašyta.
