@@ -172,6 +172,26 @@ tuo, ką Claude tuo metu realiai daro. `mode: "append"` sujungia numatytuosius (
 `verbs` sąrašu ir renkasi iš viso 653 žodžius (187+466); `mode: "replace"` rodo TIK `verbs` sąrašą.
 Norint grynai lietuviško spinnerio — reikia `"replace"`.
 
+### Papildomi žodžių šaltiniai
+
+Nuo 2026-09-14, šalia tiesioginio Claude vertimo/kūrimo, dalis naujų žodžių atrenkama
+iš realių lietuviškų žodynų/žodžių sąrašų (ne tik laisvai sugalvojama) — kiekvienas
+tokio šaltinio žodis vis tiek eina per tą patį peržiūros procesą (Claude atrenka ir
+išverčia, naudotojas patikrina/pataiso), tiesiog kandidatų sąrašas platesnis:
+
+- **[ispell-lt](https://github.com/ispell-lt/ispell-lt)** (BSD-3-Clause licencija,
+  © Albertas Agejevas ir bendraautoriai) — projekto `lietuviu.veiksmazodziai` failas
+  yra specialiai sudarytas lietuviškų veiksmažodžių sąrašas (naudojamas ispell rašybos
+  tikrinimo taisyklėms), iš jo atrinkti kandidatai žymimi `note` lauke
+  `spinner_verbs_lt_progress.json` faile su nuoroda „ispell-lt verb list". Naudojami
+  tik pavieniai žodžiai kaip vertimo kandidatai — patį failą ar jo struktūrą
+  (afiksų taisykles) neperskelbiame/neplatiname.
+- **[DLKŽ](https://ekalba.lt/dabartines-lietuviu-kalbos-zodynas/)** (Dabartinės
+  lietuvių kalbos žodynas, Lietuvių kalbos institutas) — naudojamas kandidatų
+  patikrai (ar žodis tikrai egzistuoja žodyne) per `scripts/scrape_dlkz.py`. Taip pat
+  tik pavieniai antraštiniai žodžiai naudojami kaip nuoroda, jokio žodyno turinio
+  (apibrėžimų, pavyzdžių) neperskelbiame.
+
 ### Stiliaus gairės
 
 - Pirmenybė tikriems, natūraliai skambantiems lietuviškiems veiksmažodžiams; kai tikslaus
