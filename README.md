@@ -128,8 +128,9 @@ claude-spinners-lt/
 │   ├── claudionary_source.json
 │   ├── spinner_verbs_lt_progress.json
 │   └── spinnerVerbs.settings.json
-├── scripts/                — pagalbiniai (vienkartiniai) skriptai
-│   └── scrape_claudionary.py
+├── scripts/                — pagalbiniai skriptai
+│   ├── scrape_claudionary.py
+│   └── scrape_dlkz.py
 └── install/                — diegimo skriptai
     ├── install.py
     ├── install.bat
@@ -141,6 +142,7 @@ claude-spinners-lt/
 | Failas | Paskirtis |
 |---|---|
 | `scripts/scrape_claudionary.py` | Scraperis, ištraukiantis visą claudionary.com žodyną |
+| `scripts/scrape_dlkz.py` | Scraperis, tikrinantis realius lietuviškus veiksmažodžius iš gyvo [DLKŽ](https://ekalba.lt/dabartines-lietuviu-kalbos-zodynas/) (naujų kandidatų paieškai) — reikalauja Playwright + Chromium (žr. skripto docstring dėl naudojimo/venv) |
 | `data/claudionary_source.json` | Scraping rezultatas — **187 originalūs anglų kalbos įrašai** (word, ipa, pos, category, etymology, definition, diagram_caption, example) |
 | `data/spinner_verbs_lt_progress.json` | **Darbo būklė** — visi iki šiol išversti/sukurti lietuviški žodžiai, sugrupuoti pagal semantines kategorijas |
 | `data/spinnerVerbs.settings.json` | Paruoštas `{"spinnerVerbs": {"mode": "replace", "verbs": [...]}}` blokas (visi 423 žodžiai) — naudojamas diegimo skriptų arba rankiniam kopijavimui |
