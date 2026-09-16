@@ -1,7 +1,7 @@
 {
   "_meta": {
     "purpose": "Authoritative word list for the Claude Spinners LT project, grouped by semantic category. Source dictionary: claudionary_source.json (187 entries).",
-    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds). 466 pool entries across 16 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed)."
+    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds). 467 pool entries across 16 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome."
   },
   "categories": {
     "Cooking/Food": {
@@ -1176,6 +1176,11 @@
           "en": null,
           "lt": "Kiškiakopūstėliauju",
           "note": "from kiškiakopūstėliauti — to forage/gather wood-sorrel (kiškiakopūstis, lit. \"hare's little cabbage\"); ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Nebeprisikiškiakopūstėliauju",
+          "note": "from nebeprisikiškiakopūstėliauti — nebe- (no longer) + prisi- (gather enough for oneself) + kiškiakopūstėliauti (to forage wood-sorrel); a shortened 1st-person-present form of nebeprisikiškiakopūstėliaudavome/-davote/-davo, commonly cited as one of the longest words in Lithuanian, 28 letters"
         },
         {
           "en": null,
