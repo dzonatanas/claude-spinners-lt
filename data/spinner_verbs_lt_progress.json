@@ -1,7 +1,7 @@
 {
   "_meta": {
     "purpose": "Authoritative word list for the Claude Spinners LT project, grouped by semantic category. Source dictionary: claudionary_source.json (187 entries).",
-    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds). 467 pool entries across 16 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome."
+    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds, Youth Slang). 475 pool entries across 17 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome. 2026-09-18: +8 words, new Youth Slang category (Seniukinu, Seneliumbinu, Čilinu, Failinu, Vaibinu, Sigmuoju, Bazuojuosi, Kringinuosi) sourced directly from the user's own confirmed real-world usage, not a dictionary."
   },
   "categories": {
     "Cooking/Food": {
@@ -1989,6 +1989,52 @@
           "en": null,
           "lt": "Žybsiu",
           "note": "from žybsėti — flicker/sparkle; ispell-lt verb list"
+        }
+      ]
+    },
+    "Youth Slang (bonus, no EN source)": {
+      "count": 8,
+      "locked": true,
+      "entries": [
+        {
+          "en": null,
+          "lt": "Seniukinu",
+          "note": "from \"seni\" — casual youth term of address (lit. \"old man\", used like \"bro/dude\"); to call someone \"seni\""
+        },
+        {
+          "en": null,
+          "lt": "Seneliumbinu",
+          "note": "from \"seneliumbai\" — exaggerated, ironic greeting built on \"senelis\" (grandfather) plus a playful meme suffix; to greet someone \"seneliumbai\"-style"
+        },
+        {
+          "en": null,
+          "lt": "Čilinu",
+          "note": "from English \"chill\", adapted directly as a Lithuanian youth-slang verb; to chill/relax"
+        },
+        {
+          "en": null,
+          "lt": "Failinu",
+          "note": "from English \"fail\", common among students/gamers; to fail (a test, a plan)"
+        },
+        {
+          "en": null,
+          "lt": "Vaibinu",
+          "note": "from \"vaibas\" (vibe, English loan); to vibe"
+        },
+        {
+          "en": null,
+          "lt": "Sigmuoju",
+          "note": "from \"sigma\" — internet meme personality archetype (aloof, independent); to act \"sigma\"-style"
+        },
+        {
+          "en": null,
+          "lt": "Bazuojuosi",
+          "note": "from English \"based\" (confident, unbothered by others' opinions); to be \"based\""
+        },
+        {
+          "en": null,
+          "lt": "Kringinuosi",
+          "note": "from English \"cringe\"; to cringe (at something)"
         }
       ]
     }
