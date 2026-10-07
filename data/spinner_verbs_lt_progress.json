@@ -1,7 +1,7 @@
 {
   "_meta": {
     "purpose": "Authoritative word list for the Claude Spinners LT project, grouped by semantic category. Source dictionary: claudionary_source.json (187 entries).",
-    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds, Youth Slang). 475 pool entries across 17 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome. 2026-09-18: +8 words, new Youth Slang category (Seniukinu, Seneliumbinu, Čilinu, Failinu, Vaibinu, Sigmuoju, Bazuojuosi, Kringinuosi) sourced directly from the user's own confirmed real-world usage, not a dictionary."
+    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds, Youth Slang). 483 pool entries across 17 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome. 2026-09-18: +8 words, new Youth Slang category (Seniukinu, Seneliumbinu, Čilinu, Failinu, Vaibinu, Sigmuoju, Bazuojuosi, Kringinuosi) sourced directly from the user's own confirmed real-world usage, not a dictionary. 2026-10-07: +1 word, Nebeprisivaizdotinklaraštininkauju (34 letters, new longest-word record, beats Nebeprisikiškiakopūstėliauju's 28), from user-constructed nebeprisivaizdotinklaraštininkaujantiesiems (nebe- + prisi- + vaizdo tinklaraštininkauti, 'to vlog', via the productive -ininkas→-ininkauti pattern seen in ūkininkas→ūkininkauti). 2026-10-07 (same day, second batch): +6 Youth Slang words relayed via the user's friend after reading the dictionary (Senegaluoju, Senelyzinu, Seneniukinu, Sendaikčiauju, Senbernaruoju — a Saint Bernard dog-breed pun, not 'old bachelor' as first guessed — and Senbernauju, the senbernis/old-bachelor companion form) plus +1 Whimsical Nonsense Words entry, Krabolazdeliauju (krabų lazdelės/crab sticks pun), the user's own coinage."
   },
   "categories": {
     "Cooking/Food": {
@@ -1031,7 +1031,7 @@
       ]
     },
     "Whimsical Nonsense Words": {
-      "count": 39,
+      "count": 42,
       "locked": true,
       "entries": [
         {
@@ -1184,6 +1184,11 @@
         },
         {
           "en": null,
+          "lt": "Nebeprisivaizdotinklaraštininkauju",
+          "note": "from nebeprisivaizdotinklaraštininkauti — nebe- (no longer) + prisi- (manage enough for oneself) + vaizdo tinklaraštininkauti ('to vlog', vaizdo tinklaraštis = video blog + the productive -ininkas→-ininkauti pattern, cf. ūkininkas→ūkininkauti); user-constructed from the dative-plural participle nebeprisivaizdotinklaraštininkaujantiesiems, 34 letters — new longest-word record in this list, beating Nebeprisikiškiakopūstėliauju's 28"
+        },
+        {
+          "en": null,
           "lt": "Blevyzgoju",
           "note": "from blevyzgoti — to babble nonsense; ispell-lt verb list"
         },
@@ -1211,6 +1216,11 @@
           "en": null,
           "lt": "Repečkoju",
           "note": "from repečkoti — to scramble/crawl; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Krabolazdeliauju",
+          "note": "from krabų lazdelės (crab sticks/surimi, the common supermarket snack) + -iauti; user's own food pun"
         }
       ]
     },
@@ -1993,7 +2003,7 @@
       ]
     },
     "Youth Slang (bonus, no EN source)": {
-      "count": 8,
+      "count": 14,
       "locked": true,
       "entries": [
         {
@@ -2035,6 +2045,36 @@
           "en": null,
           "lt": "Kringinuosi",
           "note": "from English \"cringe\"; to cringe (at something)"
+        },
+        {
+          "en": null,
+          "lt": "Senegaluoju",
+          "note": "sen- (old) + \"Senegalas\" (Senegal) — absurd meme-geography extension of the senelis joke family; friend-sourced, exact usage unconfirmed"
+        },
+        {
+          "en": null,
+          "lt": "Senelyzinu",
+          "note": "senelis (grandfather) blended with \"analizuoti\"-style ending; friend-sourced, exact usage unconfirmed"
+        },
+        {
+          "en": null,
+          "lt": "Seneniukinu",
+          "note": "reduplicated sen-/seniukas — intensified variant of Seniukinu; friend-sourced, exact usage unconfirmed"
+        },
+        {
+          "en": null,
+          "lt": "Sendaikčiauju",
+          "note": "from sendaikčiai (secondhand goods/antiques, real standard compound) — to rummage/deal in old junk; friend-sourced"
+        },
+        {
+          "en": null,
+          "lt": "Senbernaruoju",
+          "note": "from sanbernaras/senbernaras (Saint Bernard dog breed) — to act like a big lazy Saint Bernard; double pun with senbernis (old bachelor), see also Senbernauju; friend-sourced"
+        },
+        {
+          "en": null,
+          "lt": "Senbernauju",
+          "note": "from senbernis (old bachelor, real word) — standard senbernauti conjugation, companion to the Senbernaruoju dog pun"
         }
       ]
     }

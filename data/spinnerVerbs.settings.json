@@ -280,12 +280,14 @@
       "Svyruoju",
       "Kiškiakopūstėliauju",
       "Nebeprisikiškiakopūstėliauju",
+      "Nebeprisivaizdotinklaraštininkauju",
       "Blevyzgoju",
       "Keverzoju",
       "Gūžčioju",
       "Nusivaipau",
       "Švepluoju",
       "Repečkoju",
+      "Krabolazdeliauju",
       "Banguoju",
       "Kasuosi",
       "Tuneliuoju",
@@ -476,7 +478,13 @@
       "Vaibinu",
       "Sigmuoju",
       "Bazuojuosi",
-      "Kringinuosi"
+      "Kringinuosi",
+      "Senegaluoju",
+      "Senelyzinu",
+      "Seneniukinu",
+      "Sendaikčiauju",
+      "Senbernaruoju",
+      "Senbernauju"
     ]
   }
 }
