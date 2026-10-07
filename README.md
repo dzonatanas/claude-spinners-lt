@@ -117,6 +117,59 @@ naudok juos, jei nori stipriausios garantijos, kad niekas iš esamų nustatymų
 5. Išsaugok failą. **Pakeitimas pritaikomas iš karto**, be perkrovimo — Claude Code turi
    vidinį `settings_sync` mechanizmą, sekantį nustatymų failo pokyčius gyvai.
 
+### VS Code / Cursor naudotojams — žinoma klaida, reikia kitokio kelio
+
+Jei naudoji Claude Code per **VS Code arba Cursor plėtinį** (ne tiesiogiai CLI
+terminale), aukščiau aprašytas `~/.claude/settings.json` būdas **NEVEIKS** —
+tai patvirtinta paties plėtinio klaida, ne šio projekto ar dokumentacijos
+netikslumas: plėtinys tyliai ignoruoja `spinnerVerbs` iš `~/.claude/settings.json`
+ir vietoj to bando skaityti iš VS Code nuostatų rakto `claudeCode.spinnerVerbs`
+(kuris pačiame plėtinyje net nėra oficialiai deklaruotas, tad VS Code nuostatų UI
+jo nerodo). Žr. GitHub issues
+[#23347](https://github.com/anthropics/claude-code/issues/23347),
+[#23695](https://github.com/anthropics/claude-code/issues/23695),
+[#23764](https://github.com/anthropics/claude-code/issues/23764),
+[#41585](https://github.com/anthropics/claude-code/issues/41585) (visi patvirtinti
+pakartojami pranešimai), pilna techninė šaknies priežasties analizė —
+[#60044](https://github.com/anthropics/claude-code/issues/60044) (uždarytas dėl
+neaktyvumo, bet nepataisytas — veikiantis sprendimas lieka reikalingas).
+
+**Veikiantis apėjimas**: kadangi plėtinys vis tiek (per klaidą) bando skaityti būtent
+iš `claudeCode.spinnerVerbs`, tą patį `{"mode": ..., "verbs": [...]}` bloką reikia
+įklijuoti TEN — su `claudeCode.` priešdėliu — į paties VS Code/Cursor nuostatų failą:
+
+- **VS Code, Windows**: `%APPDATA%\Code\User\settings.json`
+- **VS Code, macOS**: `~/Library/Application Support/Code/User/settings.json`
+- **VS Code, Linux**: `~/.config/Code/User/settings.json`
+- **Cursor** — tas pats kelias, tik `Code` pakeisk į `Cursor` (plėtinys identiškas,
+  naudoja tą patį paketą)
+- Arba tik konkrečiam projektui — `.vscode/settings.json` to projekto kataloge
+
+```json
+{
+  "claudeCode.hideOnboarding": true,
+  "claudeCode.spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [ "..." ]
+  }
+}
+```
+
+(`verbs` masyvą imk tą patį iš `data/spinnerVerbs.settings.json` — tiesiog įdėk jį
+po `claudeCode.spinnerVerbs` raktu, ne po `spinnerVerbs`.) Diegimo skriptai
+(`install.py` ir kt.) šio būdo kol kas automatiškai neatlieka — tik `~/.claude/settings.json`
+variantą — tad VS Code/Cursor atveju reikalingas rankinis įklijavimas.
+
+**Svarbu**: tai apėjimas, pasinaudojantis esama plėtinio klaida, o ne oficialiai
+palaikomas būdas — jei/kai Anthropic tai ištaisys, šis raktas gali nustoti veikti
+arba pasikeisti. Jei kada nebeveiks, pirmiausia patikrink, ar standartinis
+`~/.claude/settings.json` jau pradėjo veikti tiesiogiai VS Code/Cursor plėtinyje
+(klaidai ištaisius, tai taptų teisingu/oficialiu būdu).
+
+**JetBrains papildinys**: nebuvo šios klaidos kontekste tikrintas, bet pagal esamus
+GitHub issues panašių pranešimų apie jį nerasta — tikėtina, kad veikia per tą patį
+mechanizmą kaip CLI.
+
 ## Struktūra
 
 ```
