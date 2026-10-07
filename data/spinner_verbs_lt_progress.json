@@ -1,7 +1,7 @@
 {
   "_meta": {
     "purpose": "Authoritative word list for the Claude Spinners LT project, grouped by semantic category. Source dictionary: claudionary_source.json (187 entries).",
-    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds, Youth Slang). 483 pool entries across 17 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome. 2026-09-18: +8 words, new Youth Slang category (Seniukinu, Seneliumbinu, Čilinu, Failinu, Vaibinu, Sigmuoju, Bazuojuosi, Kringinuosi) sourced directly from the user's own confirmed real-world usage, not a dictionary. 2026-10-07: +1 word, Nebeprisivaizdotinklaraštininkauju (34 letters, new longest-word record, beats Nebeprisikiškiakopūstėliauju's 28), from user-constructed nebeprisivaizdotinklaraštininkaujantiesiems (nebe- + prisi- + vaizdo tinklaraštininkauti, 'to vlog', via the productive -ininkas→-ininkauti pattern seen in ūkininkas→ūkininkauti). 2026-10-07 (same day, second batch): +6 Youth Slang words relayed via the user's friend after reading the dictionary (Senegaluoju, Senelyzinu, Seneniukinu, Sendaikčiauju, Senbernaruoju — a Saint Bernard dog-breed pun, not 'old bachelor' as first guessed — and Senbernauju, the senbernis/old-bachelor companion form) plus +1 Whimsical Nonsense Words entry, Krabolazdeliauju (krabų lazdelės/crab sticks pun), the user's own coinage."
+    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds, Youth Slang). 484 pool entries across 17 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome. 2026-09-18: +8 words, new Youth Slang category (Seniukinu, Seneliumbinu, Čilinu, Failinu, Vaibinu, Sigmuoju, Bazuojuosi, Kringinuosi) sourced directly from the user's own confirmed real-world usage, not a dictionary. 2026-10-07: +1 word, Nebeprisivaizdotinklaraštininkauju (34 letters, new longest-word record, beats Nebeprisikiškiakopūstėliauju's 28), from user-constructed nebeprisivaizdotinklaraštininkaujantiesiems (nebe- + prisi- + vaizdo tinklaraštininkauti, 'to vlog', via the productive -ininkas→-ininkauti pattern seen in ūkininkas→ūkininkauti). 2026-10-07 (same day, second batch): +6 Youth Slang words relayed via the user's friend after reading the dictionary (Senegaluoju, Senelyzinu, Seneniukinu, Sendaikčiauju, Senbernaruoju — a Saint Bernard dog-breed pun, not 'old bachelor' as first guessed — and Senbernauju, the senbernis/old-bachelor companion form) plus +1 Whimsical Nonsense Words entry, Krabolazdeliauju (krabų lazdelės/crab sticks pun), the user's own coinage. 2026-10-07 (third batch): +1 word, Brūkšniuoju (brūkšniuoti — to make dashes/strike through), added to Bureaucratic/Corporate after the user flagged a possible typo (Brūkšta) and confirmed this was the intended word over the alternative Brėkštu (dawn, an impersonal verb not well-suited to 1st-person conjugation)."
   },
   "categories": {
     "Cooking/Food": {
@@ -928,7 +928,7 @@
       ]
     },
     "Bureaucratic/Corporate": {
-      "count": 21,
+      "count": 22,
       "locked": true,
       "entries": [
         {
@@ -1027,6 +1027,11 @@
           "en": null,
           "lt": "Administruoju",
           "note": "from administruoti — to administer; ispell-lt verb list"
+        },
+        {
+          "en": null,
+          "lt": "Brūkšniuoju",
+          "note": "from brūkšniuoti (brūkšnys = a dash/stroke) — to make dashes/strike through; raised as a possible typo of Brėkštu (dawn) or Brūkšniuoju, confirmed as this one"
         }
       ]
     },
