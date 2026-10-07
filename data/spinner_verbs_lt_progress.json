@@ -1,7 +1,7 @@
 {
   "_meta": {
     "purpose": "Authoritative word list for the Claude Spinners LT project, grouped by semantic category. Source dictionary: claudionary_source.json (187 entries).",
-    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds, Youth Slang). 475 pool entries across 17 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome. 2026-09-18: +8 words, new Youth Slang category (Seniukinu, Seneliumbinu, Čilinu, Failinu, Vaibinu, Sigmuoju, Bazuojuosi, Kringinuosi) sourced directly from the user's own confirmed real-world usage, not a dictionary."
+    "status": "All 187 source words covered, plus pure-LT bonus categories with no English source (Statistics, Mathematics, Computer Networks, Sports, Philosophy, Medicine, Sounds, Youth Slang). 476 pool entries across 17 categories, zero duplicates. 2026-09-14: +43 words sourced from the ispell-lt GitHub project's curated lietuviu.veiksmazodziai verb list (cross-checked against DLKZ for real headwords, human-reviewed). 2026-09-16: +1 word, Nebeprisikiškiakopūstėliauju, a shortened 1st-person-present form of the classic long Lithuanian word nebeprisikiškiakopūstėliaudavome. 2026-09-18: +8 words, new Youth Slang category (Seniukinu, Seneliumbinu, Čilinu, Failinu, Vaibinu, Sigmuoju, Bazuojuosi, Kringinuosi) sourced directly from the user's own confirmed real-world usage, not a dictionary. 2026-10-07: +1 word, Nebeprisivaizdotinklaraštininkauju (34 letters, new longest-word record, beats Nebeprisikiškiakopūstėliauju's 28), from user-constructed nebeprisivaizdotinklaraštininkaujantiesiems (nebe- + prisi- + vaizdo tinklaraštininkauti, 'to vlog', via the productive -ininkas→-ininkauti pattern seen in ūkininkas→ūkininkauti)."
   },
   "categories": {
     "Cooking/Food": {
@@ -1031,7 +1031,7 @@
       ]
     },
     "Whimsical Nonsense Words": {
-      "count": 39,
+      "count": 41,
       "locked": true,
       "entries": [
         {
@@ -1181,6 +1181,11 @@
           "en": null,
           "lt": "Nebeprisikiškiakopūstėliauju",
           "note": "from nebeprisikiškiakopūstėliauti — nebe- (no longer) + prisi- (gather enough for oneself) + kiškiakopūstėliauti (to forage wood-sorrel); a shortened 1st-person-present form of nebeprisikiškiakopūstėliaudavome/-davote/-davo, commonly cited as one of the longest words in Lithuanian, 28 letters"
+        },
+        {
+          "en": null,
+          "lt": "Nebeprisivaizdotinklaraštininkauju",
+          "note": "from nebeprisivaizdotinklaraštininkauti — nebe- (no longer) + prisi- (manage enough for oneself) + vaizdo tinklaraštininkauti ('to vlog', vaizdo tinklaraštis = video blog + the productive -ininkas→-ininkauti pattern, cf. ūkininkas→ūkininkauti); user-constructed from the dative-plural participle nebeprisivaizdotinklaraštininkaujantiesiems, 34 letters — new longest-word record in this list, beating Nebeprisikiškiakopūstėliauju's 28"
         },
         {
           "en": null,
